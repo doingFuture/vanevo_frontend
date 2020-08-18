@@ -4,7 +4,7 @@
     :class="background ? 'bg-gray-300' : ''"
   >
     <div
-      class="py-24"
+      class="pt-24 pb-8"
       :class="fullwidth ? 'w-full' : 'container w-3/5 mx-auto'"
     >
       <slot />

@@ -5,35 +5,35 @@
         <div class="flex flex-wrap -m-2">
           <div class="p-2 w-1/2">
             <input
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:border-blue-800 text-base px-4 py-2"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
               placeholder="Vorname"
               type="text"
             />
           </div>
           <div class="p-2 w-1/2">
             <input
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:border-blue-800 text-base px-4 py-2"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
               placeholder="Nachname"
               type="text"
             />
           </div>
           <div class="p-2 w-1/2">
             <input
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:border-blue-800 text-base px-4 py-2"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
               placeholder="Betreff"
               type="text"
             />
           </div>
           <div class="p-2 w-1/2">
             <input
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:border-blue-800 text-base px-4 py-2"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
               placeholder="Email"
               type="email"
             />
           </div>
           <div class="p-2 w-full">
             <textarea
-              class="w-full bg-transparent border-2 border-black focus:outline-none h-48 focus:border-blue-800 text-base px-4 py-2 resize-none block"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white h-48 focus:border-blue-800 text-base px-4 py-2 resize-none block focus:shadow-xl"
               placeholder="Message"
             ></textarea>
           </div>
