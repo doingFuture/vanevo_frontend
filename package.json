@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
+    "postbuild": "cp .ht* dist",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
