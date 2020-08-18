@@ -7,9 +7,9 @@
         alt="blog"
       />
       <div class="p-6 bg-white">
-        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+        <h3 class="title-font text-lg font-medium text-gray-900 mb-3 inline-block">
           The Catalyzer
-        </h1>
+        </h3>
         <p class="leading-relaxed mb-3">
           Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
           microdosing tousled waistcoat.
@@ -25,4 +25,17 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h3 {
+  position: relative;
+}
+
+h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 3px solid rgb(43, 108, 176);
+}
+</style>

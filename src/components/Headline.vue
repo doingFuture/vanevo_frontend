@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full p-4">
-    <h3 class="sm:text-3xl text-2xl title-font font-medium text-gray-900">
+  <div class="p-4" :class="fullwidth ? 'w-full' : 'w-3/5'">
+    <h3 class="sm:text-4xl text-2xl title-font font-medium text-gray-900">
       {{ text }}
     </h3>
   </div>
@@ -13,6 +13,10 @@ export default {
     text: {
       type: String,
       default: 'Ich bin eine tolle Headline'
+    },
+    fullwidth: {
+      type: Boolean,
+      default: true
     }
   }
 }

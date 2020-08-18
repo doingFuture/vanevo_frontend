@@ -1,12 +1,13 @@
 <template>
   <section
-    class="min-h-screen text-gray-700 body-font"
+    class="min-h-screen text-black body-font"
     :class="background ? 'bg-gray-300' : ''"
   >
-    <div class="container w-3/5 py-24 mx-auto">
-      <div class="flex flex-wrap -m-4">
-        <slot />
-      </div>
+    <div
+      class="py-24"
+      :class="fullwidth ? 'w-full' : 'container w-3/5 mx-auto'"
+    >
+      <slot />
     </div>
   </section>
 </template>
@@ -18,6 +19,14 @@ export default {
     background: {
       type: Boolean,
       default: false
+    },
+    fullwidth: {
+      type: Boolean,
+      default: false
+    },
+    fullheight: {
+        type: Boolean,
+        default: true
     }
   }
 }
