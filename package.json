@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "postbuild": "cp .ht* dist",
+    "postbuild": "cp netlify_headers dist",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
