@@ -31,7 +31,7 @@
             />
           </div>
           <div class="flex justify-center md:justify-end">
-            <g-image class="md:w-9/12 md:-mr-20" src="~/assets/images/windrad.jpg" />
+            <g-image class="md:w-9/12 md:-mr-20 shadow-xl" src="~/assets/images/windrad.jpg" />
           </div>
         </asym-section>
       </base-row>
