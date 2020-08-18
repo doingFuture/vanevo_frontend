@@ -6,7 +6,7 @@
     <h2 class="text-white flex-col text-6xl w-9/12 text-center">
       Strom speichern – ökologisch UND ökonomisch!
     </h2>
-    <div class="bg-blue-400 flex-col w-4 h-4 absolute bottom-0"></div>
+    <div class="bg-blue-400 flex-col w-10 h-10 absolute bottom-0"></div>
   </section>
 </template>
 
