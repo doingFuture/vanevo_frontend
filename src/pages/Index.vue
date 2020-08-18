@@ -12,7 +12,7 @@
     <base-section :fullwidth="true">
       <base-row>
         <headline :fullwidth="false" text="Unser Produkt in der Praxis" />
-        <p class="p-5 w-3/5">
+        <p class="p-5 w-4/5 md:w-3/5">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
@@ -23,15 +23,15 @@
       </base-row>
       <base-row orientation="start">
         <asym-section>
-          <div class="flex justify-end">
+          <div class="flex justify-center md:justify-end">
             <quote-item
               :fullwidth="false"
               :inverted="true"
               class="self-center"
             />
           </div>
-          <div class="flex justify-end">
-            <g-image class="w-9/12 -mr-20" src="~/assets/images/windrad.jpg" />
+          <div class="flex justify-center md:justify-end">
+            <g-image class="md:w-9/12 md:-mr-20" src="~/assets/images/windrad.jpg" />
           </div>
         </asym-section>
       </base-row>
@@ -40,7 +40,7 @@
     <base-section :background="true">
       <base-row>
         <headline text="Wir sind das Team dahinter" />
-        <g-image class="w-full p-5" src="~/assets/images/team.jpg" />
+        <g-image class="w-full pt-5 md:p-5" src="~/assets/images/team.jpg" />
         <quote-item class="my-24" />
         <teaser-item />
         <teaser-item />

@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-blue-800 w-10/12 p-10 pl-5 grid grid-cols-2">
+    <div class="bg-blue-800 w-full md:w-10/12 p-10 md:pl-5 grid gap-10 grid-cols-1 md:grid-cols-2">
         <slot />
     </div>
 </template>

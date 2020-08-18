@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4" :class="fullwidth ? 'w-full' : 'w-3/5'">
+  <div class="p-4" :class="fullwidth ? 'w-full' : 'w-4/5 md:w-3/5'">
     <h3 class="sm:text-4xl text-2xl title-font font-medium text-gray-900">
       {{ text }}
     </h3>

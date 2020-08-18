@@ -6,7 +6,7 @@
     <div
       class="container w-3/5 px-5 pb-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col"
     >
-      <div class="w-1/2 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <div class="md:w-1/2 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <div class="bg-white relative flex flex-wrap">
           <div class="px-6">
             <h2

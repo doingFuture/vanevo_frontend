@@ -5,7 +5,7 @@
   >
     <div
       class="pt-24 pb-8"
-      :class="fullwidth ? 'w-full' : 'container w-3/5 mx-auto'"
+      :class="fullwidth ? 'w-full' : 'container w-4/5 md:w-3/5 mx-auto'"
     >
       <slot />
     </div>

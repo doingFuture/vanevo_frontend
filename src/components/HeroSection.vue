@@ -3,7 +3,7 @@
     class="h-75 bg-blue-800 flex flex-wrap justify-center items-center relative bg-cover"
     :style="{'background-image': 'url(' + require('../assets/images/intro.jpg') + ')'}"
   >
-    <h2 class="text-white flex-col text-6xl w-9/12 text-center">
+    <h2 class="text-white flex-col text-5xl md:text-6xl w-9/12 text-center">
       Strom speichern – ökologisch UND ökonomisch!
     </h2>
     <div class="bg-blue-400 flex-col w-10 h-10 absolute bottom-0"></div>
