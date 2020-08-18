@@ -8,7 +8,7 @@
     >
       <div class="md:w-1/2 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <div class="bg-white relative flex flex-wrap">
-          <div class="px-6">
+          <div class="px-6 w-full">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-2"
             >
@@ -21,7 +21,7 @@
               26131 Oldenburg
             </p>
           </div>
-          <div class="px-6 mt-4 lg:mt-0">
+          <div class="px-6 w-full mt-4 lg:mt-0">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-2"
             >
