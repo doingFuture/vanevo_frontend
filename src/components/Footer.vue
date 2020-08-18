@@ -27,7 +27,7 @@
             >
               EMAIL
             </h2>
-            <a class="text-indigo-500 leading-relaxed block mb-3"
+            <a href="mailto:info@vanevo.de" class="text-indigo-500 leading-relaxed block mb-3"
               >info@vanevo.de</a
             >
             <h2
