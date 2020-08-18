@@ -24,7 +24,11 @@
       <base-row orientation="start">
         <asym-section>
           <div class="flex justify-end">
-            <quote-item :fullwidth="false" :inverted="true" class="self-center" />
+            <quote-item
+              :fullwidth="false"
+              :inverted="true"
+              class="self-center"
+            />
           </div>
           <div class="flex justify-end">
             <g-image class="w-9/12 -mr-20" src="~/assets/images/windrad.jpg" />
@@ -43,6 +47,13 @@
         <teaser-item />
       </base-row>
     </base-section>
+
+    <base-section :background="true">
+      <base-row>
+        <headline text="Kontakt" />
+        <contact-form />
+      </base-row>
+    </base-section>
   </Layout>
 </template>
 
@@ -54,6 +65,7 @@ import TeaserItem from '@/components/TeaserItem.vue'
 import QuoteItem from '@/components/QuoteItem.vue'
 import AsymSection from '@/components/AsymSection.vue'
 import BaseRow from '@/components/BaseRow.vue'
+import ContactForm from '@/components/ContactForm.vue'
 
 export default {
   metaInfo: {
@@ -66,7 +78,8 @@ export default {
     TeaserItem,
     QuoteItem,
     AsymSection,
-    BaseRow
+    BaseRow,
+    ContactForm
   }
 }
 </script>
