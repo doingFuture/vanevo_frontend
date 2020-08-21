@@ -116,7 +116,6 @@ import BaseSection from '@/components/BaseSection.vue'
 import Headline from '@/components/Headline.vue'
 import TeaserItem from '@/components/TeaserItem.vue'
 import QuoteItem from '@/components/QuoteItem.vue'
-import AsymSection from '@/components/AsymSection.vue'
 import BaseRow from '@/components/BaseRow.vue'
 import ContactForm from '@/components/ContactForm.vue'
 import IntroText from '@/components/IntroText.vue'
@@ -131,7 +130,6 @@ export default {
     Headline,
     TeaserItem,
     QuoteItem,
-    AsymSection,
     BaseRow,
     ContactForm,
     IntroText
