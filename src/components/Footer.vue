@@ -1,103 +1,52 @@
 <template>
   <footer class="text-gray-700 body-font">
+    <div class="container w-3/5 px-5 pt-24 pb-5 mx-auto">
+      <g-image class="w-64" src="~/assets/images/vanevo.png" />
+    </div>
     <div
-      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col"
+      class="container w-3/5 px-5 pb-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col"
     >
-      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-        <a
-          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            ></path>
-          </svg>
-          <span class="ml-3 text-xl">tailblocks</span>
-        </a>
-        <p class="mt-2 text-sm text-gray-500">
-          Air plant banjo lyft occupy retro adaptogen indego
-        </p>
+      <div class="md:w-1/2 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <div class="bg-white relative flex flex-wrap">
+          <div class="px-6 w-full">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-2"
+            >
+              ADDRESSE
+            </h2>
+            <p class="leading-relaxed">
+              Johann-Hinrich-Engelbart Weg 2
+            </p>
+            <p class="leading-relaxed mb-3">
+              26131 Oldenburg
+            </p>
+          </div>
+          <div class="px-6 w-full mt-4 lg:mt-0">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-2"
+            >
+              EMAIL
+            </h2>
+            <a href="mailto:info@vanevo.de" class="text-vanevo-blue leading-relaxed block mb-3"
+              >info@vanevo.de</a
+            >
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-2"
+            >
+              TELEFON
+            </h2>
+            <p class="leading-relaxed">+49 (0) 151 5213083</p>
+          </div>
+        </div>
       </div>
       <div
         class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center"
       >
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <div class="md:w-1/2 w-full px-4">
           <h2
             class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
           >
-            CATEGORIES
-          </h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2
-            class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
-          >
-            CATEGORIES
-          </h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2
-            class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
-          >
-            CATEGORIES
-          </h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2
-            class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
-          >
-            CATEGORIES
+            LINKS
           </h2>
           <nav class="list-none mb-10">
             <li>
@@ -121,14 +70,7 @@
         class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
       >
         <p class="text-gray-500 text-sm text-center sm:text-left">
-          © 2020 tailblocks —
-          <a
-            href="https://twitter.com/knyttneve"
-            rel="noopener noreferrer"
-            class="text-gray-600 ml-1"
-            target="_blank"
-            >@knyttneve</a
-          >
+          © 2020 vanevo
         </p>
         <span
           class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
