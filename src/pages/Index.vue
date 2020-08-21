@@ -15,6 +15,7 @@
           :border="true"
           :headline="item.headline"
           :text="item.content"
+          :image="item.image"
         />
       </base-row>
     </base-section>
@@ -97,6 +98,7 @@
           :key="item.index"
           :headline="item.headline"
           :text="item.content"
+          :image="item.image"
         />
       </base-row>
     </base-section>

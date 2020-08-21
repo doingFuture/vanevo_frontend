@@ -6,15 +6,18 @@
     "teasers": [
       {
         "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "1.png"
       },
       {
         "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "2.png"
       },
       {
         "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "3.png"
       }
     ]
   },
@@ -24,15 +27,18 @@
     "teasers": [
       {
         "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "jan.png"
       },
       {
         "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "arne.png"
       },
       {
         "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "arne.png"
       }
     ]
   }

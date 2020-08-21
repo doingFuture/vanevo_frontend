@@ -4,11 +4,7 @@
       class="h-full overflow-hidden shadow-xl text-gray-900 hover:text-white bg-white hover:bg-vanevo-blue"
       :class="border ? 'border-4 border-white hover:border-vanevo-blue' : ''"
     >
-      <img
-        class="lg:h-48 md:h-36 w-full object-cover object-center"
-        src="https://dummyimage.com/720x400"
-        alt="blog"
-      />
+      <g-image class="lg:h-48 md:h-36 w-full object-cover object-center" :src="`/images/${image}`" />
       <div class="p-6">
         <h3 class="title-font text-lg font-medium mb-3 inline-block">
           {{ headline }}
@@ -34,6 +30,10 @@ export default {
       default: ''
     },
     text: {
+      type: String,
+      default: ''
+    },
+    image: {
       type: String,
       default: ''
     }
