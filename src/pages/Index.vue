@@ -1,19 +1,21 @@
 <template>
   <Layout>
-    <hero-section />
+    <hero-section :text="data.hero" />
     <base-section background="blue" :fullheight="false">
       <base-row>
-        <intro-text
-          text="Kickstarter biodiesel roof party wayfarers cold-pressed. Palo santo live-edge tumeric scenester copper mug flexitarian. Prism vice offal plaid everyday carry. Gluten-free chia VHS squid listicle artisan."
-        />
+        <intro-text :text="data.intro" />
       </base-row>
     </base-section>
     <base-section background="gray">
       <base-row>
-        <headline text="Im Vergleich" />
-        <teaser-item :border="true" />
-        <teaser-item :border="true" />
-        <teaser-item :border="true" />
+        <headline :text="data.comparisonSection.headline" />
+        <teaser-item
+          v-for="item in data.comparisonSection.teasers"
+          :key="item.index"
+          :border="true"
+          :headline="item.headline"
+          :text="item.content"
+        />
       </base-row>
     </base-section>
     <base-section background="blue">
@@ -87,17 +89,15 @@
 
     <base-section background="gray">
       <base-row>
-        <headline text="Wir sind das Team dahinter" />
+        <headline :text="data.teamSection.headline" />
         <g-image class="w-full pt-5 md:p-5" src="~/assets/images/team.jpg" />
-        <quote-item
-          class="my-24"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua."
+        <quote-item class="my-24" :text="data.teamSection.quote" />
+        <teaser-item
+          v-for="item in data.teamSection.teasers"
+          :key="item.index"
+          :headline="item.headline"
+          :text="item.content"
         />
-        <teaser-item />
-        <teaser-item />
-        <teaser-item />
       </base-row>
     </base-section>
 
@@ -119,6 +119,7 @@ import QuoteItem from '@/components/QuoteItem.vue'
 import BaseRow from '@/components/BaseRow.vue'
 import ContactForm from '@/components/ContactForm.vue'
 import IntroText from '@/components/IntroText.vue'
+import Content from '@/data/index.json'
 
 export default {
   metaInfo: {
@@ -133,6 +134,11 @@ export default {
     BaseRow,
     ContactForm,
     IntroText
+  },
+  data() {
+    return {
+      data: Content
+    }
   }
 }
 </script>
