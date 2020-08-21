@@ -1,11 +1,11 @@
 <template>
   <section
-    class="min-h-screen text-black body-font"
-    :class="background ? 'bg-gray-300' : ''"
+    class="text-black body-font"
+    :class="[`bg-${bgClass}`, fullheight ? 'min-h-screen' : '']"
   >
     <div
-      class="pt-24 pb-8"
-      :class="fullwidth ? 'w-full' : 'container w-4/5 md:w-3/5 mx-auto'"
+      class="pb-8"
+      :class="[fullwidth ? 'w-full' : 'container w-4/5 md:w-3/5 mx-auto', fullheight ? 'pt-24' : 'pt-8']"
     >
       <slot />
     </div>
@@ -17,8 +17,8 @@ export default {
   name: 'BaseSection',
   props: {
     background: {
-      type: Boolean,
-      default: false
+      type: String,
+      default: 'white'
     },
     fullwidth: {
       type: Boolean,
@@ -27,6 +27,17 @@ export default {
     fullheight: {
         type: Boolean,
         default: true
+    }
+  },
+  data() {
+    return {
+      bgColors: ['white', 'blue-800', 'gray-300']
+    }
+  },
+  computed: {
+    bgClass() {
+      const bgClass = this.bgColors.find(bgColor => bgColor.includes(this.background))
+      return bgClass
     }
   }
 }

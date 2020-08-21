@@ -1,7 +1,14 @@
 <template>
   <Layout>
     <hero-section />
-    <base-section :background="true">
+    <base-section background="blue" :fullheight="false">
+      <base-row>
+        <intro-text
+          text="Kickstarter biodiesel roof party wayfarers cold-pressed. Palo santo live-edge tumeric scenester copper mug flexitarian. Prism vice offal plaid everyday carry. Gluten-free chia VHS squid listicle artisan."
+        />
+      </base-row>
+    </base-section>
+    <base-section background="gray">
       <base-row>
         <headline text="Im Vergleich" />
         <teaser-item />
@@ -31,13 +38,16 @@
             />
           </div>
           <div class="flex justify-center md:justify-end">
-            <g-image class="md:w-9/12 md:-mr-20 shadow-xl" src="~/assets/images/windrad.jpg" />
+            <g-image
+              class="md:w-9/12 md:-mr-20 shadow-xl"
+              src="~/assets/images/windrad.jpg"
+            />
           </div>
         </asym-section>
       </base-row>
     </base-section>
 
-    <base-section :background="true">
+    <base-section background="gray">
       <base-row>
         <headline text="Wir sind das Team dahinter" />
         <g-image class="w-full pt-5 md:p-5" src="~/assets/images/team.jpg" />
@@ -48,7 +58,7 @@
       </base-row>
     </base-section>
 
-    <base-section :background="true">
+    <base-section background="gray">
       <base-row>
         <headline text="Kontakt" />
         <contact-form />
@@ -66,6 +76,7 @@ import QuoteItem from '@/components/QuoteItem.vue'
 import AsymSection from '@/components/AsymSection.vue'
 import BaseRow from '@/components/BaseRow.vue'
 import ContactForm from '@/components/ContactForm.vue'
+import IntroText from '@/components/IntroText.vue'
 
 export default {
   metaInfo: {
@@ -79,9 +90,8 @@ export default {
     QuoteItem,
     AsymSection,
     BaseRow,
-    ContactForm
+    ContactForm,
+    IntroText
   }
 }
 </script>
-
-<style></style>
