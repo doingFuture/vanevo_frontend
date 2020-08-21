@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      bgColors: ['white', 'blue-800', 'gray-300']
+      bgColors: ['white', 'vanevo-blue', 'gray-300']
     }
   },
   computed: {

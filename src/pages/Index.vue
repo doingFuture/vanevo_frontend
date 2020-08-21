@@ -11,15 +11,15 @@
     <base-section background="gray">
       <base-row>
         <headline text="Im Vergleich" />
-        <teaser-item />
-        <teaser-item />
-        <teaser-item />
+        <teaser-item :border="true" />
+        <teaser-item :border="true" />
+        <teaser-item :border="true" />
       </base-row>
     </base-section>
-    <base-section :fullwidth="true">
+    <base-section background="blue">
       <base-row>
-        <headline :fullwidth="false" text="Unser Produkt in der Praxis" />
-        <p class="p-5 w-4/5 md:w-3/5">
+        <headline :light="true" text="So funktioniert die Technik" />
+        <p class="p-5 text-white">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
@@ -28,22 +28,21 @@
           sadipscing.
         </p>
       </base-row>
-      <base-row orientation="start">
-        <asym-section>
-          <div class="flex justify-center md:justify-end">
-            <quote-item
-              :fullwidth="false"
-              :inverted="true"
-              class="self-center"
-            />
+      <base-row>
+        <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
+          <div>
+            <quote-item class="mb-5" :inverted="true" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua." />
+            <p class="p-5 text-white">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
           </div>
-          <div class="flex justify-center md:justify-end">
-            <g-image
-              class="md:w-9/12 md:-mr-20 shadow-xl"
-              src="~/assets/images/windrad.jpg"
-            />
-          </div>
-        </asym-section>
+          <g-image class="w-full pt-5 md:p-0" src="~/assets/images/technik.png" />
+        </div>
       </base-row>
     </base-section>
 
@@ -58,9 +57,9 @@
       </base-row>
     </base-section>
 
-    <base-section background="gray">
+    <base-section background="blue">
       <base-row>
-        <headline text="Kontakt" />
+        <headline :light="true" text="Kontakt" />
         <contact-form />
       </base-row>
     </base-section>

@@ -5,41 +5,41 @@
         <div class="flex flex-wrap -m-2">
           <div class="p-2 w-1/2">
             <input
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
               placeholder="Vorname"
               type="text"
             />
           </div>
           <div class="p-2 w-1/2">
             <input
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
               placeholder="Nachname"
               type="text"
             />
           </div>
           <div class="p-2 w-1/2">
             <input
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
               placeholder="Betreff"
               type="text"
             />
           </div>
           <div class="p-2 w-1/2">
             <input
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl"
               placeholder="Email"
               type="email"
             />
           </div>
           <div class="p-2 w-full">
             <textarea
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white h-48 focus:border-blue-800 text-base px-4 py-2 resize-none block focus:shadow-xl"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white h-48 focus:border-blue-800 text-base px-4 py-2 resize-none block focus:shadow-xl"
               placeholder="Message"
             ></textarea>
           </div>
           <div class="p-2 w-full">
             <button
-              class="flex ml-auto text-white bg-blue-800 border-0 py-2 px-8 focus:outline-none text-lg hover:shadow-xl"
+              class="flex ml-auto text-black bg-white border-0 py-2 px-8 focus:outline-none text-lg hover:shadow-xl"
             >
               Senden
             </button>
@@ -58,6 +58,6 @@ export default {
 
 <style lang="scss" scoped>
 ::placeholder {
-  color: black;
+  color: white;
 }
 </style>
