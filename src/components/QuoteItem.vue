@@ -1,8 +1,8 @@
 <template>
   <p
-    class="leading-relaxed pl-3 border-l-4"
+    class="leading-relaxed pl-3 border-l-4 font-semibold"
     :class="[
-      inverted ? 'border-white text-white ml-5 font-semibold' : 'border-vanevo-blue',
+      inverted ? 'border-white text-white' : 'border-vanevo-blue',
       fullwidth ? 'w-9/12' : 'w-9/12 md:w-6/12',
     ]"
   >

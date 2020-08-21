@@ -31,9 +31,13 @@
       <base-row>
         <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
           <div>
-            <quote-item class="mb-5" :inverted="true" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            <quote-item
+              class="mb-5 ml-5"
+              :inverted="true"
+              text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua." />
+              erat, sed diam voluptua."
+            />
             <p class="p-5 text-white">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -41,7 +45,42 @@
               dolores et ea rebum.
             </p>
           </div>
-          <g-image class="w-full pt-5 md:p-0" src="~/assets/images/technik.png" />
+          <g-image
+            class="w-full pt-5 md:p-0"
+            src="~/assets/images/technik.png"
+          />
+        </div>
+      </base-row>
+    </base-section>
+
+    <base-section background="white">
+      <base-row>
+        <headline text="Einsatzgebiete" />
+        <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
+          <g-image
+            class="w-full pt-5 md:pl-5"
+            src="~/assets/images/windrad.jpg"
+          />
+          <div>
+            <p class="p-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
+            <quote-item
+              class="my-5 ml-5"
+              text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua."
+            />
+            <p class="p-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
+          </div>
         </div>
       </base-row>
     </base-section>
@@ -50,7 +89,12 @@
       <base-row>
         <headline text="Wir sind das Team dahinter" />
         <g-image class="w-full pt-5 md:p-5" src="~/assets/images/team.jpg" />
-        <quote-item class="my-24" />
+        <quote-item
+          class="my-24"
+          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua."
+        />
         <teaser-item />
         <teaser-item />
         <teaser-item />

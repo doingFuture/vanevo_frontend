@@ -1,6 +1,6 @@
 <template>
   <div class="p-4" :class="fullwidth ? 'w-full' : 'w-4/5 md:w-3/5'">
-    <h3 class="sm:text-4xl text-2xl title-font font-medium" :class="light ? 'text-white light' : 'text-gray-900'">
+    <h3 class="sm:text-4xl text-2xl title-font font-semibold" :class="light ? 'text-white light' : 'text-gray-900'">
       {{ text }}
     </h3>
   </div>
