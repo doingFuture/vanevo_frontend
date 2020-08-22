@@ -1,19 +1,22 @@
 <template>
   <Layout>
-    <hero-section />
+    <hero-section :text="data.hero" />
     <base-section background="blue" :fullheight="false">
       <base-row>
-        <intro-text
-          text="Kickstarter biodiesel roof party wayfarers cold-pressed. Palo santo live-edge tumeric scenester copper mug flexitarian. Prism vice offal plaid everyday carry. Gluten-free chia VHS squid listicle artisan."
-        />
+        <intro-text :text="data.intro" />
       </base-row>
     </base-section>
     <base-section background="gray">
       <base-row>
-        <headline text="Im Vergleich" />
-        <teaser-item :border="true" />
-        <teaser-item :border="true" />
-        <teaser-item :border="true" />
+        <headline :text="data.comparisonSection.headline" />
+        <teaser-item
+          v-for="item in data.comparisonSection.teasers"
+          :key="item.index"
+          :border="true"
+          :headline="item.headline"
+          :text="item.content"
+          :image="item.image"
+        />
       </base-row>
     </base-section>
     <base-section background="blue">
@@ -87,17 +90,27 @@
 
     <base-section background="gray">
       <base-row>
-        <headline text="Wir sind das Team dahinter" />
+        <headline :text="data.teamSection.headline" />
         <g-image class="w-full pt-5 md:p-5" src="~/assets/images/team.jpg" />
-        <quote-item
-          class="my-24"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua."
+        <quote-item class="my-24" :text="data.teamSection.quote" />
+        <teaser-item
+          v-for="item in data.teamSection.teasers"
+          :key="item.index"
+          :headline="item.headline"
+          :text="item.content"
+          :image="item.image"
         />
-        <teaser-item />
-        <teaser-item />
-        <teaser-item />
+      </base-row>
+    </base-section>
+
+    <base-section background="white">
+      <base-row>
+        <div class="w-7/12">
+          <p class="font-semibold text-4xl md:pr-5">
+            Ich bin ein fetziger Spruch, der die Besucher motiviert <span class="text-vanevo-blue">Kontakt</span> auf zu nehmen!
+          </p>
+        </div>
+        <g-image class="w-5/12 pt-5 md:pt-0 shadow-2xl" src="~/assets/images/lightbulb.jpg" />
       </base-row>
     </base-section>
 
@@ -119,6 +132,7 @@ import QuoteItem from '@/components/QuoteItem.vue'
 import BaseRow from '@/components/BaseRow.vue'
 import ContactForm from '@/components/ContactForm.vue'
 import IntroText from '@/components/IntroText.vue'
+import Content from '@/data/index.json'
 
 export default {
   metaInfo: {
@@ -133,6 +147,11 @@ export default {
     BaseRow,
     ContactForm,
     IntroText
+  },
+  data() {
+    return {
+      data: Content
+    }
   }
 }
 </script>

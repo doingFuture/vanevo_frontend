@@ -1,0 +1,45 @@
+{
+  "hero": "Strom speichern – ökologisch UND ökonomisch!",
+  "intro": "Kickstarter biodiesel roof party wayfarers cold-pressed. Palo santo live-edge tumeric scenester copper mug flexitarian. Prism vice offal plaid everyday carry. Gluten-free chia VHS squid listicle artisan.",
+  "comparisonSection": {
+    "headline": "Im Vergleich",
+    "teasers": [
+      {
+        "headline": "The Catalyzer",
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "1.png"
+      },
+      {
+        "headline": "The Catalyzer",
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "2.png"
+      },
+      {
+        "headline": "The Catalyzer",
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "3.png"
+      }
+    ]
+  },
+  "teamSection": {
+    "headline": "Wir sind das Team dahinter",
+    "quote": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    "teasers": [
+      {
+        "headline": "The Catalyzer",
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "jan.png"
+      },
+      {
+        "headline": "The Catalyzer",
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "arne.png"
+      },
+      {
+        "headline": "The Catalyzer",
+        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "image": "arne.png"
+      }
+    ]
+  }
+}
