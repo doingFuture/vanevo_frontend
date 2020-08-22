@@ -103,6 +103,17 @@
       </base-row>
     </base-section>
 
+    <base-section background="white">
+      <base-row>
+        <div class="w-7/12">
+          <p class="font-semibold text-4xl md:pr-5">
+            Ich bin ein fetziger Spruch, der die Besucher motiviert <span class="text-vanevo-blue">Kontakt</span> auf zu nehmen!
+          </p>
+        </div>
+        <g-image class="w-5/12 pt-5 md:pt-0 shadow-2xl" src="~/assets/images/lightbulb.jpg" />
+      </base-row>
+    </base-section>
+
     <base-section background="blue">
       <base-row>
         <headline :light="true" text="Kontakt" />
