@@ -7,6 +7,6 @@ module.exports = {
         'vanevo-blue': '#143988'
       }
     }
-  },
-  purge: ['./src/**/*.vue']
+  }
+  // purge: ['./src/**/*.vue']
 }
