@@ -1,4 +1,5 @@
 module.exports = {
+  // purge: ['./src/**/*.vue'],
   theme: {
     extend: {
       variants: {},
@@ -8,5 +9,4 @@ module.exports = {
       }
     }
   }
-  // purge: ['./src/**/*.vue']
 }
