@@ -8,5 +8,8 @@ module.exports = {
         'vanevo-blue': '#143988'
       }
     }
+  },
+  future: {
+    removeDeprecatedGapUtilities: true
   }
 }
