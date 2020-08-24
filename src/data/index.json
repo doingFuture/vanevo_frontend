@@ -1,43 +1,57 @@
 {
-  "hero": "Strom speichern – ökologisch UND ökonomisch!",
-  "intro": "Kickstarter biodiesel roof party wayfarers cold-pressed. Palo santo live-edge tumeric scenester copper mug flexitarian. Prism vice offal plaid everyday carry. Gluten-free chia VHS squid listicle artisan.",
+  "hero": "Strom. Sauber. Speichern.",
+  "intro": "Mit Redox-Flow-Batterien von VANEVO kann grüner Strom gespeichert werden - ökonomisch und ökologisch!",
   "comparisonSection": {
-    "headline": "Im Vergleich",
+    "headline": "Was macht VANEVO anders?",
     "teasers": [
       {
-        "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "headline": "VANEVO Stack 4.0",
+        "listItem1": "Weniger komplexe Bauteile",
+        "listItem2": "Einfache Automatisierbarkeit",
+        "listItem3": "Keine Verspannung der Dichtelemente",
+        "listItem4": "Schneller in der Herstellung",
+        "listItem5": "Geringe Kosten",
         "image": "1.png"
       },
       {
-        "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "headline": "Stack 1.0",
+        "listItem1": "Kraftschlüssig",
+        "listItem2": "Schwere Endplatten nötig",
+        "listItem3": "Abdichtung „Stück für Stück",
+        "listItem4": "Zeitaufwändig",
+        "listItem5": "Indirekt (über Rahmen)",
         "image": "2.png"
       },
       {
-        "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "headline": "Stack 2.0",
+        "listItem1": "Kraftschlüssig",
+        "listItem2": "Schwere Endplatten nötig",
+        "listItem3": "Abdichtung „Stück für Stück",
+        "listItem4": "Zeitaufwändig",
+        "listItem5": "Indirekt (über Rahmen)",
         "image": "3.png"
       }
     ]
   },
   "teamSection": {
-    "headline": "Wir sind das Team dahinter",
-    "quote": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    "headline": "Wer steck hinter VANEVO",
     "teasers": [
       {
-        "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "headline": "Jan grosse Austing",
+        "job" : "Dr. der Elektrochemie",
+        "listItem1": "Jan ist der Experte auf dem Gebiet der Energiewirtschaft. Seit seinem Studium ist er voll und ganz in die Welt der Redux-Flow-Batterien abgetaucht und hat sich mit VANEVO einen Traum verwirklicht. Neben der Weiterentwicklung der Stacks ist Jan auch für die Geschäftsführung zuständig und immer für ein Expertengespräch zu haben.",
         "image": "jan.png"
       },
       {
-        "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "headline": "Arne grosse Austing",
+        "job" : "Ingenieur",
+        "listItem1": "Arne, der Ingenieur der Stacks. Zu finden im Maschienenraum des Unternehmens, wo er an der ständigen Weiterentwicklung und Produktion von VANEVO arbeitet. Auch er ist ein Teil der Geschäftführung und immer mit Raht und Tat zur Stelle.",
         "image": "arne.png"
       },
       {
-        "headline": "The Catalyzer",
-        "content": "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
+        "headline": "Jannick Helms",
+        "job" : "Ingenieur / Physiker",
+        "listItem1": "Jannick, das neuste Mitglied im Team übernimmt den Prüfstandbetrieb und das Batterie-Managemant-System. Durch seine jahre lange Erfahrung auf dem Gebiet der Redux-Flow-Batterien, ist Jannick die Kompetenz in Person.",
         "image": "arne.png"
       }
     ]
