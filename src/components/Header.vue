@@ -11,10 +11,11 @@
       <nav
         class="md:ml-auto flex flex-wrap items-center text-base justify-center"
       >
-        <a class="mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer">First Link</a>
-        <a class="mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer">Second Link</a>
-        <a class="mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer">Third Link</a>
-        <a class="mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer">Fourth Link</a>
+        <a class="mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer">Was macht VANEVO?</a>
+        <a class="mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer">Anwendung</a>
+        <a class="mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer">Einsatzgebiete</a>
+        <a class="mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer">Team</a>
+        <a class="mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer">kontakt</a>
       </nav>
     </div>
   </header>

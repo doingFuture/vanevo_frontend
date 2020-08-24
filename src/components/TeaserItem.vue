@@ -9,9 +9,19 @@
         <h3 class="title-font text-lg font-medium mb-3 inline-block">
           {{ headline }}
         </h3>
-        <p class="leading-relaxed mb-3">
-          {{ text }}
+        <p class="team-teaser__job">
+          {{ job }}
         </p>
+        <ul 
+          class="leading-relaxed mb-3"
+          :class="list ? 'list-disc list-inside' : ''"
+        >
+          <li>{{ listItem1 }}</li>
+          <li>{{ listItem2 }}</li>
+          <li>{{ listItem3 }}</li>
+          <li>{{ listItem4 }}</li>
+          <li>{{ listItem5 }}</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -25,11 +35,35 @@ export default {
       type: Boolean,
       default: false
     },
+    list: {
+      type: Boolean,
+      default: false
+    },
     headline: {
       type: String,
       default: ''
     },
-    text: {
+    job: {
+      type: String,
+      default: ''
+    },
+    listItem1: {
+      type: String,
+      default: ''
+    },
+    listItem2: {
+      type: String,
+      default: ''
+    },
+    listItem3: {
+      type: String,
+      default: ''
+    },
+    listItem4: {
+      type: String,
+      default: ''
+    },
+    listItem5: {
       type: String,
       default: ''
     },
@@ -54,4 +88,13 @@ h3:after {
   right: 0;
   border-top: 3px solid #143988;
 }
+
+.team-teaser__job {
+    margin-top: -5px;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
 </style>
