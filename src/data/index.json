@@ -6,29 +6,35 @@
     "teasers": [
       {
         "headline": "VANEVO Stack 4.0",
-        "listItem1": "Weniger komplexe Bauteile",
-        "listItem2": "Einfache Automatisierbarkeit",
-        "listItem3": "Keine Verspannung der Dichtelemente",
-        "listItem4": "Schneller in der Herstellung",
-        "listItem5": "Geringe Kosten",
+        "content": [
+          "Weniger komplexe Bauteile",
+          "Einfache Automatisierbarkeit",
+          "Keine Verspannung der Dichtelemente",
+          "Schneller in der Herstellung",
+          "Geringe Kosten"
+        ],
         "image": "1.png"
       },
       {
         "headline": "Stack 1.0",
-        "listItem1": "Kraftschlüssig",
-        "listItem2": "Schwere Endplatten nötig",
-        "listItem3": "Abdichtung „Stück für Stück",
-        "listItem4": "Zeitaufwändig",
-        "listItem5": "Indirekt (über Rahmen)",
+        "content": [
+          "Kraftschlüssig",
+          "Schwere Endplatten nötig",
+          "Abdichtung „Stück für Stück",
+          "Zeitaufwändig",
+          "Indirekt (über Rahmen)"
+        ],
         "image": "2.png"
       },
       {
         "headline": "Stack 2.0",
-        "listItem1": "Kraftschlüssig",
-        "listItem2": "Schwere Endplatten nötig",
-        "listItem3": "Abdichtung „Stück für Stück",
-        "listItem4": "Zeitaufwändig",
-        "listItem5": "Indirekt (über Rahmen)",
+        "content": [
+          "Kraftschlüssig",
+          "Schwere Endplatten nötig",
+          "Abdichtung „Stück für Stück",
+          "Zeitaufwändig",
+          "Indirekt (über Rahmen)"
+        ],
         "image": "3.png"
       }
     ]
@@ -38,20 +44,26 @@
     "teasers": [
       {
         "headline": "Jan grosse Austing",
-        "job" : "Dr. der Elektrochemie",
-        "listItem1": "Jan ist der Experte auf dem Gebiet der Energiewirtschaft. Seit seinem Studium ist er voll und ganz in die Welt der Redux-Flow-Batterien abgetaucht und hat sich mit VANEVO einen Traum verwirklicht. Neben der Weiterentwicklung der Stacks ist Jan auch für die Geschäftsführung zuständig und immer für ein Expertengespräch zu haben.",
+        "job": "Dr. der Elektrochemie",
+        "content": [
+          "Jan ist der Experte auf dem Gebiet der Energiewirtschaft. Seit seinem Studium ist er voll und ganz in die Welt der Redux-Flow-Batterien abgetaucht und hat sich mit VANEVO einen Traum verwirklicht. Neben der Weiterentwicklung der Stacks ist Jan auch für die Geschäftsführung zuständig und immer für ein Expertengespräch zu haben."
+        ],
         "image": "jan.png"
       },
       {
         "headline": "Arne grosse Austing",
-        "job" : "Ingenieur",
-        "listItem1": "Arne, der Ingenieur der Stacks. Zu finden im Maschienenraum des Unternehmens, wo er an der ständigen Weiterentwicklung und Produktion von VANEVO arbeitet. Auch er ist ein Teil der Geschäftführung und immer mit Raht und Tat zur Stelle.",
+        "job": "Ingenieur",
+        "content": [
+          "Arne, der Ingenieur der Stacks. Zu finden im Maschienenraum des Unternehmens, wo er an der ständigen Weiterentwicklung und Produktion von VANEVO arbeitet. Auch er ist ein Teil der Geschäftführung und immer mit Raht und Tat zur Stelle."
+        ],
         "image": "arne.png"
       },
       {
         "headline": "Jannick Helms",
-        "job" : "Ingenieur / Physiker",
-        "listItem1": "Jannick, das neuste Mitglied im Team übernimmt den Prüfstandbetrieb und das Batterie-Managemant-System. Durch seine jahre lange Erfahrung auf dem Gebiet der Redux-Flow-Batterien, ist Jannick die Kompetenz in Person.",
+        "job": "Ingenieur / Physiker",
+        "content": [
+          "Jannick, das neuste Mitglied im Team übernimmt den Prüfstandbetrieb und das Batterie-Managemant-System. Durch seine jahre lange Erfahrung auf dem Gebiet der Redux-Flow-Batterien, ist Jannick die Kompetenz in Person."
+        ],
         "image": "arne.png"
       }
     ]
