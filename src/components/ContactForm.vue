@@ -2,7 +2,7 @@
   <section class="text-black body-font relative">
     <div class="container px-5 py-8 mx-auto">
       <div class="lg:w-full md:w-2/3 mx-auto">
-        <p v-if="errors.length" class="text-red-500 mb-2 italic font-semibold">
+        <p v-if="error" class="text-red-500 mb-2 italic font-semibold">
           Sie haben ein oder mehrere Felder nicht ausgefüllt!
         </p>
         <div class="flex flex-wrap -m-2">
@@ -76,15 +76,20 @@ export default {
   name: 'ContactForm',
   data() {
     return {
-      errors: [],
+      error: false,
       form: {
-        surname: '',
-        lastname: '',
-        mail: '',
-        message: '',
-        subject: ''
+        surname: null,
+        lastname: null,
+        mail: null,
+        message: null,
+        subject: null
       },
-      sent: false
+      response: null
+    }
+  },
+  computed: {
+    responseCode() {
+      return this.response.status
     }
   },
   methods: {
@@ -92,7 +97,7 @@ export default {
       axios
         .post('http://vanevo.de/new/mail.php', querystring.stringify(this.form))
         .then((res) => {
-          console.log(res.status)
+          this.response = res
         })
     },
     checkForm() {
@@ -103,12 +108,16 @@ export default {
         this.form.message &&
         this.form.subject
       ) {
-        return this.send()
-        
+        this.send()
+        this.clearForm()
+        return
       }
-
-      this.errors = []
-      this.errors.push(1)
+      this.error = true
+    },
+    clearForm() {
+      const newForm = Object.keys(this.form).map(() => ({}))
+      this.form = newForm
+      this.error = false
     }
   }
 }
