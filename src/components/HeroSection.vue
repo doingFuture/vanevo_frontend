@@ -5,7 +5,7 @@
       'background-image': 'url(' + require('../assets/images/intro.jpg') + ')',
     }"
   >
-    <h2 class="text-white flex-col text-5xl md:text-6xl w-9/12 text-center">
+    <h2 class="text-vanevo-blue flex-col text-5xl md:text-6xl w-9/12 text-center">
       {{ text }}
     </h2>
     <div class="bg-blue-400 flex-col w-10 h-10 absolute bottom-0"></div>
