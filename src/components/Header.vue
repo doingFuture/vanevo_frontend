@@ -11,7 +11,7 @@
       <div class="block lg:hidden absolute right-0">
         <v-burger
           :active="showMenu"
-          :type="squeeze"
+          type="squeeze"
           class="focus:outline-none"
           @updated="handleBurger()"
         />
