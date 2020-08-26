@@ -22,7 +22,7 @@
             >
               TELEFON
             </h2>
-            <p class="leading-relaxed">+49 (0) 151 5213083</p>
+            <p class="leading-relaxed mb-3">+49 (0) 151 5213083</p>
           </div>
           <div class="px-6 w-full">
             <h2
