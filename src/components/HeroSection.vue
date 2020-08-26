@@ -1,6 +1,6 @@
 <template>
   <section
-    class="h-75 bg-blue-800 flex flex-wrap justify-center items-center relative bg-cover"
+    class="h-75 bg-white flex flex-wrap justify-center items-center relative bg-cover"
     :style="{
       'background-image': 'url(' + require('../assets/images/intro.jpg') + ')',
     }"
