@@ -1,52 +1,40 @@
 {
   "hero": "Strom. Sauber. Speichern.",
-  "intro": "Mit Redox-Flow-Batterien von VANEVO kann grüner Strom gespeichert werden - ökonomisch und ökologisch!",
+  "intro": "Mit Komponenten von VANEVO grünen Strom in Redox-Flow-Batterien speichern - Ökologisch und ökonomisch!",
   "comparisonSection": {
     "headline": "Was macht VANEVO anders?",
+    "number": "2",
     "teasers": [
       {
-        "headline": "VANEVO Stack 4.0",
+        "headline": "Herkömmliche Stacks",
         "content": [
-          "Weniger komplexe Bauteile",
-          "Einfache Automatisierbarkeit",
-          "Keine Verspannung der Dichtelemente",
-          "Schneller in der Herstellung",
-          "Geringe Kosten"
+          "Viele, verschiedene und komplexe Bauteile ",
+          "Zeitintensive Montage ",
+          "Schwer: Verspannung der Dichtelemente erforderlich",
+          "Hohe Kosten"
         ],
-        "image": "1.png"
+        "image": ""
       },
       {
-        "headline": "Stack 1.0",
+        "headline": "VANEVO-Stacks",
         "content": [
-          "Kraftschlüssig",
-          "Schwere Endplatten nötig",
-          "Abdichtung „Stück für Stück",
-          "Zeitaufwändig",
-          "Indirekt (über Rahmen)"
+          "Wenige, einfache Bauteile",
+          "Einfach automatisierbar mit hoher Geschwindigkeit",
+          "Keine Verspannung erforderlich",
+          "Geringere Herstellkosten"
         ],
-        "image": "2.png"
-      },
-      {
-        "headline": "Stack 2.0",
-        "content": [
-          "Kraftschlüssig",
-          "Schwere Endplatten nötig",
-          "Abdichtung „Stück für Stück",
-          "Zeitaufwändig",
-          "Indirekt (über Rahmen)"
-        ],
-        "image": "3.png"
+        "image": ""
       }
     ]
   },
   "teamSection": {
-    "headline": "Wer steck hinter VANEVO",
+    "headline": "VANEVO – das Team",
     "teasers": [
       {
-        "headline": "Jan grosse Austing",
-        "job": "Dr. der Elektrochemie",
+        "headline": "Dr. Jan grosse Austing",
+        "job": "Elektrochemiker",
         "content": [
-          "Jan ist der Experte auf dem Gebiet der Energiewirtschaft. Seit seinem Studium ist er voll und ganz in die Welt der Redux-Flow-Batterien abgetaucht und hat sich mit VANEVO einen Traum verwirklicht. Neben der Weiterentwicklung der Stacks ist Jan auch für die Geschäftsführung zuständig und immer für ein Expertengespräch zu haben."
+          "Jan ist der Experte für Redox-Flow-Batterien und Energiewirtschaft. Seit seinem Studium untersucht und entwickelt er Redox-Flow-Batterien. Daher ist er bei VANEVO für die Elektrochemie zuständig: Materialien auswählen, Messdaten interpretieren, den Batteriebetrieb stetig verbessern und vieles mehr. Ebenso wichtig ist die Geschäftsentwicklung der VANEVO GmbH, denn Finanzzahlen anpassen, Businessplan entwickeln und Kontakte zu Kunden und Investoren zählen auch zu seinen Aufgaben."
         ],
         "image": "jan.png"
       },
@@ -54,7 +42,7 @@
         "headline": "Arne grosse Austing",
         "job": "Ingenieur",
         "content": [
-          "Arne, der Ingenieur der Stacks. Zu finden im Maschienenraum des Unternehmens, wo er an der ständigen Weiterentwicklung und Produktion von VANEVO arbeitet. Auch er ist ein Teil der Geschäftführung und immer mit Raht und Tat zur Stelle."
+          "Arne ist der Konstrukteur der Stacks und Module. Dafür plant er die neue Version im CAD und fertigt die Teile für den Prototypen dann auch gleich an der CNC-Fräse. Zudem plant er schon mal den Aufbau der Produktion für die Stack-Fertigung."
         ],
         "image": "arne.png"
       },
@@ -62,7 +50,7 @@
         "headline": "Jannick Helms",
         "job": "Ingenieur / Physiker",
         "content": [
-          "Jannick, das neuste Mitglied im Team übernimmt den Prüfstandbetrieb und das Batterie-Managemant-System. Durch seine jahre lange Erfahrung auf dem Gebiet der Redux-Flow-Batterien, ist Jannick die Kompetenz in Person."
+          "Jannick kann und macht (fast) alles - und ist daher ein ganz wichtiger Bestandteil von VANEVO. Er kümmert sich darum, dass der Prüfstand läuft, Daten ausgewertet und Teile beschafft werden. Zusätzlich entwickelt er die Steuerung für die Teststände, die Basis für das zukünftige Batteriemanagement-System."
         ],
         "image": "arne.png"
       }
