@@ -1,12 +1,13 @@
 <template>
-  <div :class="`p-4 md:w-1/3${itemNumber}`">
+  <div class="p-4 w-full" :class="itemNumber < 2 ? '' : `md:w-1/${itemNumber}`">
     <div
       class="h-full overflow-hidden shadow-xl text-gray-900 hover:text-white bg-white hover:bg-vanevo-blue"
       :class="border ? 'border-4 border-white hover:border-vanevo-blue' : ''"
     >
       <g-image
-        class=""
-        :class="hasImage ? 'lg:h-48 md:h-36 w-full object-cover object-center' : 'hidden'"
+        :class="
+          image ? 'lg:h-48 md:h-36 w-full object-cover object-center' : 'hidden'
+        "
         :src="`/images/${image}`"
       />
       <div class="p-6">
@@ -54,10 +55,6 @@ export default {
     content: {
       type: Array,
       default: () => []
-    },
-    hasImage: {
-      type: Boolean,
-      default: false
     },
     image: {
       type: String,

@@ -38,8 +38,8 @@
         </div>
         <teaser-item
           v-for="item in data.comparisonSection.teasers"
-          :itemNumber="item.number"
           :key="item.index"
+          :item-number="data.comparisonSection.teasers.length"
           :border="true"
           :list="true"
           :headline="item.headline"
@@ -150,11 +150,10 @@
         <teaser-item
           v-for="item in data.teamSection.teasers"
           :key="item.index"
-          :itemNumber="item.number"
+          :item-number="data.teamSection.teasers.length"
           :headline="item.headline"
           :job="item.job"
           :content="item.content"
-          :hasImage="true"
           :image="item.image"
         />
       </base-row>
