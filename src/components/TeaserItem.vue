@@ -37,8 +37,8 @@ export default {
       default: false
     },
     itemNumber: {
-      type: String,
-      default: ''
+      type: Number,
+      default: 1
     },
     list: {
       type: Boolean,
