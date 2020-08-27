@@ -106,7 +106,7 @@
               Die Einsatzgebiete für Redox-Flow-Batterien von VANEVO sind sehr
               vielseitig.
             </p>
-            <ul class="leading-relaxed p-5 list-disc list-inside"> 
+            <ul class="leading-relaxed p-5 list-disc pl-10"> 
               <li>Speicherung grünen Stroms zur Erhöhung des Eigenverbrauchs</li>
               <li>Versorgung von Ladesäulen für die Elektromobilität</li>
               <li>Lastmanagement (Peakshaving), Notstromversorgung in der Industrie</li>

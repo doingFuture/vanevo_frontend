@@ -19,7 +19,7 @@
         </p>
         <ul
           class="leading-relaxed mb-3"
-          :class="list ? 'list-disc list-inside' : ''"
+          :class="list ? 'list-disc pl-5' : ''"
         >
           <li v-for="item in content" :key="item.index">{{ item }}</li>
         </ul>
