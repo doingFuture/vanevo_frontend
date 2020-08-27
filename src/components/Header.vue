@@ -1,5 +1,5 @@
 <template>
-  <header class="text-gray-700 body-font shadow-2xl">
+  <header class="text-gray-700 body-font shadow-2xl fixed top-0 left-0 right-0 z-10 background-white">
     <div
       class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-center"
     >
