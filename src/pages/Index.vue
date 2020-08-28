@@ -47,13 +47,12 @@
         />
       </base-row>
     </base-section>
-    <base-section background="blue">
+    <base-section background="white">
       <base-row>
         <headline
-          :light="true"
           text="Wie funktionieren Redox-Flow-Batterien?"
         />
-        <p class="p-5 text-white">
+        <p class="p-5 text-black">
           Redox-Flow-Batterien speichern elektrische Energie mit Hilfe von zwei Flüssigkeiten (Elektrolyte).
           <br>
           Diese Elektrolyte werden in zwei Tanks gelagert und können in den Stacks geladen und entladen werden. 
@@ -66,10 +65,9 @@
           <div>
             <quote-item
               class="mb-5 ml-5"
-              :inverted="true"
               text="Die Vorteile dieser Speicher-Technologie liegen damit auf der Hand: Sie ist sicher, langlebig, günstig und nachhaltig!"
             />
-            <p class="p-5 text-white">
+            <p class="p-5 text-black">
               Übrigens: Redox-Flow-Batterien sind eine bewährte Technologie , welche seit über 40 Jahren stetig weiterentwickelt wird. 
             </p>
           </div>
@@ -81,16 +79,16 @@
       </base-row>
     </base-section>
 
-    <base-section background="white">
+    <base-section background="blue">
       <base-row>
-        <headline text="Wo kommen Redox-Flow-Batterien zum Einsatz?"/>
+        <headline :light="true" text="Wo kommen Redox-Flow-Batterien zum Einsatz?"/>
         <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
           <g-image
             class="w-full pt-5 md:pl-5"
             src="~/assets/images/windrad.jpg"
           />
           <div>
-            <p class="p-5">
+            <p class="p-5 text-white">
               Die Erzeugung von grünem Strom erfolgt nicht kontinuierlich.
               <br />
               Wenn keine Sonne scheint – z.B. nachts – oder wenn kein Wind weht,
@@ -98,15 +96,16 @@
             </p>
             <quote-item
               class="my-5 ml-5"
+              :inverted="true"
               text="Für ein verlässliches Stromsystem auf Basis fluktuierender grüner Stromquellen sind
               daher Stromspeicher nötig. Diese sollten nachhaltig sein, wie die
                     Redox-Flow-Batterien von VANEVO"
             />
-            <p class="p-5">
+            <p class="p-5 text-white">
               Die Einsatzgebiete für Redox-Flow-Batterien von VANEVO sind sehr
               vielseitig.
             </p>
-            <ul class="leading-relaxed p-5 list-disc pl-10"> 
+            <ul class="leading-relaxed p-5 list-disc pl-10 text-white"> 
               <li>Speicherung grünen Stroms zur Erhöhung des Eigenverbrauchs</li>
               <li>Versorgung von Ladesäulen für die Elektromobilität</li>
               <li>Lastmanagement (Peakshaving), Notstromversorgung in der Industrie</li>
