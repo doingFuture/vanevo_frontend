@@ -69,11 +69,11 @@
       </div>
     </div>
     <div>
-      <span class="flex justify-between items-center w-3/5 mx-auto px-5 mb-20">
-          <g-image class="w-32" src="~/assets/images/bund.jpg" />
-          <g-image class="w-32" src="~/assets/images/exist.jpg" />
-          <g-image class="w-32" src="~/assets/images/esf.jpg" />
-          <g-image class="w-32" src="~/assets/images/eu.jpg" />
+      <span class="flex flex-col md:flex-row justify-between items-center w-3/5 mx-auto px-5 mb-20">
+          <g-image class="w-32 mb-10 md:m-0" src="~/assets/images/bund.jpg" />
+          <g-image class="w-32 mb-10 md:m-0" src="~/assets/images/exist.jpg" />
+          <g-image class="w-32 mb-10 md:m-0" src="~/assets/images/esf.jpg" />
+          <g-image class="w-32 mb-10 md:m-0" src="~/assets/images/eu.jpg" />
           <g-image class="w-32" src="~/assets/images/foerder.jpg" />
       </span>
     </div>
