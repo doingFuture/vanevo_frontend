@@ -8,8 +8,18 @@
     </base-section>
     <base-section background="gray">
       <base-row>
-        <headline :text="data.comparisonSection.headline" />
-        <checkered-section class="mt-10" />
+        <headline class="mb-10" :text="data.comparisonSection.headline" />
+        <checkered-section
+          v-for="(item, index) in data.comparisonSection.checks"
+          :key="index"
+          :is-even="index % 2 == 0"
+          :content="item"
+        >
+          <quote-item v-if="item.quote"
+            class="mb-5 ml-5"
+            :text="item.quote"
+          />
+        </checkered-section>
         <teaser-item
           v-for="item in data.comparisonSection.teasers"
           :key="item.index"
