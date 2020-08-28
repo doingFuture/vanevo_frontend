@@ -3,7 +3,17 @@
   "intro": "Mit Komponenten von VANEVO grünen Strom in Redox-Flow-Batterien speichern - Ökologisch und ökonomisch!",
   "comparisonSection": {
     "headline": "Was macht VANEVO anders?",
-    "number": "2",
+    "checks": [
+      {
+        "text": "Für VANEVO-Stacks werden weniger Teile sowie weniger komplexe Teile als bei alternativen Stackkonzepten benötigt, wodurch die Anforderungen vereinfacht werden. Zudem kann der Vorgang leichter automatisiert werden, so dass eine schnellere Montage möglich ist. Durch den Verzicht auf Dichtelemente entfallen massive Endplatten zur Verspannung - die Stacks sind daher deutlich leichter und somit einfacher in der Handhabung.",
+        "image": ""
+      },
+      {
+        "text": "Das Verkleben ermöglicht die kosteneffiziente Fertigung von VANEVO-Stacks und ist durch mehrere Patentanmeldungen geschützt.",
+        "image": "",
+        "quote": "Der VANEVO-Stack: Einfacher, schneller, günstiger!"
+      }
+    ],
     "teasers": [
       {
         "headline": "Herkömmliche Stacks",
