@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full py-5">
+  <div class="w-full p-5">
     <h3 class="text-lg font-semibold py-2">{{ paragraph.headline }}</h3>
     <p class="text-base">{{ paragraph.text }}</p>
   </div>
