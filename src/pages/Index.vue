@@ -9,14 +9,30 @@
     <base-section background="gray">
       <base-row>
         <headline class="mb-10" :text="data.comparisonSection.headline" />
-        <checkered-section
-          v-for="(item, index) in data.comparisonSection.checks"
-          :key="index"
-          :is-even="index % 2 == 0"
-          :content="item"
-        >
-          <quote-item v-if="item.quote" class="mb-5 ml-5" :text="item.quote" />
-        </checkered-section>
+        <p class="px-5 mb-5">
+          Vanevo hat ein neues Herstellungsverfahren für die Kernkomponente -
+          den Stack - von Redox-Flow-Batterien entwickelt.
+          <span class="text-vanevo-blue font-semibold">
+            Der Ansatz: Verkleben statt Verpressen!
+          </span>
+        </p>
+        <div class="m-5 md:shadow-xl">
+          <checkered-section
+            v-for="(item, index) in data.comparisonSection.checks"
+            :key="index"
+            :is-even="index % 2 == 0"
+            :content="item"
+          >
+            <quote-item
+              v-if="item.quote"
+              class="mb-5 ml-5"
+              :text="item.quote"
+            />
+          </checkered-section>
+        </div>
+        <h4 class="font-semibold text-xl mt-10 p-5 w-full">
+          Im Vergleich mit dem Stand der Technik:
+        </h4>
         <teaser-item
           v-for="item in data.comparisonSection.teasers"
           :key="item.index"
@@ -25,7 +41,6 @@
           :list="true"
           :headline="item.headline"
           :content="item.content"
-          class="mt-10"
         />
       </base-row>
     </base-section>

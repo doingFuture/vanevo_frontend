@@ -1,7 +1,7 @@
 <template>
-  <div class="flex" :class="isEven ? '' : 'flex-row-reverse'">
-    <g-image class="w-1/2" src="~/assets/images/VANEVO-Shortstack.jpg" />
-    <div class="w-1/2 bg-white flex flex-col justify-center items-center">
+  <div class="flex flex-col mb-10 md:mb-0" :class="isEven ? 'md:flex-row' : 'md:flex-row-reverse'">
+    <g-image class="md:w-1/2 w-full" src="~/assets/images/VANEVO-Shortstack.jpg" />
+    <div class="md:w-1/2 w-full bg-white flex flex-col justify-center items-center px-5 py-10 md:p-0">
       <slot />
       <p class="w-9/12 ml-5">
         {{ content.text }}

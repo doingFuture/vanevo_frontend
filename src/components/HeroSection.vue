@@ -1,13 +1,22 @@
 <template>
   <section
-    class="h-75 bg-white flex flex-wrap justify-center items-center relative bg-cover"
+    class="h-75 bg-white flex flex-wrap flex-col justify-center items-center relative bg-cover"
     :style="{
       'background-image': 'url(' + require('../assets/images/intro.jpg') + ')',
     }"
   >
-    <h2 class="text-vanevo-blue flex-col text-5xl md:text-6xl w-9/12 text-center">
-      {{ text }}
-    </h2>
+    <div class="w-2/3">
+      <h2
+        class="text-black flex-col md:text-5xl"
+      >
+        {{ text }}
+      </h2>
+      <button
+        class="uppercase text-white self-start bg-vanevo-blue border-0 mt-4 py-4 px-8 focus:outline-none text-base shadow-xl hover:shadow-2xl"
+      >
+        Jetzt Kontakt aufnehmen
+      </button>
+    </div>
     <div class="bg-blue-400 flex-col w-10 h-10 absolute bottom-0"></div>
   </section>
 </template>
