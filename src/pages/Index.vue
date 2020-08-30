@@ -6,20 +6,33 @@
         <intro-text :text="data.intro" />
       </base-row>
     </base-section>
-    <base-section background="gray">
+    <base-section id="comparison" background="gray">
       <base-row>
         <headline class="mb-10" :text="data.comparisonSection.headline" />
-        <checkered-section
-          v-for="(item, index) in data.comparisonSection.checks"
-          :key="index"
-          :is-even="index % 2 == 0"
-          :content="item"
-        >
-          <quote-item v-if="item.quote"
-            class="mb-5 ml-5"
-            :text="item.quote"
-          />
-        </checkered-section>
+        <p class="px-5 mb-5">
+          Vanevo hat ein neues Herstellungsverfahren für die Kernkomponente -
+          den Stack - von Redox-Flow-Batterien entwickelt.
+          <span class="text-vanevo-blue font-semibold">
+            Der Ansatz: Verkleben statt Verpressen!
+          </span>
+        </p>
+        <div class="m-5 md:shadow-xl">
+          <checkered-section
+            v-for="(item, index) in data.comparisonSection.checks"
+            :key="index"
+            :is-even="index % 2 == 0"
+            :content="item"
+          >
+            <quote-item
+              v-if="item.quote"
+              class="mb-5 ml-5"
+              :text="item.quote"
+            />
+          </checkered-section>
+        </div>
+        <h4 class="font-semibold text-xl mt-10 p-5 w-full">
+          Im Vergleich mit dem Stand der Technik:
+        </h4>
         <teaser-item
           v-for="item in data.comparisonSection.teasers"
           :key="item.index"
@@ -28,11 +41,10 @@
           :list="true"
           :headline="item.headline"
           :content="item.content"
-          class="mt-10"
         />
       </base-row>
     </base-section>
-    <base-section background="white">
+    <base-section id="function" background="white">
       <base-row>
         <headline text="Wie funktionieren Redox-Flow-Batterien?" />
         <p class="p-5 text-black">
@@ -47,8 +59,12 @@
         </p>
       </base-row>
       <base-row>
-        <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
+        <div class="grid gap-10 grid-cols-1">
           <div>
+            <g-image
+              class="w-full pt-5 md:p-5"
+              src="~/assets/images/schema.jpg"
+            />
             <quote-item
               class="mb-5 ml-5"
               text="Die Vorteile dieser Speicher-Technologie liegen damit auf der Hand: Sie ist sicher, langlebig, günstig und nachhaltig!"
@@ -58,15 +74,11 @@
               welche seit über 40 Jahren stetig weiterentwickelt wird.
             </p>
           </div>
-          <g-image
-            class="w-full pt-5 md:p-0"
-            src="~/assets/images/schema.jpg"
-          />
         </div>
       </base-row>
     </base-section>
 
-    <base-section background="blue">
+    <base-section id="application" background="blue">
       <base-row>
         <headline
           :light="true"
@@ -113,7 +125,7 @@
       </base-row>
     </base-section>
 
-    <base-section background="gray">
+    <base-section id="team" background="gray">
       <base-row>
         <headline :text="data.teamSection.headline" />
         <g-image class="w-full pt-5 md:p-5" src="~/assets/images/team.png" />
@@ -197,7 +209,7 @@
       </base-row>
     </base-section>
 
-    <base-section background="blue">
+    <base-section id="contact" background="blue">
       <base-row>
         <headline :light="true" text="Kontakt" />
         <contact-form />
