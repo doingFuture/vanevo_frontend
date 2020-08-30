@@ -6,7 +6,7 @@
         <intro-text :text="data.intro" />
       </base-row>
     </base-section>
-    <base-section background="gray">
+    <base-section id="comparison" background="gray">
       <base-row>
         <headline class="mb-10" :text="data.comparisonSection.headline" />
         <p class="px-5 mb-5">
@@ -44,7 +44,7 @@
         />
       </base-row>
     </base-section>
-    <base-section background="white">
+    <base-section id="function" background="white">
       <base-row>
         <headline text="Wie funktionieren Redox-Flow-Batterien?" />
         <p class="p-5 text-black">
@@ -78,7 +78,7 @@
       </base-row>
     </base-section>
 
-    <base-section background="blue">
+    <base-section id="application" background="blue">
       <base-row>
         <headline
           :light="true"
@@ -125,7 +125,7 @@
       </base-row>
     </base-section>
 
-    <base-section background="gray">
+    <base-section id="team" background="gray">
       <base-row>
         <headline :text="data.teamSection.headline" />
         <g-image class="w-full pt-5 md:p-5" src="~/assets/images/team.png" />
@@ -209,7 +209,7 @@
       </base-row>
     </base-section>
 
-    <base-section background="blue">
+    <base-section id="contact" background="blue">
       <base-row>
         <headline :light="true" text="Kontakt" />
         <contact-form />

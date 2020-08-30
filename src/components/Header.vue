@@ -1,13 +1,16 @@
 <template>
-  <header class="text-gray-700 body-font shadow-2xl fixed top-0 left-0 right-0 z-10 bg-white">
+  <header
+    class="text-gray-700 body-font shadow-2xl fixed top-0 left-0 right-0 z-10 bg-white"
+  >
     <div
       class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-center"
     >
-      <a
+      <g-link
+        to="/"
         class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
       >
         <g-image class="w-64" src="~/assets/images/vanevo.png" />
-      </a>
+      </g-link>
       <div class="block lg:hidden absolute right-0">
         <v-burger
           :active="showMenu"
@@ -20,25 +23,25 @@
         class="md:ml-auto flex flex-wrap flex-col md:flex-row items-center text-xl md:text-base justify-center"
         :class="showMenu ? 'block' : 'hidden md:block'"
       >
-        <a
+        <g-link to="/#comparison"
           class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
-          >VANEVO-Stacks</a
+          >VANEVO-Stacks</g-link
         >
-        <a
+        <g-link to="/#function"
           class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
-          >Funktionsweise</a
+          >Funktionsweise</g-link
         >
-        <a
+        <g-link to="/#application"
           class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
-          >Anwendung</a
+          >Anwendung</g-link
         >
-        <a
+        <g-link to="/#team"
           class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
-          >Team</a
+          >Team</g-link
         >
-        <a
+        <g-link to="/#contact"
           class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
-          >Kontakt</a
+          >Kontakt</g-link
         >
       </nav>
     </div>
