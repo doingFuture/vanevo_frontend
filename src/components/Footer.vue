@@ -56,19 +56,33 @@
           </h2>
           <nav class="list-none mb-10">
             <li class="mb-3">
-              <a class="text-gray-600 hover:text-gray-800">VANEVO-Stacks</a>
+              <g-link
+                to="/#comparison"
+                class="text-gray-600 hover:text-gray-800"
+                >VANEVO-Stacks</g-link
+              >
             </li>
             <li class="mb-3">
-              <a class="text-gray-600 hover:text-gray-800">Funktionsweise</a>
+              <g-link to="/#function" class="text-gray-600 hover:text-gray-800"
+                >Funktionsweise</g-link
+              >
             </li>
             <li class="mb-3">
-              <a class="text-gray-600 hover:text-gray-800">Anwendung</a>
+              <g-link
+                to="/#application"
+                class="text-gray-600 hover:text-gray-800"
+                >Anwendung</g-link
+              >
             </li>
             <li class="mb-3">
-              <a class="text-gray-600 hover:text-gray-800">Team</a>
+              <g-link to="/#team" class="text-gray-600 hover:text-gray-800"
+                >Team</g-link
+              >
             </li>
             <li class="mb-3">
-              <a class="text-gray-600 hover:text-gray-800">Kontakt</a>
+              <g-link to="/#contact" class="text-gray-600 hover:text-gray-800"
+                >Kontakt</g-link
+              >
             </li>
             <li class="mb-3">
               <g-link
