@@ -11,11 +11,11 @@
       >
         {{ text }}
       </h2>
-      <button
-        class="uppercase text-white self-start bg-vanevo-blue border-0 mt-4 py-4 px-8 focus:outline-none text-base shadow-xl hover:shadow-2xl"
+      <g-link to="/#contact"
+        class="inline-block uppercase text-white self-start bg-vanevo-blue border-0 mt-4 py-4 px-8 focus:outline-none text-base shadow-xl hover:shadow-2xl"
       >
         Jetzt Kontakt aufnehmen
-      </button>
+      </g-link>
     </div>
     <div class="bg-blue-400 flex-col w-10 h-10 absolute bottom-0"></div>
   </section>
