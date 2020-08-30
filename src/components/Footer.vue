@@ -64,6 +64,12 @@
             <li class="mb-3">
               <a class="text-gray-600 hover:text-gray-800">Kontakt</a>
             </li>
+            <li class="mb-3">
+              <g-link to="/datenschutz" class="text-gray-600 hover:text-gray-800">Datenschutz</g-link>
+            </li>
+            <li class="mb-3">
+              <g-link to="/impressum" class="text-gray-600 hover:text-gray-800">Impressum</g-link>
+            </li>
           </nav>
         </div>
       </div>
