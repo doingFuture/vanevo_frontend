@@ -1,13 +1,16 @@
 <template>
-  <header class="text-gray-700 body-font shadow-2xl fixed top-0 left-0 right-0 z-10 bg-white">
+  <header
+    class="text-gray-700 body-font shadow-2xl fixed top-0 left-0 right-0 z-10 bg-white"
+  >
     <div
       class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-center"
     >
-      <a
+      <g-link
+        to="/"
         class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
       >
         <g-image class="w-64" src="~/assets/images/vanevo.png" />
-      </a>
+      </g-link>
       <div class="block lg:hidden absolute right-0">
         <v-burger
           :active="showMenu"
