@@ -15,10 +15,7 @@
           :is-even="index % 2 == 0"
           :content="item"
         >
-          <quote-item v-if="item.quote"
-            class="mb-5 ml-5"
-            :text="item.quote"
-          />
+          <quote-item v-if="item.quote" class="mb-5 ml-5" :text="item.quote" />
         </checkered-section>
         <teaser-item
           v-for="item in data.comparisonSection.teasers"
@@ -47,8 +44,12 @@
         </p>
       </base-row>
       <base-row>
-        <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
+        <div class="grid gap-10 grid-cols-1">
           <div>
+            <g-image
+              class="w-full pt-5 md:p-5"
+              src="~/assets/images/schema.jpg"
+            />
             <quote-item
               class="mb-5 ml-5"
               text="Die Vorteile dieser Speicher-Technologie liegen damit auf der Hand: Sie ist sicher, langlebig, günstig und nachhaltig!"
@@ -58,10 +59,6 @@
               welche seit über 40 Jahren stetig weiterentwickelt wird.
             </p>
           </div>
-          <g-image
-            class="w-full pt-5 md:p-0"
-            src="~/assets/images/schema.jpg"
-          />
         </div>
       </base-row>
     </base-section>
