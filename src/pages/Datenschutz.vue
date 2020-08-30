@@ -2,6 +2,7 @@
   <Layout>
     <base-section background="white">
       <base-row>
+        <headline text="Datenschutz" />
         <text-paragraph
           v-for="(paragraph, index) in data.paragraphs"
           :key="index"
@@ -16,6 +17,7 @@
 import BaseSection from '@/components/BaseSection.vue'
 import BaseRow from '@/components/BaseRow.vue'
 import TextParagraph from '@/components/TextParagraph.vue'
+import Headline from '@/components/Headline.vue'
 import Content from '@/data/datenschutz.json'
 
 export default {
@@ -25,7 +27,8 @@ export default {
   components: {
     BaseSection,
     BaseRow,
-    TextParagraph
+    TextParagraph,
+    Headline
   },
   data() {
     return {
