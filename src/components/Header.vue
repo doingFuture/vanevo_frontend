@@ -11,7 +11,7 @@
       >
         <g-image class="w-64" src="~/assets/images/vanevo.png" />
       </g-link>
-      <div class="block lg:hidden absolute right-0">
+      <div class="block lg:hidden absolute right-0 top-0 p-5">
         <v-burger
           :active="showMenu"
           type="squeeze"
@@ -20,27 +20,27 @@
         />
       </div>
       <nav
-        class="md:ml-auto flex flex-wrap flex-col md:flex-row items-center text-xl md:text-base justify-center"
-        :class="showMenu ? 'block' : 'hidden md:block'"
+        class="lg:ml-auto flex flex-wrap flex-col lg:flex-row items-center text-xl pt-5 lg:pt-0 lg:text-base justify-center"
+        :class="showMenu ? 'block w-full' : 'hidden lg:block'"
       >
         <g-link to="/#comparison"
-          class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
+          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           >VANEVO-Stacks</g-link
         >
         <g-link to="/#function"
-          class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
+          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           >Funktionsweise</g-link
         >
         <g-link to="/#application"
-          class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
+          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           >Anwendung</g-link
         >
         <g-link to="/#team"
-          class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
+          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           >Team</g-link
         >
         <g-link to="/#contact"
-          class="p-5 md:p-0 md:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
+          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           >Kontakt</g-link
         >
       </nav>
