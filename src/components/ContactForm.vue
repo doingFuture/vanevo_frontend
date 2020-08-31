@@ -6,42 +6,42 @@
           Sie haben ein oder mehrere Felder nicht ausgefüllt!
         </p>
         <div class="flex flex-wrap -m-2">
-          <div class="p-2 w-1/2">
+          <div class="p-2 w-full md:w-1/2">
             <input
               v-model="form.surname"
               required
               name="surname"
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
               placeholder="Vorname"
               type="text"
             />
           </div>
-          <div class="p-2 w-1/2">
+          <div class="p-2 w-full md:w-1/2">
             <input
               v-model="form.lastname"
               required
               name="lastname"
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
               placeholder="Nachname"
               type="text"
             />
           </div>
-          <div class="p-2 w-1/2">
+          <div class="p-2 w-full md:w-1/2">
             <input
               v-model="form.subject"
               required
               name="subject"
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
               placeholder="Betreff"
               type="text"
             />
           </div>
-          <div class="p-2 w-1/2">
+          <div class="p-2 w-full md:w-1/2">
             <input
               v-model="form.mail"
               required
               name="mail"
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white focus:border-blue-800 text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
               placeholder="Email"
               type="email"
             />
@@ -50,13 +50,13 @@
             <textarea
               v-model="form.message"
               required
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white h-48 focus:border-blue-800 text-base px-4 py-2 resize-none block focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white h-48 text-base px-4 py-2 resize-none block focus:shadow-xl text-white focus:text-black"
               placeholder="Message"
             ></textarea>
           </div>
           <div class="p-2 w-full">
             <button
-              class="flex ml-auto text-black bg-white border-0 py-2 px-8 focus:outline-none text-lg hover:shadow-xl"
+              class="flex ml-auto text-black bg-white border-0 py-2 px-8 focus:border-none focus:outline-none text-lg hover:shadow-xl"
               @click="checkForm()"
             >
               Senden
