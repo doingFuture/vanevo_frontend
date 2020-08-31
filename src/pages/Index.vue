@@ -9,10 +9,12 @@
     <base-section id="comparison" background="gray">
       <base-row>
         <headline class="mb-10" :text="data.comparisonSection.headline" />
-        <p class="px-5 mb-5">
+        <p class=" mb-5 text-base leading-10">
           Vanevo hat ein neues Herstellungsverfahren für die Kernkomponente -
           den Stack - von Redox-Flow-Batterien entwickelt.
-          <span class="text-vanevo-blue font-semibold">
+          
+          <br>
+          <span class="text-vanevo-blue font-bold text-lg">
             Der Ansatz: Verkleben statt Verpressen!
           </span>
         </p>
@@ -22,6 +24,7 @@
             :key="index"
             :is-even="index % 2 == 0"
             :content="item"
+            :image="item.image"
           >
             <quote-item
               v-if="item.quote"
@@ -30,7 +33,7 @@
             />
           </checkered-section>
         </div>
-        <h4 class="font-semibold text-xl mt-10 p-5 w-full">
+        <h4 class="font-semibold text-xl mt-20 p-5 w-full">
           Im Vergleich mit dem Stand der Technik:
         </h4>
         <teaser-item
@@ -50,26 +53,26 @@
         <p class="p-5 text-black">
           Redox-Flow-Batterien speichern elektrische Energie mit Hilfe von zwei
           Flüssigkeiten (Elektrolyte).
-          <br />
+          <br/>
+          <br/>
           Diese Elektrolyte werden in zwei Tanks gelagert und können in den
           Stacks geladen und entladen werden. Redox-Flow-Batterien sind nicht
           brennbar, bieten eine hohe Lebensdauer mit bis zu 15.000 Ladezyklen,
           weisen die geringsten Kosten je Lade/Entlade-Zyklus auf und können
           recycelt werden.
         </p>
-      </base-row>
-      <base-row>
+
         <div class="grid gap-10 grid-cols-1">
-          <div>
-            <g-image
-              class="w-full pt-5 lg:p-5"
-              src="~/assets/images/schema.jpg"
-            />
-            <quote-item
-              class="mb-5 ml-5"
+                      <quote-item
+              class="mb-5 ml-5 mt-10"
               text="Die Vorteile dieser Speicher-Technologie liegen damit auf der Hand: Sie ist sicher, langlebig, günstig und nachhaltig!"
             />
-            <p class="p-5 text-black">
+          <div>
+            <g-image
+              class="w-8/12 pt-5 lg:p-5"
+              src="~/assets/images/schema.jpg"
+            />
+            <p class="p-5 text-vanevo-blue font-semibold text-xl mt-10">
               Übrigens: Redox-Flow-Batterien sind eine bewährte Technologie ,
               welche seit über 40 Jahren stetig weiterentwickelt wird.
             </p>
@@ -93,6 +96,7 @@
             <p class="p-5 text-white">
               Die Erzeugung von grünem Strom erfolgt nicht kontinuierlich.
               <br />
+              <br />
               Wenn keine Sonne scheint – z.B. nachts – oder wenn kein Wind weht,
               wird kein Strom aus Sonnen- und Windkraft erzeugt.
             </p>
@@ -105,7 +109,7 @@
             />
             <p class="p-5 text-white">
               Die Einsatzgebiete für Redox-Flow-Batterien von VANEVO sind sehr
-              vielseitig.
+              vielseitig:
             </p>
             <ul class="leading-relaxed p-5 list-disc pl-10 text-white">
               <li>
@@ -128,13 +132,15 @@
     <base-section id="team" background="gray">
       <base-row>
         <headline :text="data.teamSection.headline" />
-        <g-image class="w-full pt-5 px-5" src="~/assets/images/team.png" />
+        <g-image class="w-full pt-5 px-5" src="~/assets/images/team_02.jpg" />
         <p class="font-semibold text-4m px-5 my-20">
           2015 Aller Anfang ist... akademisch, zumindest bei VANEVO:
           <br />
           <br />
           Während seiner Doktorarbeit am Forschungsinstitut untersuchte und
-          entwickelte Jan Redox-Flow-Batterien. Dabei kam die Frage auf: Wieso
+          entwickelte Jan Redox-Flow-Batterien. 
+          <br>
+          Dabei kam die Frage auf: Wieso
           ist diese vorteilhafte Technologie eigentlich nicht wirklich im Markt
           der Stromspeicher-Technologie vertreten?
           <br />
@@ -161,8 +167,9 @@
           Herstellverfahren angemeldet.
           <br />
           <br />
-          Nächste Meilensteine: Investoren gewinnen, Mitarbeiter einstellen,
-          Serienproduktion aufbauen!
+          <br>
+          <span class="text-vanevo-blue font-bold">Nächste Meilensteine: Investoren gewinnen, Mitarbeiter einstellen,
+          Serienproduktion aufbauen!</span>
         </p>
         <teaser-item
           v-for="item in data.teamSection.teasers"
@@ -180,31 +187,21 @@
       <base-row>
         <div class="w-7/12">
           <p class="font-semibold text-4xl lg:pr-5">
-            Wie funktioniert das VANEVO-Herstellverfahren ganz genau?
-            <br />
-            <br />
-            Wie viel kann dabei denn an Kosten eingespart werden?
-            <br />
-            <br />
-            Wie viel Geld benötigt VANEVO denn?
-            <br />
-            <br />
-            Kann ich Redox-Flow-Batterien auch in meinen Keller stellen?
-            <br />
-            <br />
-            Was sagt Barack Obama zu Redox-Flow-Batterien?
-            <br />
-            <br />
-            Hää?
-            <br />
-            <br />
-            Wenn Sie diese oder andere Fragen haben: Nehmen Sie
+            Sie haben weitere Fragen?
+            <br>
+            Dann nehmen Sie
             <span class="text-vanevo-blue">Kontakt</span> mit uns auf!
+            <br>
           </p>
+                <g-link to="/#contact"
+        class="mt-20 inline-block uppercase text-white self-start bg-vanevo-blue border-0 mt-4 py-4 px-8 focus:outline-none text-xs md:text-base xl:text-lg shadow-xl hover:shadow-2xl"
+      >
+        Jetzt Kontakt aufnehmen
+      </g-link>
         </div>
         <g-image
           class="hidden lg:block w-5/12 pt-5 lg:pt-0 shadow-2xl"
-          src="~/assets/images/lightbulb.jpg"
+          src="~/assets/images/jannick_cta.jpg"
         />
       </base-row>
     </base-section>

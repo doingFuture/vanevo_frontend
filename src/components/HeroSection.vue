@@ -7,17 +7,16 @@
   >
     <div class="container w-2/3 p-5">
       <h2
-        class="text-black flex-col text-xl md:text-5xl xl:text-6xl"
+        class="text-black flex-col text-xl md:text-5xl xl:text-6xl font-bold tracking-wide"
       >
         {{ text }}
       </h2>
       <g-link to="/#contact"
-        class="inline-block uppercase text-white self-start bg-vanevo-blue border-0 mt-4 py-4 px-8 focus:outline-none text-xs md:text-base xl:text-lg shadow-xl hover:shadow-2xl"
+        class="inline-block uppercase text-white self-start bg-vanevo-blue border-0 mt-8 py-4 px-8 focus:outline-none text-xs md:text-base xl:text-lg shadow-xl hover:shadow-2xl"
       >
         Jetzt Kontakt aufnehmen
       </g-link>
     </div>
-    <div class="bg-blue-400 flex-col w-10 h-10 absolute bottom-0"></div>
   </section>
 </template>
 
@@ -36,8 +35,6 @@ export default {
 <style lang="scss" scoped>
 .h-75 {
   height: 75vh;
-  h2 {
-    text-shadow: 1px 1px 1px gray;
-  }
+
 }
 </style>

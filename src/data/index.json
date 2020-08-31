@@ -6,11 +6,11 @@
     "checks": [
       {
         "text": "Für VANEVO-Stacks werden weniger Teile sowie weniger komplexe Teile als bei alternativen Stackkonzepten benötigt, wodurch die Anforderungen vereinfacht werden. Zudem kann der Vorgang leichter automatisiert werden, so dass eine schnellere Montage möglich ist. Durch den Verzicht auf Dichtelemente entfallen massive Endplatten zur Verspannung - die Stacks sind daher deutlich leichter und somit einfacher in der Handhabung.",
-        "image": ""
+        "image": "was_01.jpg"
       },
       {
         "text": "Das Verkleben ermöglicht die kosteneffiziente Fertigung von VANEVO-Stacks und ist durch mehrere Patentanmeldungen geschützt.",
-        "image": "",
+        "image": "was_02.jpg",
         "quote": "Der VANEVO-Stack: Einfacher, schneller, günstiger!"
       }
     ],
@@ -46,7 +46,7 @@
         "content": [
           "Jan ist der Experte für Redox-Flow-Batterien und Energiewirtschaft. Seit seinem Studium untersucht und entwickelt er Redox-Flow-Batterien. Daher ist er bei VANEVO für die Elektrochemie zuständig: Materialien auswählen, Messdaten interpretieren, den Batteriebetrieb stetig verbessern und vieles mehr. Ebenso wichtig ist die Geschäftsentwicklung der VANEVO GmbH, denn Finanzzahlen anpassen, Businessplan entwickeln und Kontakte zu Kunden und Investoren zählen auch zu seinen Aufgaben."
         ],
-        "image": "jan.png"
+        "image": "jan_03.jpg"
       },
       {
         "headline": "Arne grosse Austing",
@@ -54,7 +54,7 @@
         "content": [
           "Arne ist der Konstrukteur der Stacks und Module. Dafür plant er die neue Version im CAD und fertigt die Teile für den Prototypen dann auch gleich an der CNC-Fräse. Zudem plant er schon mal den Aufbau der Produktion für die Stack-Fertigung."
         ],
-        "image": "arne.png"
+        "image": "arne_03.jpg"
       },
       {
         "headline": "Jannick Helms",
@@ -62,7 +62,7 @@
         "content": [
           "Jannick kann und macht (fast) alles - und ist daher ein ganz wichtiger Bestandteil von VANEVO. Er kümmert sich darum, dass der Prüfstand läuft, Daten ausgewertet und Teile beschafft werden. Zusätzlich entwickelt er die Steuerung für die Teststände, die Basis für das zukünftige Batteriemanagement-System."
         ],
-        "image": "arne.png"
+        "image": "jannick_03.jpg"
       }
     ]
   }
