@@ -16,7 +16,7 @@
             Der Ansatz: Verkleben statt Verpressen!
           </span>
         </p>
-        <div class="m-5 md:shadow-xl">
+        <div class="m-5 lg:shadow-xl">
           <checkered-section
             v-for="(item, index) in data.comparisonSection.checks"
             :key="index"
@@ -62,7 +62,7 @@
         <div class="grid gap-10 grid-cols-1">
           <div>
             <g-image
-              class="w-full pt-5 md:p-5"
+              class="w-full pt-5 lg:p-5"
               src="~/assets/images/schema.jpg"
             />
             <quote-item
@@ -84,9 +84,9 @@
           :light="true"
           text="Wo kommen Redox-Flow-Batterien zum Einsatz?"
         />
-        <div class="grid gap-10 grid-cols-1 md:grid-cols-2">
+        <div class="grid gap-10 grid-cols-1 lg:grid-cols-2">
           <g-image
-            class="w-full pt-5 md:pl-5"
+            class="w-full p-5 lg:pl-5"
             src="~/assets/images/windrad.jpg"
           />
           <div>
@@ -128,8 +128,8 @@
     <base-section id="team" background="gray">
       <base-row>
         <headline :text="data.teamSection.headline" />
-        <g-image class="w-full pt-5 md:p-5" src="~/assets/images/team.png" />
-        <p class="font-semibold text-4m md:p-5 my-20">
+        <g-image class="w-full pt-5 px-5" src="~/assets/images/team.png" />
+        <p class="font-semibold text-4m px-5 my-20">
           2015 Aller Anfang ist... akademisch, zumindest bei VANEVO:
           <br />
           <br />
@@ -179,7 +179,7 @@
     <base-section background="white">
       <base-row>
         <div class="w-7/12">
-          <p class="font-semibold text-4xl md:pr-5">
+          <p class="font-semibold text-4xl lg:pr-5">
             Wie funktioniert das VANEVO-Herstellverfahren ganz genau?
             <br />
             <br />
@@ -203,7 +203,7 @@
           </p>
         </div>
         <g-image
-          class="hidden md:block w-5/12 pt-5 md:pt-0 shadow-2xl"
+          class="hidden lg:block w-5/12 pt-5 lg:pt-0 shadow-2xl"
           src="~/assets/images/lightbulb.jpg"
         />
       </base-row>
