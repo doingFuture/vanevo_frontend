@@ -1,5 +1,5 @@
 <template>
-  <p class="text-white text-center text-4xl font-light">{{text}}</p>
+  <p class="text-white text-center text-4xl xl:text-5xl font-light">{{text}}</p>
 </template>
 
 <script>
