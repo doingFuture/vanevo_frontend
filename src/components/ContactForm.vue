@@ -1,7 +1,7 @@
 <template>
   <section class="text-black body-font relative">
     <div class="container px-5 py-8 mx-auto">
-      <div class="lg:w-full md:w-2/3 mx-auto">
+      <div class="lg:w-full lg:w-2/3 mx-auto">
         <p v-if="error" class="text-red-500 mb-2 italic font-semibold">
           Sie haben ein oder mehrere Felder nicht ausgefüllt!
         </p>
