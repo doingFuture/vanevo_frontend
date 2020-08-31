@@ -51,7 +51,7 @@
               v-model="form.message"
               required
               class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white h-48 text-base px-4 py-2 resize-none block focus:shadow-xl text-white focus:text-black"
-              placeholder="Message"
+              placeholder="Nachricht"
             ></textarea>
           </div>
           <div class="p-2 w-full">
