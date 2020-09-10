@@ -20,8 +20,8 @@
         />
       </div>
       <nav
-        class="lg:ml-auto flex flex-wrap flex-col lg:flex-row items-center pt-5 lg:pt-0 text-xl lg:text-base xl:text-lg justify-center"
-        :class="showMenu ? 'block w-full' : 'hidden lg:block'"
+        class="lg:ml-auto flex flex-wrap flex-col lg:flex-row items-center pt-5 lg:pt-0 text-xl lg:text-base xl:text-lg justify-around lg:justify-center"
+        :class="showMenu ? 'block w-full h-screen' : 'hidden lg:block'"
       >
         <g-link to="/#comparison"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
