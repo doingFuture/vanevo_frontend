@@ -7,6 +7,13 @@
           :key="index"
           :paragraph="data.paragraphs[index]"
         />
+        <p class="pl-5 pb-10 text-black w-full">
+          - von unserem Fotografen vom Foto- und Bilderwerk - www.bilderwerk.org
+          <br>
+          - eigene Schemata
+          <br>
+          - Windrad / Danke Gonz DDL dass du deine Arbeit auf Unsplash geteilt hast.
+        </p>
         <p class="w-full px-5">Quelle: <a class="text-vanevo-blue underline" href="https://www.e-recht24.de/impressum-generator.html">e-recht24.de</a></p>
       </base-row>
     </base-section>

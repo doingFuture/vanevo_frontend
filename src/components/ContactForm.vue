@@ -1,6 +1,6 @@
 <template>
   <section class="text-black body-font relative">
-    <div class="container pr-10 pb-8 pt-10 mx-auto">
+    <div class="container lg:pr-10 pb-8 pt-10 mx-auto">
       <div class="lg:w-full lg:w-2/3 mx-auto">
         <p v-if="error" class="text-red-500 mb-2 italic font-semibold">
           Sie haben ein oder mehrere Felder nicht ausgefüllt!
