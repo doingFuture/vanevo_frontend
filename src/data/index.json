@@ -1,37 +1,45 @@
 {
-  "hero": "Mit Komponenten von VANEVO grünen Strom in Redox-Flow-Batterien speichern - Ökologisch und ökonomisch!",
-  "intro": "Strom. Sauber. Speichern.",
+  "intro": "Mit VANEVO grünen Strom in Redox-Flow-Batterien speichern - ökonomisch und ökologisch!",
   "comparisonSection": {
     "headline": "Was macht VANEVO anders?",
     "checks": [
       {
-        "text": "Für VANEVO-Stacks werden weniger Teile sowie weniger komplexe Teile als bei alternativen Stackkonzepten benötigt, wodurch die Anforderungen vereinfacht werden. Zudem kann der Vorgang leichter automatisiert werden, so dass eine schnellere Montage möglich ist. Durch den Verzicht auf Dichtelemente entfallen massive Endplatten zur Verspannung - die Stacks sind daher deutlich leichter und somit einfacher in der Handhabung.",
-        "image": "was_01.jpg"
+        "text": [
+          "VANEVO hat ein neues Herstellungsverfahren für die Kernkomponente von Redox-Flow-Batterien entwickelt.",
+          "Für VANEVO-Stacks werden weniger komplexe Teile als bei bestehenden Stackkonzepten benötigt, wodurch die Anforderungen vereinfacht werden. Zudem kann der Vorgang leichter automatisiert werden, so dass eine schnellere Montage möglich ist."
+        ],
+        "image": "was_01.jpg",
+        "quote": "Der Ansatz: Verkleben statt Verpressen!"
       },
       {
-        "text": "Das Verkleben ermöglicht die kosteneffiziente Fertigung von VANEVO-Stacks und ist durch mehrere Patentanmeldungen geschützt.",
+        "text": [
+          "Durch den Verzicht auf Dichtelemente entfallen massive Endplatten zur Verspannung - die Stacks sind daher deutlich leichter und somit einfacher in der Handhabung.",
+          "Das Verkleben ermöglicht die kosteneffiziente Fertigung von VANEVO-Stacks und ist durch mehrere Patentanmeldungen geschützt."
+        ],
         "image": "was_02.jpg",
         "quote": "Der VANEVO-Stack: Einfacher, schneller, günstiger!"
       }
     ],
     "teasers": [
       {
-        "headline": "Herkömmliche Stacks",
+        "headline": "Stand der Technik",
         "content": [
-          "Viele, verschiedene und komplexe Bauteile ",
-          "Zeitintensive Montage ",
-          "Schwer: Verspannung der Dichtelemente erforderlich",
-          "Hohe Kosten"
+          "Zahlreich: viele Teile erforderlich",
+          "Aufwendig: komplizierte Bauteile",
+          "Langsam: zeitintensive Montage",
+          "Schwer: massive Endplatten zur Verspannung",
+          "Teuer!"
         ],
         "image": ""
       },
       {
-        "headline": "VANEVO-Stacks",
+        "headline": "VANEVO",
         "content": [
-          "Wenige, einfache Bauteile",
-          "Einfach automatisierbar mit hoher Geschwindigkeit",
-          "Keine Verspannung erforderlich",
-          "Geringere Herstellkosten"
+          "Weniger: Reduktion der Teile",
+          "Einfacher: weniger komplexe Bauteile",
+          "Schneller: einfache Automatisierbarkeit",
+          "Leichter: keine Verspannung von Dichtelementen",
+          "Günstiger!"
         ],
         "image": ""
       }
@@ -44,7 +52,7 @@
         "headline": "Dr. Jan grosse Austing",
         "job": "Elektrochemiker",
         "content": [
-          "Jan ist der Experte für Redox-Flow-Batterien und Energiewirtschaft. Seit seinem Studium untersucht und entwickelt er Redox-Flow-Batterien. Daher ist er bei VANEVO für die Elektrochemie zuständig: Materialien auswählen, Messdaten interpretieren, den Batteriebetrieb stetig verbessern und vieles mehr. Ebenso wichtig ist die Geschäftsentwicklung der VANEVO GmbH, denn Finanzzahlen anpassen, Businessplan entwickeln und Kontakte zu Kunden und Investoren zählen auch zu seinen Aufgaben."
+          "Jan ist der Experte für Redox-Flow-Batterien und Energiewirtschaft. Bei VANEVO ist er für die Elektrochemie zuständig: Materialien auswählen, Messdaten interpretieren und die Effizienz der Systeme steigern. Ebenso verantwortet für die Geschäftsentwicklung der VANEVO GmbH."
         ],
         "image": "jan_03.jpg"
       },
@@ -60,7 +68,7 @@
         "headline": "Jannick Helms",
         "job": "Ingenieur / Physiker",
         "content": [
-          "Jannick kann und macht (fast) alles - und ist daher ein ganz wichtiger Bestandteil von VANEVO. Er kümmert sich darum, dass der Prüfstand läuft, Daten ausgewertet und Teile beschafft werden. Zusätzlich entwickelt er die Steuerung für die Teststände, die Basis für das zukünftige Batteriemanagement-System."
+          "Jannick  ist für den Prüfstandsbetrieb und die Prototypenfertigung verantwortlich. Zudem entwickelt er die Steuerung für die Teststände, die Basis für das zukünftige Batteriemanagement-System."
         ],
         "image": "jannick_03.jpg"
       }

@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-gray-700 body-font">
+  <footer class="text-gray-700 body-font border-t-2">
     <div class="container w-3/5 px-5 pt-24 pb-5 mx-auto">
       <g-link to="/">
         <g-image class="w-64" src="~/assets/images/vanevo.png" />
@@ -116,7 +116,7 @@
         class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
       >
         <p class="text-gray-500 text-sm text-center sm:text-left">
-          © 2020 vanevo
+          © 2020 VANEVO GmbH
         </p>
       </div>
     </div>

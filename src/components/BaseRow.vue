@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap my-20" :class="`justify-${orientation}`">
+  <div class="flex flex-wrap mt-8 mb-12 md:my-20" :class="`justify-${orientation}`">
       <slot />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="layout pt-24">
+  <div class="layout pt-20">
     <Header />
     <div class="min-h-screen">
       <slot />
