@@ -56,7 +56,7 @@
           </div>
           <div class="p-2 w-full">
             <button
-              class="flex ml-auto text-white bg-vanevo-blue border-0 py-2 px-8 focus:border-none focus:outline-none text-lg hover:shadow-xl"
+              class="flex ml-auto text-white bg-vanevo-blue border-0 mt-5 lg:mt-0 py-2 px-8 focus:border-none focus:outline-none text-lg hover:shadow-xl"
               @click="checkForm()"
             >
               Senden
