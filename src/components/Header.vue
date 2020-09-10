@@ -20,7 +20,7 @@
         />
       </div>
       <nav
-        class="lg:ml-auto flex flex-wrap flex-col lg:flex-row items-center pt-5 lg:pt-0 text-xl lg:text-base xl:text-lg justify-around lg:justify-center"
+        class="lg:ml-auto flex flex-wrap flex-col lg:flex-row items-center pt-5 lg:pt-0 text-xl lg:text-base xl:text-lg justify-start"
         :class="showMenu ? 'block w-full h-screen' : 'hidden lg:block'"
       >
         <g-link to="/#comparison"
