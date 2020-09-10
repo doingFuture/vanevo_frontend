@@ -4,12 +4,18 @@
     "headline": "Was macht VANEVO anders?",
     "checks": [
       {
-        "text": "VANEVO hat ein neues Herstellungsverfahren für die Kernkomponente von Redox-Flow-Batterien entwickelt. Für VANEVO-Stacks werden weniger komplexe Teile als bei bestehenden Stackkonzepten benötigt, wodurch die Anforderungen vereinfacht werden. Zudem kann der Vorgang leichter automatisiert werden, so dass eine schnellere Montage möglich ist.",
+        "text": [
+          "VANEVO hat ein neues Herstellungsverfahren für die Kernkomponente von Redox-Flow-Batterien entwickelt.",
+          "Für VANEVO-Stacks werden weniger komplexe Teile als bei bestehenden Stackkonzepten benötigt, wodurch die Anforderungen vereinfacht werden. Zudem kann der Vorgang leichter automatisiert werden, so dass eine schnellere Montage möglich ist."
+        ],
         "image": "was_01.jpg",
         "quote": "Der Ansatz: Verkleben statt Verpressen!"
       },
       {
-        "text": "Durch den Verzicht auf Dichtelemente entfallen massive Endplatten zur Verspannung - die Stacks sind daher deutlich leichter und somit einfacher in der Handhabung. Das Verkleben ermöglicht die kosteneffiziente Fertigung von VANEVO-Stacks und ist durch mehrere Patentanmeldungen geschützt.",
+        "text": [
+          "Durch den Verzicht auf Dichtelemente entfallen massive Endplatten zur Verspannung - die Stacks sind daher deutlich leichter und somit einfacher in der Handhabung.",
+          "Das Verkleben ermöglicht die kosteneffiziente Fertigung von VANEVO-Stacks und ist durch mehrere Patentanmeldungen geschützt."
+        ],
         "image": "was_02.jpg",
         "quote": "Der VANEVO-Stack: Einfacher, schneller, günstiger!"
       }

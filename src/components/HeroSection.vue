@@ -5,9 +5,9 @@
       'background-image': 'url(' + require('../assets/images/intro.jpg') + ')',
     }"
   >
-    <div class="container w-2/3 p-5">
+    <div class="container w-10/12 md:w-2/3 p-5">
       <h2
-        class="text-black flex-col text-xl md:text-5xl xl:text-6xl font-bold tracking-wide"
+        class="text-black flex-col text-5xl md:text-6xl font-bold tracing-wide"
       >
         STROM.
         <br>

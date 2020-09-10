@@ -6,10 +6,10 @@
         <intro-text :text="data.intro" />
       </base-row>
     </base-section>
-    <base-section id="comparison" background="gray">
-      <base-row>
+    <base-section id="comparison" :fullheight="false" background="gray">
+      <base-row class="mt-8 md:mt-20">
         <headline class="mb-10" :text="data.comparisonSection.headline" />
-        <div class="m-5 lg:shadow-xl">
+        <div class="my-5 lg:shadow-xl">
           <checkered-section
             v-for="(item, index) in data.comparisonSection.checks"
             :key="index"
@@ -19,12 +19,12 @@
           >
             <quote-item
               v-if="item.quote"
-              class="mb-5 ml-5"
+              class="my-5 ml-5 w-10/12"
               :text="item.quote"
             />
           </checkered-section>
         </div>
-        <h4 class="font-semibold text-xl mt-20 p-5 w-full">
+        <h4 class="font-semibold text-2xl lg:text-xl mt-20 p-5 w-full">
           Stacks im Vergleich:
         </h4>
         <teaser-item
@@ -38,8 +38,8 @@
         />
       </base-row>
     </base-section>
-    <base-section id="function" background="white">
-      <base-row>
+    <base-section id="function" :fullheight="false" background="white">
+      <base-row class="mt-8 md:mt-20">
         <headline text="Wie funktionieren Redox-Flow-Batterien?" />
         <p class="p-5 text-black">
           Redox-Flow-Batterien speichern elektrische Energie mit Hilfe von zwei
@@ -64,7 +64,7 @@
               src="~/assets/images/schema.png"
             />
             <p class="p-5 text-black">
-              Übrigens: Redox-Flow-Batterien sind eine bewährte Technologie ,
+              Übrigens: Redox-Flow-Batterien sind eine bewährte Technologie,
               welche seit über 40 Jahren stetig weiterentwickelt wird.
             </p>
           </div>

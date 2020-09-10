@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 w-full" :class="itemNumber < 2 ? '' : `md:w-1/${itemNumber}`">
+  <div class="p-4 w-full" :class="itemNumber < 2 ? '' : `lg:w-1/${itemNumber}`">
     <div
       class="h-full overflow-hidden shadow-xl text-gray-900  bg-white "
       :class="border ? 'border-4 border-white ' : ''"
@@ -72,7 +72,7 @@ h3 {
 h3:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   right: 0;
   border-top: 3px solid #143988;
