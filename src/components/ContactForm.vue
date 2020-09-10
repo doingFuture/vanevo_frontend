@@ -11,7 +11,7 @@
               v-model="form.surname"
               required
               name="surname"
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:border-vanevo-blue focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
               placeholder="Vorname"
               type="text"
             />
