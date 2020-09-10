@@ -9,7 +9,7 @@
         to="/"
         class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
       >
-        <g-image class="w-64" src="~/assets/images/vanevo.png" />
+        <g-image class="w-48 self-center pt-2 lg:pt-0" src="~/assets/images/vanevo.png" />
       </g-link>
       <div class="block lg:hidden absolute right-0 top-0 p-5">
         <v-burger
