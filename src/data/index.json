@@ -1,37 +1,39 @@
 {
-  "hero": "Mit Komponenten von VANEVO grünen Strom in Redox-Flow-Batterien speichern - Ökologisch und ökonomisch!",
-  "intro": "Strom. Sauber. Speichern.",
+  "intro": "Mit VANEVO grünen Strom in Redox-Flow-Batterien speichern - ökonomisch und ökologisch!",
   "comparisonSection": {
     "headline": "Was macht VANEVO anders?",
     "checks": [
       {
-        "text": "Für VANEVO-Stacks werden weniger Teile sowie weniger komplexe Teile als bei alternativen Stackkonzepten benötigt, wodurch die Anforderungen vereinfacht werden. Zudem kann der Vorgang leichter automatisiert werden, so dass eine schnellere Montage möglich ist. Durch den Verzicht auf Dichtelemente entfallen massive Endplatten zur Verspannung - die Stacks sind daher deutlich leichter und somit einfacher in der Handhabung.",
-        "image": "was_01.jpg"
+        "text": "VANEVO hat ein neues Herstellungsverfahren für die Kernkomponente von Redox-Flow-Batterien entwickelt. Für VANEVO-Stacks werden weniger komplexe Teile als bei bestehenden Stackkonzepten benötigt, wodurch die Anforderungen vereinfacht werden. Zudem kann der Vorgang leichter automatisiert werden, so dass eine schnellere Montage möglich ist.",
+        "image": "was_01.jpg",
+        "quote": "Der Ansatz: Verkleben statt Verpressen!"
       },
       {
-        "text": "Das Verkleben ermöglicht die kosteneffiziente Fertigung von VANEVO-Stacks und ist durch mehrere Patentanmeldungen geschützt.",
+        "text": "Durch den Verzicht auf Dichtelemente entfallen massive Endplatten zur Verspannung - die Stacks sind daher deutlich leichter und somit einfacher in der Handhabung. Das Verkleben ermöglicht die kosteneffiziente Fertigung von VANEVO-Stacks und ist durch mehrere Patentanmeldungen geschützt.",
         "image": "was_02.jpg",
         "quote": "Der VANEVO-Stack: Einfacher, schneller, günstiger!"
       }
     ],
     "teasers": [
       {
-        "headline": "Herkömmliche Stacks",
+        "headline": "Stand der Technik",
         "content": [
-          "Viele, verschiedene und komplexe Bauteile ",
-          "Zeitintensive Montage ",
-          "Schwer: Verspannung der Dichtelemente erforderlich",
-          "Hohe Kosten"
+          "Zahlreich: viele Teile erforderlich",
+          "Aufwendig: komplizierte Bauteile",
+          "Langsam: zeitintensive Montage",
+          "Schwer: massive Endplatten zur Verspannung",
+          "Teuer!"
         ],
         "image": ""
       },
       {
-        "headline": "VANEVO-Stacks",
+        "headline": "VANEVO",
         "content": [
-          "Wenige, einfache Bauteile",
-          "Einfach automatisierbar mit hoher Geschwindigkeit",
-          "Keine Verspannung erforderlich",
-          "Geringere Herstellkosten"
+          "Weniger: Reduktion der Teile",
+          "Einfacher: weniger komplexe Bauteile",
+          "Schneller: einfache Automatisierbarkeit",
+          "Leichter: keine Verspannung von Dichtelementen",
+          "Günstiger!"
         ],
         "image": ""
       }
