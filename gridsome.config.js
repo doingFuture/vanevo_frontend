@@ -6,7 +6,7 @@
 const tailwindcss = require('tailwindcss')
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Strom. Sauber. Speichern.',
   css: {
     loaderOptions: {
       postcss: {
