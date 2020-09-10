@@ -7,7 +7,7 @@
       </base-row>
     </base-section>
     <base-section id="comparison" :fullheight="false" background="gray">
-      <base-row class="mt-8 md:mt-20">
+      <base-row>
         <headline class="mb-10" :text="data.comparisonSection.headline" />
         <div class="my-5 lg:shadow-xl">
           <checkered-section
@@ -39,7 +39,7 @@
       </base-row>
     </base-section>
     <base-section id="function" :fullheight="false" background="white">
-      <base-row class="mt-8 md:mt-20">
+      <base-row>
         <headline text="Wie funktionieren Redox-Flow-Batterien?" />
         <p class="p-5 text-black">
           Redox-Flow-Batterien speichern elektrische Energie mit Hilfe von zwei
@@ -61,7 +61,7 @@
           <div>
             <div class="image-wrapper">
               <g-image
-                class="w-8/12 pt-5 lg:p-5"
+                class="w-8/12 pb-5 lg:p-5"
                 src="~/assets/images/schema.png"
               />
             </div>
@@ -74,7 +74,7 @@
       </base-row>
     </base-section>
 
-    <base-section id="application" background="blue">
+    <base-section id="application" :fullheight="false" background="blue">
       <base-row>
         <headline
           :light="true"
@@ -120,7 +120,7 @@
       </base-row>
     </base-section>
 
-    <base-section id="team" background="gray">
+    <base-section id="team" :fullheight="false" background="gray">
       <base-row>
         <headline :text="data.teamSection.headline" />
         <g-image class="w-full pt-5 px-5" src="~/assets/images/team_02.jpg" />
@@ -168,7 +168,7 @@
       </base-row>
     </base-section>
 
-    <base-section id="contact" background="white">
+    <base-section id="contact" :fullheight="false" background="white">
       <base-row>
         <div class="lg:w-7/12">
           <p class="font-semibold text-4xl lg:pr-5 pb-2">

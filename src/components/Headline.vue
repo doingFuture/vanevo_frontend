@@ -52,7 +52,7 @@ span:after {
 }
 
 .light {
-  .span:after {
+  span:after {
     content: "";
     position: absolute;
     bottom: -5px;
