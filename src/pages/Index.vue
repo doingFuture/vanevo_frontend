@@ -9,15 +9,6 @@
     <base-section id="comparison" background="gray">
       <base-row>
         <headline class="mb-10" :text="data.comparisonSection.headline" />
-        <p class=" mb-5 text-base leading-10">
-          Vanevo hat ein neues Herstellungsverfahren für die Kernkomponente -
-          den Stack - von Redox-Flow-Batterien entwickelt.
-          
-          <br>
-          <span class="text-vanevo-blue font-bold text-lg">
-            Der Ansatz: Verkleben statt Verpressen!
-          </span>
-        </p>
         <div class="m-5 lg:shadow-xl">
           <checkered-section
             v-for="(item, index) in data.comparisonSection.checks"
@@ -34,7 +25,7 @@
           </checkered-section>
         </div>
         <h4 class="font-semibold text-xl mt-20 p-5 w-full">
-          Im Vergleich mit dem Stand der Technik:
+          Stacks im Vergleich:
         </h4>
         <teaser-item
           v-for="item in data.comparisonSection.teasers"
@@ -70,9 +61,9 @@
           <div>
             <g-image
               class="w-8/12 pt-5 lg:p-5"
-              src="~/assets/images/schema.jpg"
+              src="~/assets/images/schema.png"
             />
-            <p class="p-5 text-vanevo-blue font-semibold text-xl mt-10">
+            <p class="p-5 text-black">
               Übrigens: Redox-Flow-Batterien sind eine bewährte Technologie ,
               welche seit über 40 Jahren stetig weiterentwickelt wird.
             </p>
