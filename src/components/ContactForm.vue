@@ -1,6 +1,6 @@
 <template>
   <section class="text-black body-font relative">
-    <div class="container px-5 py-8 mx-auto">
+    <div class="container pr-10 pb-8 pt-10 mx-auto">
       <div class="lg:w-full lg:w-2/3 mx-auto">
         <p v-if="error" class="text-red-500 mb-2 italic font-semibold">
           Sie haben ein oder mehrere Felder nicht ausgefüllt!
@@ -11,7 +11,7 @@
               v-model="form.surname"
               required
               name="surname"
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
               placeholder="Vorname"
               type="text"
             />
@@ -21,42 +21,42 @@
               v-model="form.lastname"
               required
               name="lastname"
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
               placeholder="Nachname"
               type="text"
             />
           </div>
-          <div class="p-2 w-full md:w-1/2">
-            <input
-              v-model="form.subject"
-              required
-              name="subject"
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
-              placeholder="Betreff"
-              type="text"
-            />
-          </div>
-          <div class="p-2 w-full md:w-1/2">
+          <div class="p-2 w-full ">
             <input
               v-model="form.mail"
               required
               name="mail"
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
               placeholder="Email"
               type="email"
+            />
+          </div>
+          <div class="p-2 w-full ">
+            <input
+              v-model="form.subject"
+              required
+              name="subject"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              placeholder="Betreff"
+              type="text"
             />
           </div>
           <div class="p-2 w-full">
             <textarea
               v-model="form.message"
               required
-              class="w-full bg-transparent border-2 border-white focus:outline-none focus:bg-white h-48 text-base px-4 py-2 resize-none block focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white h-48 text-base px-4 py-2 resize-none block focus:shadow-xl text-white focus:text-black"
               placeholder="Nachricht"
             ></textarea>
           </div>
           <div class="p-2 w-full">
             <button
-              class="flex ml-auto text-black bg-white border-0 py-2 px-8 focus:border-none focus:outline-none text-lg hover:shadow-xl"
+              class="flex ml-auto text-white bg-vanevo-blue border-0 py-2 px-8 focus:border-none focus:outline-none text-lg hover:shadow-xl"
               @click="checkForm()"
             >
               Senden
@@ -125,6 +125,6 @@ export default {
 
 <style lang="scss" scoped>
 ::placeholder {
-  color: white;
+  color: black;
 }
 </style>
