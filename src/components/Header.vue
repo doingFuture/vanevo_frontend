@@ -27,7 +27,7 @@
         :class="showMenu ? 'block w-full h-screen' : 'hidden lg:block'"
       >
         <a
-          href="/#comparison"
+          href="/#VANEVO-Stacks"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           @click="showMenu = false"
           >VANEVO-Stacks</a

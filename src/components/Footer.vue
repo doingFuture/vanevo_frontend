@@ -28,13 +28,13 @@
             >
               TELEFON
             </h2>
-            <p class="leading-relaxed mb-3">+49 (0) 151 5213083</p>
+            <p class="leading-relaxed mb-3">+49 (0) 15152131083</p>
           </div>
           <div class="px-6 w-full">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-2"
             >
-              ADDRESSE
+              ADRESSE
             </h2>
             <p class="leading-relaxed">
               Johann-Hinrich-Engelbart Weg 2

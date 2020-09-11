@@ -6,7 +6,7 @@
         <intro-text :text="data.intro" />
       </base-row>
     </base-section>
-    <base-section id="comparison" :fullheight="false" background="gray">
+    <base-section id="VANEVO-Stacks" :fullheight="false" background="gray">
       <base-row>
         <headline class="mb-10" :text="data.comparisonSection.headline" />
         <div class="my-5 lg:shadow-xl">
@@ -24,7 +24,7 @@
             />
           </checkered-section>
         </div>
-        <h4 class="font-semibold text-2xl lg:text-xl mt-20 p-5 w-full">
+        <h4 class="font-semibold text-2xl lg:text-xl lg:mt-20 p-5 w-full">
           Stacks im Vergleich:
         </h4>
         <teaser-item
@@ -86,17 +86,17 @@
             src="~/assets/images/windrad.jpg"
           />
           <div>
-            <p class="p-5 text-white">
+            <p class="pb-5 pl-5 pr-5 lg:pt-5 text-white">
               Die Erzeugung von grünem Strom erfolgt zeitlich variabel - immer nur dann, wenn Wind weht oder die Sonne scheint.
               <br>
               Für eine gelungene Energiewende wird aber eine durchgehende, zuverlässige Stromversorgung benötigt.
               <br>
-              Dies kann mit Redox-Flow-Batterien als Stromspeicher für Grün-Strom erreicht werden: für eine zuverlässige und nachhaltige Energiewende!
+              Dies kann mit Redox-Flow-Batterien als Stromspeicher für grünen Strom erreicht werden: für eine zuverlässige und nachhaltige Energiewende!
             </p>
             <quote-item
               class="my-5 ml-5"
               :inverted="true"
-              text="Redox-Flow-Batterien eignen sich perfekt als Puffer für Grünstrom!"
+              text="Redox-Flow-Batterien eignen sich perfekt als Puffer für grünen Strom!"
             />
             <p class="p-5 text-white">
               Die Einsatzgebiete für Redox-Flow-Batterien von VANEVO sind sehr
@@ -123,8 +123,8 @@
     <base-section id="team" :fullheight="false" background="gray">
       <base-row>
         <headline :text="data.teamSection.headline" />
-        <g-image class="w-full pt-5 px-5" src="~/assets/images/team_02.jpg" />
-        <p class=" text-4m px-5 my-20">
+        <g-image class="w-full pt-5 px-5 h-full" src="~/assets/images/team_02.jpg" />
+        <p class=" text-4m px-5 mb-20 lg:mt-20 mt-10">
           2015
           <br>
           Aller Anfang ist... akademisch, zumindest bei VANEVO:
