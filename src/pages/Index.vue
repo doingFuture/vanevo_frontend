@@ -6,7 +6,7 @@
         <intro-text :text="data.intro" />
       </base-row>
     </base-section>
-    <base-section id="comparison" :fullheight="false" background="gray">
+    <base-section id="VANEVO-Stacks" :fullheight="false" background="gray">
       <base-row>
         <headline class="mb-10" :text="data.comparisonSection.headline" />
         <div class="my-5 lg:shadow-xl">
@@ -123,7 +123,7 @@
     <base-section id="team" :fullheight="false" background="gray">
       <base-row>
         <headline :text="data.teamSection.headline" />
-        <g-image class="w-full pt-5 px-5" src="~/assets/images/team_02.jpg" />
+        <g-image class="w-full pt-5 px-5 h-full" src="~/assets/images/team_02.jpg" />
         <p class=" text-4m px-5 mb-20 lg:mt-20 mt-10">
           2015
           <br>
