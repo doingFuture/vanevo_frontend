@@ -91,12 +91,12 @@
               <br>
               Für eine gelungene Energiewende wird aber eine durchgehende, zuverlässige Stromversorgung benötigt.
               <br>
-              Dies kann mit Redox-Flow-Batterien als Stromspeicher für Grün-Strom erreicht werden: für eine zuverlässige und nachhaltige Energiewende!
+              Dies kann mit Redox-Flow-Batterien als Stromspeicher für grünen Strom erreicht werden: für eine zuverlässige und nachhaltige Energiewende!
             </p>
             <quote-item
               class="my-5 ml-5"
               :inverted="true"
-              text="Redox-Flow-Batterien eignen sich perfekt als Puffer für Grünstrom!"
+              text="Redox-Flow-Batterien eignen sich perfekt als Puffer für grünen Strom!"
             />
             <p class="p-5 text-white">
               Die Einsatzgebiete für Redox-Flow-Batterien von VANEVO sind sehr
