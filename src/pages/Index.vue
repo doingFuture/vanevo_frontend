@@ -24,7 +24,7 @@
             />
           </checkered-section>
         </div>
-        <h4 class="font-semibold text-2xl lg:text-xl mt-20 p-5 w-full">
+        <h4 class="font-semibold text-2xl lg:text-xl lg:mt-20 p-5 w-full">
           Stacks im Vergleich:
         </h4>
         <teaser-item
@@ -86,7 +86,7 @@
             src="~/assets/images/windrad.jpg"
           />
           <div>
-            <p class="p-5 text-white">
+            <p class="pb-5 pl-5 pr-5 lg:pt-5 text-white">
               Die Erzeugung von grünem Strom erfolgt zeitlich variabel - immer nur dann, wenn Wind weht oder die Sonne scheint.
               <br>
               Für eine gelungene Energiewende wird aber eine durchgehende, zuverlässige Stromversorgung benötigt.
@@ -124,7 +124,7 @@
       <base-row>
         <headline :text="data.teamSection.headline" />
         <g-image class="w-full pt-5 px-5" src="~/assets/images/team_02.jpg" />
-        <p class=" text-4m px-5 my-20">
+        <p class=" text-4m px-5 mb-20 lg:mt-20 mt-10">
           2015
           <br>
           Aller Anfang ist... akademisch, zumindest bei VANEVO:
