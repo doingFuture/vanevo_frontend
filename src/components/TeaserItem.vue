@@ -6,7 +6,7 @@
     >
       <g-image
         :class="
-          image ? 'lg:h-48 md:h-36 w-full object-cover object-center' : 'hidden'
+          image ? 'xl:h-64 lg:h-48 md:h-36 w-full object-cover object-center' : 'hidden'
         "
         :src="`/images/${image}`"
       />

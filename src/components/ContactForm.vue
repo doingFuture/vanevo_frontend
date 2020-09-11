@@ -11,7 +11,7 @@
               v-model="form.surname"
               required
               name="surname"
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-black focus:text-black"
               placeholder="Vorname"
               type="text"
             />
@@ -21,7 +21,7 @@
               v-model="form.lastname"
               required
               name="lastname"
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-black focus:text-black"
               placeholder="Nachname"
               type="text"
             />
@@ -31,7 +31,7 @@
               v-model="form.mail"
               required
               name="mail"
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-black focus:text-black"
               placeholder="Email"
               type="email"
             />
@@ -41,7 +41,7 @@
               v-model="form.subject"
               required
               name="subject"
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-black focus:text-black"
               placeholder="Betreff"
               type="text"
             />
@@ -50,13 +50,13 @@
             <textarea
               v-model="form.message"
               required
-              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white h-48 text-base px-4 py-2 resize-none block focus:shadow-xl text-white focus:text-black"
+              class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white h-48 text-base px-4 py-2 resize-none block focus:shadow-xl text-black focus:text-black"
               placeholder="Nachricht"
             ></textarea>
           </div>
           <div class="p-2 w-full">
             <button
-              class="flex ml-auto text-white bg-vanevo-blue border-0 py-2 px-8 focus:border-none focus:outline-none text-lg hover:shadow-xl"
+              class="flex ml-auto text-white bg-vanevo-blue border-0 mt-5 lg:mt-0 py-2 px-8 focus:border-none focus:outline-none text-lg hover:shadow-xl"
               @click="checkForm()"
             >
               Senden

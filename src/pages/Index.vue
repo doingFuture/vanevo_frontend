@@ -169,9 +169,9 @@
     </base-section>
 
     <base-section id="contact" :fullheight="false" background="white">
-      <base-row>
+      <base-row class="px-2">
         <div class="lg:w-7/12">
-          <p class="font-semibold text-4xl lg:pr-5 pb-2">
+          <p class="font-semibold text-3xl lg:pr-5 pb-2">
             Interesse geweckt?
             <br>
             Nehmen Sie Kontakt mit uns auf!
