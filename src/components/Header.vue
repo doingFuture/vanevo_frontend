@@ -7,7 +7,7 @@
     >
       <g-link
         to="/"
-        class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        class="flex title-font font-medium items-center text-gray-900"
       >
         <g-image
           class="w-48 self-center pt-2 lg:pt-0"

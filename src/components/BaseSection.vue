@@ -1,6 +1,6 @@
 <template>
   <section
-    class="text-black body-font"
+    class="text-black body-font pt-5 lg:pt-0"
     :class="[`bg-${bgClass}`, fullheight ? 'min-h-screen' : '']"
   >
     <div
