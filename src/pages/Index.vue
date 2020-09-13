@@ -179,7 +179,7 @@
           <contact-form />
         </div>
         <g-image
-          class="hidden lg:block w-5/12 pt-5 lg:pt-0 shadow-2xl"
+          class="hidden lg:block w-5/12 h-full pt-5 lg:pt-0 shadow-2xl"
           src="~/assets/images/jannick_cta.jpg"
         />
       </base-row>
