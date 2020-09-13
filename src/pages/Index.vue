@@ -168,7 +168,7 @@
       </base-row>
     </base-section>
 
-    <base-section id="contact" :fullheight="false" background="white">
+    <base-section id="contact" class="pt-16" :fullheight="false" background="white">
       <base-row class="px-2">
         <div class="lg:w-7/12">
           <p class="font-semibold text-3xl lg:pr-5 pb-2">
