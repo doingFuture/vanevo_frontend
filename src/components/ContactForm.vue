@@ -95,7 +95,7 @@ export default {
   methods: {
     send() {
       axios
-        .post('http://vanevo.de/new/mail.php', querystring.stringify(this.form))
+        .post('http://vanevo.de/new/vanevo.php', querystring.stringify(this.form))
         .then((res) => {
           this.response = res
         })
