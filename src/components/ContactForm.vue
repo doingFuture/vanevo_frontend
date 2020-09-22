@@ -95,7 +95,7 @@ export default {
   methods: {
     send() {
       axios
-        .post('http://vanevo.de/new/vanevo.php', querystring.stringify(this.form))
+        .post('', querystring.stringify(this.form))
         .then((res) => {
           this.response = res
         })
@@ -110,9 +110,9 @@ export default {
       ) {
         this.send()
         this.clearForm()
-        return
+      } else {
+        this.error = true
       }
-      this.error = true
     },
     clearForm() {
       const newForm = Object.keys(this.form).map(() => ({}))
@@ -127,4 +127,11 @@ export default {
 ::placeholder {
   color: black;
 }
+input:required, textarea:required {
+    box-shadow:none;
+}
+input:invalid, textarea:invalid {
+    box-shadow:none;
+}
+
 </style>
