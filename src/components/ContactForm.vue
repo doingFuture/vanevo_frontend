@@ -144,7 +144,7 @@ export default {
     send() {
       axios
         .post(
-          'http://vanevo.de/new/vanevo.php',
+          'https://vanevo.de/new/vanevo.php',
           querystring.stringify(this.form)
         )
         .then((res) => {
