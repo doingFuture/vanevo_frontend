@@ -1,0 +1,74 @@
+{
+  "intro": "Components from VANEVO enable storing green energy in redox flow batteries – at low costs and ecologically friendly!",
+  "comparisonSection": {
+    "headline": "How is Vanevo different",
+    "checks": [
+      {
+        "text": [
+          "VANEVO has developed a new assembly approach for the key component of redox flow batteries – the stack.",
+          "VANEVO stacks need less complex parts compared to state of the art, reducing the overall requirements. The assembly process is optimized for automation, allowing for fast stack manufacturing at low costs."
+        ],
+        "image": "was_01.jpg",
+        "quote": "Our approach: Using adhesives instead of compressible sealings!"
+      },
+      {
+        "text": [
+          "Due to the elimination of compressible sealings, massive end plates are no longer necessary – resulting in lighter stacks that are easier to handle."
+        ],
+        "image": "was_02.jpg",
+        "quote": "The VANEVO-Stack: Easier, faster, cheaper!"
+      }
+    ],
+    "teasers": [
+      {
+        "headline": "State of the art",
+        "content": [
+          "Numerous, complex parts",
+          "Tedious assembly",
+          "Heavy due to massive end plates",
+          "High costs"
+        ],
+        "image": ""
+      },
+      {
+        "headline": "VANEVO",
+        "content": [
+          "Less complex parts and and less parts overall",
+          "Quick and easy to automate",
+          "No massive end plates",
+          "Reduced costs"
+        ],
+        "image": ""
+      }
+    ]
+  },
+  "teamSection": {
+    "headline": "VANEVO – the Team",
+    "teasers": [
+      {
+        "headline": "Dr. Jan grosse Austing",
+        "job": "Co-Founder, Electrochemist",
+        "content": [
+          "Domain expert for redox flow batteries and the energy sector. In charge of the electrochemistry and the business development."
+        ],
+        "image": "jan_03.jpg"
+      },
+      {
+        "headline": "Arne grosse Austing",
+        "job": "Co-Funder, Engineer",
+        "content": [
+          "CAD designer of stacks and modules. Manufactures the parts for the prototypes on our CNC milling machine. System designer for the serial production of the stacks."
+        ],
+        "image": "arne_03.jpg"
+      },
+      {
+        "headline": "Jannick Helms",
+        "job": "Engineer/Physicist",
+        "content": [
+          "Keeps the test rigs running and takes care of the prototype assembly. Developer of the control system, the base for our upcoming battery management system."
+        ],
+        "image": "jannick_03.jpg"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="layout pt-20">
-    <Header />
+    <Header :english="english" />
     <div class="min-h-screen">
       <slot />
     </div>
@@ -24,6 +24,12 @@ export default {
   components: {
     Header,
     Footer
+  },
+  props: {
+    english: {
+      type: Boolean,
+      default: false
+    }
   }
 }
 </script>

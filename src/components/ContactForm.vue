@@ -12,7 +12,7 @@
               required
               name="surname"
               class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-black focus:text-black"
-              placeholder="Vorname"
+              :placeholder="english ? 'surname' : 'Vorname'"
               type="text"
             />
           </div>
@@ -22,7 +22,7 @@
               required
               name="lastname"
               class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-black focus:text-black"
-              placeholder="Nachname"
+              :placeholder="english ? 'lastname' : 'Nachname'"
               type="text"
             />
           </div>
@@ -32,7 +32,7 @@
               required
               name="mail"
               class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-black focus:text-black"
-              placeholder="Email"
+              :placeholder="english ? 'email' : 'Email'"
               type="email"
             />
           </div>
@@ -42,7 +42,7 @@
               required
               name="subject"
               class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white text-base px-4 py-2 focus:shadow-xl text-black focus:text-black"
-              placeholder="Betreff"
+              :placeholder="english ? 'subject' : 'Betreff'"
               type="text"
             />
           </div>
@@ -51,15 +51,23 @@
               v-model="form.message"
               required
               class="w-full bg-transparent border-2 border-black focus:outline-none focus:bg-white h-48 text-base px-4 py-2 resize-none block focus:shadow-xl text-black focus:text-black"
-              placeholder="Nachricht"
+              :placeholder="english ? 'message' : 'Nachricht'"
             ></textarea>
           </div>
           <div class="p-2 w-full">
             <button
+              v-if="!english"
               class="flex ml-auto text-white bg-vanevo-blue border-0 mt-5 lg:mt-0 py-2 px-8 focus:border-none focus:outline-none text-lg hover:shadow-xl"
               @click="checkForm()"
             >
               Senden
+            </button>
+            <button
+              v-if="english"
+              class="flex ml-auto text-white bg-vanevo-blue border-0 mt-5 lg:mt-0 py-2 px-8 focus:border-none focus:outline-none text-lg hover:shadow-xl"
+              @click="checkForm()"
+            >
+              send
             </button>
           </div>
         </div>
@@ -113,6 +121,12 @@ import querystring from 'querystring'
 
 export default {
   name: 'ContactForm',
+  props: {
+    english: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       error: false,

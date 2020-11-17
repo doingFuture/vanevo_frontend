@@ -24,38 +24,59 @@
       </div>
       <nav
         class="lg:ml-auto flex flex-wrap flex-col lg:flex-row items-center pt-5 lg:pt-0 text-xl lg:text-base xl:text-lg justify-start"
-        :class="showMenu ? 'block w-full h-screen' : 'hidden lg:block'"
+        :class="showMenu ? 'block w-full h-screen' : 'hidden lg:flex'"
       >
         <a
-          href="/#VANEVO-Stacks"
+          :href="english ? '/home/#VANEVO-Stacks' : '/#VANEVO-Stacks'"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           @click="showMenu = false"
           >VANEVO-Stacks</a
         >
         <a
-          href="/#function"
+          :href="english ? '/home/#function' : '/#function'"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           @click="showMenu = false"
-          >Funktionsweise</a
+          ><span v-if="!english">Funktionsweise</span
+          ><span v-if="english">Functional Principle</span></a
         >
         <a
-          href="/#application"
+          :href="english ? '/home/#application' : '/#application'"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           @click="showMenu = false"
-          >Anwendung</a
+          ><span v-if="!english">Anwendung</span
+          ><span v-if="english">Application</span></a
         >
         <a
-          href="/#team"
+          :href="english ? '/home/#team' : '/#team'"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           @click="showMenu = false"
           >Team</a
         >
         <a
-          href="/#contact"
+          :href="english ? '/home/#contact' : '/#contact'"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           @click="showMenu = false"
-          >Kontakt</a
+          ><span v-if="!english">Kontakt</span
+          ><span v-if="english">Contact</span></a
         >
+        <div class="flex">
+          <g-link
+            to="/home"
+          >
+            <g-image
+              class="w-8 p-1"
+              src="~/assets/images/english.jpeg"
+            />
+          </g-link>
+          <g-link
+            to="/"
+          >
+            <g-image
+              class="w-8 p-1"
+              src="~/assets/images/german.jpeg"
+            />
+          </g-link>
+        </div>
       </nav>
     </div>
   </header>
@@ -68,6 +89,12 @@ export default {
   name: 'Header',
   components: {
     VBurger
+  },
+  props: {
+    english: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {

@@ -14,18 +14,4 @@ module.exports = {
       }
     }
   }
-  // plugins: [
-  //   {
-  //     use: '@gridsome/source-wordpress',
-  //     options: {
-  //       baseUrl: 'http://localhost:8000', // required
-  //       typeName: 'WordPress' // GraphQL schema name
-  //     }
-  //   }
-  // ],
-  // // Setup template routes for any WordPress collection
-  // templates: {
-  //   WordPressPost: '/:slug',
-  //   WordPressPage: '/:slug'
-  // }
 }

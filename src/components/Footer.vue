@@ -105,10 +105,16 @@
         class="flex flex-col flex-wrap md:flex-row justify-between items-center w-3/5 mx-auto px-5 mb-20"
       >
         <g-image class="w-32 mb-10 p-2 lg:m-0" src="~/assets/images/bund.jpg" />
-        <g-image class="w-32 mb-10 p-2 lg:m-0" src="~/assets/images/exist.jpg" />
+        <g-image
+          class="w-32 mb-10 p-2 lg:m-0"
+          src="~/assets/images/exist.jpg"
+        />
         <g-image class="w-32 mb-10 p-2 lg:m-0" src="~/assets/images/esf.jpg" />
         <g-image class="w-32 mb-10 p-2 lg:m-0" src="~/assets/images/eu.jpg" />
-        <g-image class="w-32 mb-10 p-2 lg:m-0" src="~/assets/images/foerder.jpg" />
+        <g-image
+          class="w-32 mb-10 p-2 lg:m-0"
+          src="~/assets/images/foerder.jpg"
+        />
       </span>
     </div>
     <div class="bg-gray-200">
@@ -116,7 +122,7 @@
         class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
       >
         <p class="text-gray-500 text-sm text-center sm:text-left">
-          © 2020 VANEVO GmbH
+          © {{ new Date().getFullYear() }} VANEVO GmbH
         </p>
       </div>
     </div>
