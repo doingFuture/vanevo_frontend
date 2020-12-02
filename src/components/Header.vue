@@ -30,7 +30,7 @@
           :href="english ? '/home/#VANEVO-Stacks' : '/#VANEVO-Stacks'"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           @click="showMenu = false"
-          >VANEVO-Stacks</a
+          >VANEVO Stacks</a
         >
         <a
           :href="english ? '/home/#function' : '/#function'"
@@ -61,19 +61,19 @@
         >
         <div class="flex">
           <g-link
-            to="/home"
-          >
-            <g-image
-              class="w-8 p-1"
-              src="~/assets/images/english.jpeg"
-            />
-          </g-link>
-          <g-link
             to="/"
           >
             <g-image
               class="w-8 p-1"
               src="~/assets/images/german.jpeg"
+            />
+          </g-link>
+          <g-link
+            to="/home"
+          >
+            <g-image
+              class="w-8 p-1"
+              src="~/assets/images/english.jpeg"
             />
           </g-link>
         </div>

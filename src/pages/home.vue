@@ -25,7 +25,7 @@
           </checkered-section>
         </div>
         <h4 class="font-semibold text-2xl lg:text-xl lg:mt-20 p-5 w-full">
-          Stack Technologies compared:
+          Stack technologies compared:
         </h4>
         <teaser-item
           v-for="item in data.comparisonSection.teasers"
@@ -47,15 +47,15 @@
           <br />
           <br />
           These electrolytes are stored in tanks. The electrolytes can be
-          charged or discharged by circulation through the stacks. Redox flow
-          batteries are non-flammable, show a high cycle life, are recyclable
-          and offer the lowest levelized costs of storage.
+          charged or discharged by circulation through the stacks.
+           <br />
+          Redox flow batteries are non-flammable, show a high cycle life, are recyclable and offer the lowest levelized costs of storage.
         </p>
 
         <div class="grid gap-10 grid-cols-1">
           <quote-item
             class="mb-5 ml-5 mt-10"
-            text="The advantages of this technology: it is safe, long-lasting, cheap and sustainable."
+            text="The advantage of this technology: it is safe, long-lasting, cheap and sustainable."
           />
           <div>
             <div class="image-wrapper">
@@ -96,7 +96,7 @@
             <quote-item
               class="my-5 ml-5"
               :inverted="true"
-              text="Redox flow batteries are perfectly suited as buffer for renewable electricity!"
+              text="Redox flow batteries are perfectly suited as buffer for renewable electricity."
             />
             <p class="p-5 text-white">
               Redox flow batteries can be used in various applications:
@@ -131,11 +131,16 @@
           2015
           <br />
           During his PhD at the German Aerospace Center (DLR) Jan investigated
-          redox flow batteries. Soon he came up with the question: why is this
-          advantageous technology not really present in the market? The simple
-          answer: it‘s too expensive! Approaches and solutions to reduce costs
-          were developed and a patent application was filed. Together with 3
-          colleagues and funded by a project grant, the idea to cut down the
+          redox flow batteries. 
+          <br>
+          Soon he came up with the question: why is this
+          advantageous technology not really present in the market?
+          <br>
+          The simple answer: it‘s too expensive!
+          <br>
+          Approaches and solutions to reduce costs were developed and a patent application was filed.
+          <br>
+          Together with 3 colleagues and funded by a project grant, the idea to cut down the
           costs of redox flow batteries was turned into a business idea.
           <br />
           <br />

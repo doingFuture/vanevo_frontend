@@ -1,22 +1,22 @@
 {
   "intro": "Components from VANEVO enable storing green energy in redox flow batteries – at low costs and ecologically friendly!",
   "comparisonSection": {
-    "headline": "How is Vanevo different",
+    "headline": "How is Vanevo different?",
     "checks": [
       {
         "text": [
           "VANEVO has developed a new assembly approach for the key component of redox flow batteries – the stack.",
-          "VANEVO stacks need less complex parts compared to state of the art, reducing the overall requirements. The assembly process is optimized for automation, allowing for fast stack manufacturing at low costs."
+          "VANEVO stacks need less complex parts compared to state of the art stacks, reducing the overall requirements. The assembly process is optimized for automation, allowing for fast stack manufacturing at low costs."
         ],
         "image": "was_01.jpg",
-        "quote": "Our approach: Using adhesives instead of compressible sealings!"
+        "quote": "Our approach: Using adhesives instead of compressible sealings."
       },
       {
         "text": [
           "Due to the elimination of compressible sealings, massive end plates are no longer necessary – resulting in lighter stacks that are easier to handle."
         ],
         "image": "was_02.jpg",
-        "quote": "The VANEVO-Stack: Easier, faster, cheaper!"
+        "quote": "The VANEVO stack: Easier, faster, cheaper."
       }
     ],
     "teasers": [
@@ -46,7 +46,7 @@
     "headline": "VANEVO – the Team",
     "teasers": [
       {
-        "headline": "Dr. Jan grosse Austing",
+        "headline": "Dr Jan grosse Austing",
         "job": "Co-Founder, Electrochemist",
         "content": [
           "Domain expert for redox flow batteries and the energy sector. In charge of the electrochemistry and the business development."
@@ -55,7 +55,7 @@
       },
       {
         "headline": "Arne grosse Austing",
-        "job": "Co-Funder, Engineer",
+        "job": "Co-Founder, Engineer",
         "content": [
           "CAD designer of stacks and modules. Manufactures the parts for the prototypes on our CNC milling machine. System designer for the serial production of the stacks."
         ],
