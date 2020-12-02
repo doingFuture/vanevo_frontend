@@ -26,7 +26,8 @@
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-2"
             >
-              TELEFON
+              <span v-if="!english">TELEFON</span
+              ><span v-if="english">PHONE</span>
             </h2>
             <p class="leading-relaxed mb-3">+49 (0) 15152131083</p>
           </div>
@@ -34,7 +35,8 @@
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-2"
             >
-              ADRESSE
+              <span v-if="!english"> ADRESSE</span
+              ><span v-if="english">ADDRESS</span>
             </h2>
             <p class="leading-relaxed">
               Johann-Hinrich-Engelbart Weg 2
