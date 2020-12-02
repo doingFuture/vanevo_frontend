@@ -61,7 +61,7 @@
             <div class="image-wrapper">
               <g-image
                 class="w-8/12 pb-5 lg:p-5"
-                src="~/assets/images/schema.png"
+                src="~/assets/images/schema_eng.jpeg"
               />
             </div>
             <p class="p-5 text-black">

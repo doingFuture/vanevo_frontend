@@ -4,7 +4,7 @@
     <div class="min-h-screen">
       <slot />
     </div>
-    <Footer />
+    <Footer :english="english" />
   </div>
 </template>
 

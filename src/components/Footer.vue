@@ -57,43 +57,54 @@
           <nav class="list-none mb-10">
             <li class="mb-3">
               <g-link
-                to="/#comparison"
+                :to="english ? '/home/#comparison' : '/#comparison'"
                 class="text-gray-600 hover:text-gray-800"
                 >VANEVO-Stacks</g-link
               >
             </li>
             <li class="mb-3">
-              <g-link to="/#function" class="text-gray-600 hover:text-gray-800"
-                >Funktionsweise</g-link
+              <g-link
+                :to="english ? '/home/#function' : '/#function'"
+                class="text-gray-600 hover:text-gray-800"
+                ><span v-if="!english">Funktionsweise</span
+                ><span v-if="english">Functional Principle</span></g-link
               >
             </li>
             <li class="mb-3">
               <g-link
-                to="/#application"
+                :to="english ? '/home/#application' : '/#application'"
                 class="text-gray-600 hover:text-gray-800"
-                >Anwendung</g-link
+                ><span v-if="!english">Anwendung</span
+                ><span v-if="english">Application</span></g-link
               >
             </li>
             <li class="mb-3">
-              <g-link to="/#team" class="text-gray-600 hover:text-gray-800"
+              <g-link
+                :to="english ? '/home/#team' : '/#team'"
+                class="text-gray-600 hover:text-gray-800"
                 >Team</g-link
               >
             </li>
             <li class="mb-3">
-              <g-link to="/#contact" class="text-gray-600 hover:text-gray-800"
-                >Kontakt</g-link
+              <g-link
+                :to="english ? '/home/#contact' : '/#contact'"
+                class="text-gray-600 hover:text-gray-800"
+                ><span v-if="!english">Kontakt</span
+                ><span v-if="english">Contact</span></g-link
               >
             </li>
             <li class="mb-3">
               <g-link
                 to="/datenschutz"
                 class="text-gray-600 hover:text-gray-800"
-                >Datenschutz</g-link
+                ><span v-if="!english">Datenschutz</span
+                ><span v-if="english">Privacy</span></g-link
               >
             </li>
             <li class="mb-3">
               <g-link to="/impressum" class="text-gray-600 hover:text-gray-800"
-                >Impressum</g-link
+                ><span v-if="!english">Impressum</span
+                ><span v-if="english">Imprint</span></g-link
               >
             </li>
           </nav>
@@ -131,7 +142,13 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  props: {
+    english: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
 
