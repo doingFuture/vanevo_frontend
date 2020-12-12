@@ -61,7 +61,7 @@
               <g-link
                 :to="english ? '/home/#comparison' : '/#comparison'"
                 class="text-gray-600 hover:text-gray-800"
-                >VANEVO-Stacks</g-link
+                >VANEVO Stacks</g-link
               >
             </li>
             <li class="mb-3">
