@@ -182,7 +182,7 @@
           :key="item.index"
           :item-number="data.teamSection.teasers.length"
           :headline="item.headline"
-          :job="item.job"
+          :subline="item.job"
           :content="item.content"
           :image="item.image"
         />
@@ -213,6 +213,32 @@
             job-name="Wirtschaftsingenieur / Betriebswirtschaftler (m/w/d)"
           />
         </div>
+      </base-row>
+    </base-section>
+
+    <base-section id="team" :fullheight="false" background="gray">
+      <base-row>
+        <headline text="News" />
+        <teaser-item
+          :item-number="2"
+          :is-news-teaser="true"
+          headline="NBank Capital beteiligt sich an VANEVO GmbH"
+          subline="30.12.2020"
+          :content="[
+            'VANEVO und die NBank Capital haben am 30.12.2020 einen Beteiligungsvertrag unterzeichnet.',
+          ]"
+          image="NBank_News.png"
+        />
+        <teaser-item
+          :item-number="2"
+          :is-news-teaser="true"
+          headline="VANEVO gewinnt den 2. Platz des DurchSTARTer-Preises 2020 in der Kategorie Science-Spin-Off"
+          subline="01.12.2020"
+          :content="[
+            'VANEVO konnte sich unter 92 Bewerbern für den Durchstarterpreis in der Kategorie Science-Spin-Off durchsetzen und den 2. Platz belegen.',
+          ]"
+          image="NBank_BuB_Durchstarter_PRZ-0702.jpg"
+        />
       </base-row>
     </base-section>
 

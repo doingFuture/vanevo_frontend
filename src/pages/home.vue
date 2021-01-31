@@ -178,7 +178,7 @@
           :key="item.index"
           :item-number="data.teamSection.teasers.length"
           :headline="item.headline"
-          :job="item.job"
+          :subline="item.job"
           :content="item.content"
           :image="item.image"
         />
