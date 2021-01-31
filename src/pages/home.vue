@@ -48,8 +48,9 @@
           <br />
           These electrolytes are stored in tanks. The electrolytes can be
           charged or discharged by circulation through the stacks.
-           <br />
-          Redox flow batteries are non-flammable, show a high cycle life, are recyclable and offer the lowest levelized costs of storage.
+          <br />
+          Redox flow batteries are non-flammable, show a high cycle life, are
+          recyclable and offer the lowest levelized costs of storage.
         </p>
 
         <div class="grid gap-10 grid-cols-1">
@@ -131,17 +132,19 @@
           2015
           <br />
           During his PhD at the German Aerospace Center (DLR) Jan investigated
-          redox flow batteries. 
-          <br>
-          Soon he came up with the question: why is this
-          advantageous technology not really present in the market?
-          <br>
+          redox flow batteries.
+          <br />
+          Soon he came up with the question: why is this advantageous technology
+          not really present in the market?
+          <br />
           The simple answer: it‘s too expensive!
-          <br>
-          Approaches and solutions to reduce costs were developed and a patent application was filed.
-          <br>
-          Together with 3 colleagues and funded by a project grant, the idea to cut down the
-          costs of redox flow batteries was turned into a business idea.
+          <br />
+          Approaches and solutions to reduce costs were developed and a patent
+          application was filed.
+          <br />
+          Together with 3 colleagues and funded by a project grant, the idea to
+          cut down the costs of redox flow batteries was turned into a business
+          idea.
           <br />
           <br />
           2016
@@ -182,6 +185,35 @@
       </base-row>
     </base-section>
 
+    <base-section id="jobs" class="pt-16" :fullheight="false" background="blue">
+      <base-row class="px-2">
+        <div class="w-full">
+          <headline :light="true" class="mb-4" text="Working with VANEVO" />
+          <p class="pb-5 pl-5 pr-5 lg:pt-5 text-white">
+            We hire! For our technical developments and the upcoming market
+            entry we look for talents (M/F/X).
+            <br />
+            <br />
+            If you’re interested in working for a startup and you’d like to push
+            VANEVO forward with your ideas, write us to jobs@vanevo.de!
+            <br />
+            <br />
+            We’re looking forward to your message – whether specific to a job
+            posting or a spontaneous application!
+          </p>
+          <headline
+            :underlined="false"
+            :light="true"
+            class="my-4"
+            text="Current Vacancies:"
+          />
+          <job-offer
+            job-name="Wirtschaftsingenieur / Betriebswirtschaftler (m/w/d)"
+          />
+        </div>
+      </base-row>
+    </base-section>
+
     <base-section
       id="contact"
       class="pt-16"
@@ -215,6 +247,7 @@ import QuoteItem from '@/components/QuoteItem.vue'
 import BaseRow from '@/components/BaseRow.vue'
 import ContactForm from '@/components/ContactForm.vue'
 import IntroText from '@/components/IntroText.vue'
+import JobOffer from '@/components/JobOffer.vue'
 import CheckeredSection from '@/components/CheckeredSection.vue'
 import Content from '@/data/home.json'
 
@@ -231,7 +264,8 @@ export default {
     BaseRow,
     ContactForm,
     IntroText,
-    CheckeredSection
+    CheckeredSection,
+    JobOffer
   },
   data() {
     return {

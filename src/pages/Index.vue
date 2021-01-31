@@ -191,7 +191,7 @@
 
     <base-section id="jobs" class="pt-16" :fullheight="false" background="blue">
       <base-row class="px-2">
-        <div class="lg:w-full">
+        <div class="w-full">
           <headline :light="true" class="mb-4" text="Karriere bei VANEVO" />
           <p class="pb-5 pl-5 pr-5 lg:pt-5 text-white">
             Wir stellen ein! Für unsere weiteren technischen Entwicklungen sowie
@@ -206,11 +206,11 @@
           <headline
             :underlined="false"
             :light="true"
-            class="mb-4"
+            class="my-4"
             text="Unsere offenen Vakanzen:"
           />
           <job-offer
-            job-name="Wirtschaftsingenieur/Betriebswirtschaftler (m/w/d)"
+            job-name="Wirtschaftsingenieur / Betriebswirtschaftler (m/w/d)"
           />
         </div>
       </base-row>
