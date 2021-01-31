@@ -89,6 +89,21 @@
             </li>
             <li class="mb-3">
               <g-link
+                :to="english ? '/home/#career' : '/#career'"
+                class="text-gray-600 hover:text-gray-800"
+                ><span v-if="!english">Karriere</span
+                ><span v-if="english">Career</span></g-link
+              >
+            </li>
+            <li class="mb-3">
+              <g-link
+                :to="english ? '/home/#news' : '/#news'"
+                class="text-gray-600 hover:text-gray-800"
+                ><span>News</span></g-link
+              >
+            </li>
+            <li class="mb-3">
+              <g-link
                 :to="english ? '/home/#contact' : '/#contact'"
                 class="text-gray-600 hover:text-gray-800"
                 ><span v-if="!english">Kontakt</span

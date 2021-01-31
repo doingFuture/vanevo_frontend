@@ -53,6 +53,19 @@
           >Team</a
         >
         <a
+          :href="english ? '/home/#career' : '/#career'"
+          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer has-bubble"
+          @click="showMenu = false"
+          ><span v-if="!english">Karriere</span
+          ><span v-if="english">Career</span></a
+        >
+        <a
+          :href="english ? '/home/#news' : '/#news'"
+          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
+          @click="showMenu = false"
+          ><span>News</span></a
+        >
+        <a
           :href="english ? '/home/#contact' : '/#contact'"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
           @click="showMenu = false"
@@ -60,21 +73,11 @@
           ><span v-if="english">Contact</span></a
         >
         <div class="flex">
-          <g-link
-            to="/"
-          >
-            <g-image
-              class="w-8 p-1"
-              src="~/assets/images/german.jpeg"
-            />
+          <g-link to="/">
+            <g-image class="w-8 p-1" src="~/assets/images/german.jpeg" />
           </g-link>
-          <g-link
-            to="/home"
-          >
-            <g-image
-              class="w-8 p-1"
-              src="~/assets/images/english.jpeg"
-            />
+          <g-link to="/home">
+            <g-image class="w-8 p-1" src="~/assets/images/english.jpeg" />
           </g-link>
         </div>
       </nav>
@@ -109,4 +112,22 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.has-bubble {
+  position: relative;
+  &:after {
+    content: "1";
+    background:#143988;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size:16px;
+    padding-right:1px;
+  }
+}
+</style>

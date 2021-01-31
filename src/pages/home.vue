@@ -185,7 +185,12 @@
       </base-row>
     </base-section>
 
-    <base-section id="jobs" class="pt-16" :fullheight="false" background="blue">
+    <base-section
+      id="career"
+      class="pt-16"
+      :fullheight="false"
+      background="blue"
+    >
       <base-row class="px-2">
         <div class="w-full">
           <headline :light="true" class="mb-4" text="Working with VANEVO" />
@@ -211,6 +216,36 @@
             job-name="Wirtschaftsingenieur / Betriebswirtschaftler (m/w/d)"
           />
         </div>
+      </base-row>
+    </base-section>
+
+    <base-section id="news" :fullheight="false" background="gray">
+      <base-row>
+        <headline text="News" />
+        <teaser-item
+          :item-number="2"
+          :is-news-teaser="true"
+          :is-english="true"
+          headline="NBank Capital invests in VANEVO GmbH"
+          subline="Dec. 30th, 2020"
+          :content="[
+            'On Dec. 30th, 2020, VANEVO and NBank Capital have signed an investment agreement.',
+          ]"
+          image="NBank_News.png"
+          link="nbank-capital-invests-in-vanevo-gmbh"
+        />
+        <teaser-item
+          :item-number="2"
+          :is-news-teaser="true"
+          :is-english="true"
+          headline="VANEVO wins the 2nd place of the DurchSTARTER-Award 2020 in the category science spin-off"
+          subline="Dec. 1st, 2020"
+          :content="[
+            'Among 92 applicants, VANEVO managed to win the second place of the DurchSTARTER-Award 2020 in the category science spin-off.',
+          ]"
+          image="NBank_BuB_Durchstarter_PRZ-0702.jpg"
+          link="Vanevo-Wins-The-Second-Place-Of-The-Durch-Starter-Award-In-The-Category-Science-Spin-Off"
+        />
       </base-row>
     </base-section>
 

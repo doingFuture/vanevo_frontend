@@ -28,11 +28,10 @@
           <li v-for="item in content" :key="item.index">{{ item }}</li>
         </ul>
         <div v-if="isNewsTeaser" class="flex items-end h-full">
-          <a
-            href="./vacancies/Stellenausschreibung_Wirtschaftsingenieur_VANEVO.pdf"
-            target="_blank"
+          <g-link
+            :to="link"
             class="flex justify-center bg-vanevo-blue text-white text-xl mt-6 p-6 lg:px-16 px-4 w-full break-words focus:border-none focus:outline-none"
-            >Mehr erfahren</a
+            >{{ buttonText }}</g-link
           >
         </div>
       </div>
@@ -47,6 +46,14 @@ export default {
     isNewsTeaser: {
       type: Boolean,
       default: false
+    },
+    isEnglish: {
+      type: Boolean,
+      default: false
+    },
+    link: {
+      type: String,
+      default: ''
     },
     border: {
       type: Boolean,
@@ -75,6 +82,11 @@ export default {
     image: {
       type: String,
       default: ''
+    }
+  },
+  computed: {
+    buttonText() {
+      return this.isEnglish ? 'more' : 'mehr erfahren'
     }
   }
 }

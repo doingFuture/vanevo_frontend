@@ -189,7 +189,7 @@
       </base-row>
     </base-section>
 
-    <base-section id="jobs" class="pt-16" :fullheight="false" background="blue">
+    <base-section id="career" class="pt-16" :fullheight="false" background="blue">
       <base-row class="px-2">
         <div class="w-full">
           <headline :light="true" class="mb-4" text="Karriere bei VANEVO" />
@@ -216,7 +216,7 @@
       </base-row>
     </base-section>
 
-    <base-section id="team" :fullheight="false" background="gray">
+    <base-section id="news" :fullheight="false" background="gray">
       <base-row>
         <headline text="News" />
         <teaser-item
@@ -228,6 +228,7 @@
             'VANEVO und die NBank Capital haben am 30.12.2020 einen Beteiligungsvertrag unterzeichnet.',
           ]"
           image="NBank_News.png"
+          link="nbank-capital-beteiligt-sich-an-vanevo-gmbh"
         />
         <teaser-item
           :item-number="2"
@@ -238,6 +239,7 @@
             'VANEVO konnte sich unter 92 Bewerbern für den Durchstarterpreis in der Kategorie Science-Spin-Off durchsetzen und den 2. Platz belegen.',
           ]"
           image="NBank_BuB_Durchstarter_PRZ-0702.jpg"
+          link="Vanevo-Gewinnt-Den-Zweiten-Platz-Des-Durch-Starter-Preises-Zweitausend-Zwanzig-In-Der-Kategorie-Science-Spin-Off"
         />
       </base-row>
     </base-section>
