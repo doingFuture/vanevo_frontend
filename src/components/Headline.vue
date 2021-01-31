@@ -4,8 +4,8 @@
       class="sm:text-4xl text-3xl title-font font-semibold"
       :class="light ? 'text-white light' : 'text-gray-900'"
     >
-      <span class="relative">{{ underlineable[0] }}</span
-      >{{ underlineable[1] }}
+      <span v-if="underlined" class="relative">{{ underlineable[0] }}</span
+      >{{ underlined ? underlineable[1] : text }}
     </h3>
   </div>
 </template>
@@ -23,6 +23,10 @@ export default {
       default: false
     },
     fullwidth: {
+      type: Boolean,
+      default: true
+    },
+    underlined: {
       type: Boolean,
       default: true
     }
