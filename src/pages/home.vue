@@ -244,7 +244,7 @@
             'Among 92 applicants, VANEVO managed to win the second place of the DurchSTARTER-Award 2020 in the category science spin-off.',
           ]"
           image="NBank_BuB_Durchstarter_PRZ-0702.jpg"
-          link="Vanevo-Wins-The-Second-Place-Of-The-Durch-Starter-Award-In-The-Category-Science-Spin-Off"
+          link="vanevo-wins-the-second-place-of-the-durch-starter-award-in-the-category-science-spin-off"
         />
       </base-row>
     </base-section>

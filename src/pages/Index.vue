@@ -239,7 +239,7 @@
             'VANEVO konnte sich unter 92 Bewerbern für den Durchstarterpreis in der Kategorie Science-Spin-Off durchsetzen und den 2. Platz belegen.',
           ]"
           image="NBank_BuB_Durchstarter_PRZ-0702.jpg"
-          link="Vanevo-Gewinnt-Den-Zweiten-Platz-Des-Durch-Starter-Preises-Zweitausend-Zwanzig-In-Der-Kategorie-Science-Spin-Off"
+          link="vanevo-gewinnt-den-zweiten-platz-des-durch-starter-preises-zweitausend-zwanzig-in-der-kategorie-science-spin-off"
         />
       </base-row>
     </base-section>
