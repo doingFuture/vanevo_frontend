@@ -227,20 +227,21 @@
     <base-section id="news" :fullheight="false" background="gray">
       <base-row>
         <headline text="News" />
-
-        <carousel :navigation-enabled="true" :per-page="2" :loop="true">
-          <slide v-for="newsItem in $page.news.edges" :key="newsItem.node.id">
-            <teaser-item
-              :item-number="2"
-              :is-news-teaser="true"
-              :headline="newsItem.node.title"
-              :subline="newsItem.node.date"
-              :content="[...newsItem.node.excerpt]"
-              :image="newsItem.node.image.image"
-              :link="newsItem.node.path"
-            />
-          </slide>
-        </carousel>
+        <ClientOnly>
+          <carousel :navigation-enabled="true" :per-page="2" :loop="true">
+            <slide v-for="newsItem in $page.news.edges" :key="newsItem.node.id">
+              <teaser-item
+                :item-number="2"
+                :is-news-teaser="true"
+                :headline="newsItem.node.title"
+                :subline="newsItem.node.date"
+                :content="[...newsItem.node.excerpt]"
+                :image="newsItem.node.image.image"
+                :link="newsItem.node.path"
+              />
+            </slide>
+          </carousel>
+        </ClientOnly>
       </base-row>
     </base-section>
 
@@ -301,22 +302,21 @@ query {
 </page-query>
 
 <script>
-import HeroSection from '@/components/HeroSection.vue'
-import BaseSection from '@/components/BaseSection.vue'
-import Headline from '@/components/Headline.vue'
-import TeaserItem from '@/components/TeaserItem.vue'
-import QuoteItem from '@/components/QuoteItem.vue'
-import BaseRow from '@/components/BaseRow.vue'
-import ContactForm from '@/components/ContactForm.vue'
-import IntroText from '@/components/IntroText.vue'
-import CheckeredSection from '@/components/CheckeredSection.vue'
-import JobOffer from '@/components/JobOffer.vue'
-import Content from '@/data/index.json'
-import { Carousel, Slide } from 'vue-carousel'
+import HeroSection from "@/components/HeroSection.vue";
+import BaseSection from "@/components/BaseSection.vue";
+import Headline from "@/components/Headline.vue";
+import TeaserItem from "@/components/TeaserItem.vue";
+import QuoteItem from "@/components/QuoteItem.vue";
+import BaseRow from "@/components/BaseRow.vue";
+import ContactForm from "@/components/ContactForm.vue";
+import IntroText from "@/components/IntroText.vue";
+import CheckeredSection from "@/components/CheckeredSection.vue";
+import JobOffer from "@/components/JobOffer.vue";
+import Content from "@/data/index.json";
 
 export default {
   metaInfo: {
-    title: 'Vanevo'
+    title: "Vanevo",
   },
   components: {
     HeroSection,
@@ -329,15 +329,21 @@ export default {
     IntroText,
     CheckeredSection,
     JobOffer,
-    Carousel,
-    Slide
+    Carousel: () =>
+      import("vue-carousel")
+        .then((m) => m.Carousel)
+        .catch(),
+    Slide: () =>
+      import("vue-carousel")
+        .then((m) => m.Slide)
+        .catch(),
   },
   data() {
     return {
-      data: Content
-    }
-  }
-}
+      data: Content,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
