@@ -189,7 +189,12 @@
       </base-row>
     </base-section>
 
-    <base-section id="career" class="pt-16" :fullheight="false" background="blue">
+    <base-section
+      id="career"
+      class="pt-16"
+      :fullheight="false"
+      background="blue"
+    >
       <base-row class="px-2">
         <div class="w-full">
           <headline :light="true" class="mb-4" text="Karriere bei VANEVO" />
@@ -207,10 +212,13 @@
             :underlined="false"
             :light="true"
             class="my-4"
-            text="Unsere offenen Vakanzen:"
+            text="Unsere Stellenangebote:"
           />
           <job-offer
-            job-name="Wirtschaftsingenieur / Betriebswirtschaftler (m/w/d)"
+            v-for="edge in $page.jobs.edges"
+            :key="edge.node.id"
+            :job-name="edge.node.title"
+            :job-pdf="edge.node.vacancy_pdf"
           />
         </div>
       </base-row>
@@ -220,26 +228,15 @@
       <base-row>
         <headline text="News" />
         <teaser-item
-          :item-number="2"
+          v-for="newsItem in deNews"
+          :key="newsItem.node.id"
+          :item-number="deNews.length"
           :is-news-teaser="true"
-          headline="NBank Capital beteiligt sich an VANEVO GmbH"
-          subline="30.12.2020"
-          :content="[
-            'VANEVO und die NBank Capital haben am 30.12.2020 einen Beteiligungsvertrag unterzeichnet.',
-          ]"
-          image="NBank_News.png"
-          link="nbank-capital-beteiligt-sich-an-vanevo-gmbh"
-        />
-        <teaser-item
-          :item-number="2"
-          :is-news-teaser="true"
-          headline="VANEVO gewinnt den 2. Platz des DurchSTARTer-Preises 2020 in der Kategorie Science-Spin-Off"
-          subline="01.12.2020"
-          :content="[
-            'VANEVO konnte sich unter 92 Bewerbern für den Durchstarterpreis in der Kategorie Science-Spin-Off durchsetzen und den 2. Platz belegen.',
-          ]"
-          image="NBank_BuB_Durchstarter_PRZ-0702.jpg"
-          link="vanevo-gewinnt-den-zweiten-platz-des-durch-starter-preises-zweitausend-zwanzig-in-der-kategorie-science-spin-off"
+          :headline="newsItem.node.title"
+          :subline="newsItem.node.date"
+          :content="[...newsItem.node.excerpt]"
+          :image="newsItem.node.image.image"
+          :link="newsItem.node.path"
         />
       </base-row>
     </base-section>
@@ -267,6 +264,38 @@
     </base-section>
   </Layout>
 </template>
+
+<page-query>
+query {
+  news: allNews {
+    edges {
+      node {
+      	title
+        id
+        date
+        excerpt
+        image {
+          image
+          alt
+        }
+        path
+        fileInfo{
+          directory
+        }
+      }
+    }
+  }
+  jobs: allJobs {
+    edges {
+      node {
+      	title
+        id
+        vacancy_pdf
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import HeroSection from '@/components/HeroSection.vue'
@@ -300,6 +329,13 @@ export default {
   data() {
     return {
       data: Content
+    }
+  },
+  computed: {
+    deNews() {
+      return this.$page.news.edges.filter(
+        (edge) => edge.node.fileInfo.directory === 'news/de'
+      )
     }
   }
 }

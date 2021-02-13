@@ -213,7 +213,10 @@
             text="Current Vacancies:"
           />
           <job-offer
-            job-name="Wirtschaftsingenieur / Betriebswirtschaftler (m/w/d)"
+            v-for="edge in $page.jobs.edges"
+            :key="edge.node.id"
+            :job-name="edge.node.title"
+            :job-pdf="edge.node.vacancy_pdf"
           />
         </div>
       </base-row>
@@ -223,28 +226,15 @@
       <base-row>
         <headline text="News" />
         <teaser-item
-          :item-number="2"
+          v-for="newsItem in enNews"
+          :key="newsItem.node.id"
+          :item-number="enNews.length"
           :is-news-teaser="true"
-          :is-english="true"
-          headline="NBank Capital invests in VANEVO GmbH"
-          subline="Dec. 30th, 2020"
-          :content="[
-            'On Dec. 30th, 2020, VANEVO and NBank Capital have signed an investment agreement.',
-          ]"
-          image="NBank_News.png"
-          link="nbank-capital-invests-in-vanevo-gmbh"
-        />
-        <teaser-item
-          :item-number="2"
-          :is-news-teaser="true"
-          :is-english="true"
-          headline="VANEVO wins the 2nd place of the DurchSTARTER-Award 2020 in the category science spin-off"
-          subline="Dec. 1st, 2020"
-          :content="[
-            'Among 92 applicants, VANEVO managed to win the second place of the DurchSTARTER-Award 2020 in the category science spin-off.',
-          ]"
-          image="NBank_BuB_Durchstarter_PRZ-0702.jpg"
-          link="vanevo-wins-the-second-place-of-the-durch-starter-award-in-the-category-science-spin-off"
+          :headline="newsItem.node.title"
+          :subline="newsItem.node.date"
+          :content="[...newsItem.node.excerpt]"
+          :image="newsItem.node.image.image"
+          :link="newsItem.node.path"
         />
       </base-row>
     </base-section>
@@ -272,6 +262,38 @@
     </base-section>
   </Layout>
 </template>
+
+<page-query>
+query {
+  news: allNews {
+    edges {
+      node {
+      	title
+        id
+        date
+        excerpt
+        image {
+          image
+          alt
+        }
+        path
+        fileInfo{
+          directory
+        }
+      }
+    }
+  }
+  jobs: allJobs {
+    edges {
+      node {
+      	title
+        id
+        vacancy_pdf
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import HeroSection from '@/components/HeroSection.vue'
@@ -305,6 +327,13 @@ export default {
   data() {
     return {
       data: Content
+    }
+  },
+  computed: {
+    enNews() {
+      return this.$page.news.edges.filter(
+        (edge) => edge.node.fileInfo.directory === 'news/en'
+      )
     }
   }
 }

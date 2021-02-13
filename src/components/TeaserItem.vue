@@ -10,13 +10,12 @@
             ? 'xl:h-64 lg:h-48 md:h-36 w-full object-cover object-center'
             : 'hidden'
         "
-        :src="`/images/${image}`"
+        :src="isNewsTeaser ? image : `/images/${image}`"
       />
       <div class="p-6 flex flex-col h-full">
         <div :class="isNewsTeaser ? 'h-48' : ''">
           <h3
-            class="title-font text-lg font-medium inline-block"
-            :class="isNewsTeaser ? '' : 'underlined mb-3'"
+            class="title-font text-lg font-medium inline-block underlined mb-3"
           >
             {{ headline }}
           </h3>
