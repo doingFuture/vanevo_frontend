@@ -269,7 +269,7 @@
             <br />
             Get in touch with us!
           </p>
-          <contact-form english="true" />
+          <contact-form :english="true" />
         </div>
         <g-image
           class="hidden lg:block w-5/12 h-full pt-5 lg:pt-0 shadow-2xl"
