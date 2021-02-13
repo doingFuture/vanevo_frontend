@@ -18,7 +18,7 @@
       <div class="p-6 flex flex-col h-full">
         <div :class="isNewsTeaser ? 'h-32' : ''">
           <h3
-            class="title-font text-lg font-medium inline-block underlined mb-3"
+            class="text-base lg:text-lg title-font font-medium inline-block underlined mb-3"
           >
             {{ headline }}
           </h3>

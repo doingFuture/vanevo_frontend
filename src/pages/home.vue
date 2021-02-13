@@ -225,8 +225,25 @@
     <base-section id="news" :fullheight="false" background="gray">
       <base-row>
         <headline text="News" />
+        <ClientOnly v-if="!isPhone">
+          <carousel :navigation-enabled="true" :per-page="2" :loop="true">
+            <slide v-for="newsItem in $page.news.edges" :key="newsItem.node.id">
+              <teaser-item
+                :item-number="2"
+                :is-news-teaser="true"
+                :headline="newsItem.node.title"
+                :subline="newsItem.node.date"
+                :content="[...newsItem.node.excerpt]"
+                :image="newsItem.node.image.image"
+                :link="newsItem.node.path"
+              />
+            </slide>
+          </carousel>
+        </ClientOnly>
+
         <teaser-item
-          v-for="newsItem in this.$page.news.edges"
+          v-else
+          v-for="newsItem in $page.news.edges"
           :key="newsItem.node.id"
           :item-number="2"
           :is-news-teaser="true"
@@ -235,7 +252,6 @@
           :content="[...newsItem.node.excerpt]"
           :image="newsItem.node.image.image"
           :link="newsItem.node.path"
-          :is-english="true"
         />
       </base-row>
     </base-section>
@@ -297,21 +313,21 @@ query {
 </page-query>
 
 <script>
-import HeroSection from '@/components/HeroSection.vue'
-import BaseSection from '@/components/BaseSection.vue'
-import Headline from '@/components/Headline.vue'
-import TeaserItem from '@/components/TeaserItem.vue'
-import QuoteItem from '@/components/QuoteItem.vue'
-import BaseRow from '@/components/BaseRow.vue'
-import ContactForm from '@/components/ContactForm.vue'
-import IntroText from '@/components/IntroText.vue'
-import JobOffer from '@/components/JobOffer.vue'
-import CheckeredSection from '@/components/CheckeredSection.vue'
-import Content from '@/data/home.json'
+import HeroSection from "@/components/HeroSection.vue";
+import BaseSection from "@/components/BaseSection.vue";
+import Headline from "@/components/Headline.vue";
+import TeaserItem from "@/components/TeaserItem.vue";
+import QuoteItem from "@/components/QuoteItem.vue";
+import BaseRow from "@/components/BaseRow.vue";
+import ContactForm from "@/components/ContactForm.vue";
+import IntroText from "@/components/IntroText.vue";
+import JobOffer from "@/components/JobOffer.vue";
+import CheckeredSection from "@/components/CheckeredSection.vue";
+import Content from "@/data/home.json";
 
 export default {
   metaInfo: {
-    title: 'Vanevo'
+    title: "Vanevo",
   },
   components: {
     HeroSection,
@@ -323,14 +339,27 @@ export default {
     ContactForm,
     IntroText,
     CheckeredSection,
-    JobOffer
+    JobOffer,
+    Carousel: () =>
+      import("vue-carousel")
+        .then((m) => m.Carousel)
+        .catch(),
+    Slide: () =>
+      import("vue-carousel")
+        .then((m) => m.Slide)
+        .catch(),
   },
   data() {
     return {
-      data: Content
-    }
-  }
-}
+      data: Content,
+    };
+  },
+  computed: {
+    isPhone() {
+      return !this.$screen.lg;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

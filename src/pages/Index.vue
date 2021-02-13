@@ -227,7 +227,7 @@
     <base-section id="news" :fullheight="false" background="gray">
       <base-row>
         <headline text="News" />
-        <ClientOnly>
+        <ClientOnly v-if="!isPhone">
           <carousel :navigation-enabled="true" :per-page="2" :loop="true">
             <slide v-for="newsItem in $page.news.edges" :key="newsItem.node.id">
               <teaser-item
@@ -242,6 +242,19 @@
             </slide>
           </carousel>
         </ClientOnly>
+
+        <teaser-item
+          v-else
+          v-for="newsItem in $page.news.edges"
+          :key="newsItem.node.id"
+          :item-number="2"
+          :is-news-teaser="true"
+          :headline="newsItem.node.title"
+          :subline="newsItem.node.date"
+          :content="[...newsItem.node.excerpt]"
+          :image="newsItem.node.image.image"
+          :link="newsItem.node.path"
+        />
       </base-row>
     </base-section>
 
@@ -342,6 +355,11 @@ export default {
     return {
       data: Content,
     };
+  },
+  computed: {
+    isPhone() {
+      return !this.$screen.lg;
+    },
   },
 };
 </script>
