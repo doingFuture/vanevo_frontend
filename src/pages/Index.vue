@@ -227,17 +227,20 @@
     <base-section id="news" :fullheight="false" background="gray">
       <base-row>
         <headline text="News" />
-        <teaser-item
-          v-for="newsItem in deNews"
-          :key="newsItem.node.id"
-          :item-number="deNews.length"
-          :is-news-teaser="true"
-          :headline="newsItem.node.title"
-          :subline="newsItem.node.date"
-          :content="[...newsItem.node.excerpt]"
-          :image="newsItem.node.image.image"
-          :link="newsItem.node.path"
-        />
+
+        <carousel :navigation-enabled="true" :per-page="2" :loop="true">
+          <slide v-for="newsItem in $page.news.edges" :key="newsItem.node.id">
+            <teaser-item
+              :item-number="2"
+              :is-news-teaser="true"
+              :headline="newsItem.node.title"
+              :subline="newsItem.node.date"
+              :content="[...newsItem.node.excerpt]"
+              :image="newsItem.node.image.image"
+              :link="newsItem.node.path"
+            />
+          </slide>
+        </carousel>
       </base-row>
     </base-section>
 
@@ -267,7 +270,7 @@
 
 <page-query>
 query {
-  news: allNews {
+  news: allNews(filter: { fileInfo: { directory: { eq: "news/de" } } }) {
     edges {
       node {
       	title
@@ -309,6 +312,7 @@ import IntroText from '@/components/IntroText.vue'
 import CheckeredSection from '@/components/CheckeredSection.vue'
 import JobOffer from '@/components/JobOffer.vue'
 import Content from '@/data/index.json'
+import { Carousel, Slide } from 'vue-carousel'
 
 export default {
   metaInfo: {
@@ -324,18 +328,13 @@ export default {
     ContactForm,
     IntroText,
     CheckeredSection,
-    JobOffer
+    JobOffer,
+    Carousel,
+    Slide
   },
   data() {
     return {
       data: Content
-    }
-  },
-  computed: {
-    deNews() {
-      return this.$page.news.edges.filter(
-        (edge) => edge.node.fileInfo.directory === 'news/de'
-      )
     }
   }
 }

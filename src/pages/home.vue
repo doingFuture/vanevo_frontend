@@ -226,15 +226,16 @@
       <base-row>
         <headline text="News" />
         <teaser-item
-          v-for="newsItem in enNews"
+          v-for="newsItem in this.$page.news.edges"
           :key="newsItem.node.id"
-          :item-number="enNews.length"
+          :item-number="2"
           :is-news-teaser="true"
           :headline="newsItem.node.title"
           :subline="newsItem.node.date"
           :content="[...newsItem.node.excerpt]"
           :image="newsItem.node.image.image"
           :link="newsItem.node.path"
+          :is-english="true"
         />
       </base-row>
     </base-section>
@@ -265,7 +266,7 @@
 
 <page-query>
 query {
-  news: allNews {
+  news: allNews(filter: { fileInfo: { directory: { eq: "news/en" } } }) {
     edges {
       node {
       	title
@@ -327,13 +328,6 @@ export default {
   data() {
     return {
       data: Content
-    }
-  },
-  computed: {
-    enNews() {
-      return this.$page.news.edges.filter(
-        (edge) => edge.node.fileInfo.directory === 'news/en'
-      )
     }
   }
 }

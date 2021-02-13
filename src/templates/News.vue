@@ -11,8 +11,10 @@
           :src="$page.news.image.image"
           :alt="$page.news.image.alt"
         />
-        <!-- eslint-disable-next-line vue/no-v-html -->
-        <div class="w-full p-5 mt-16" v-html="$page.news.content" />
+        <div
+          class="w-full p-5 mt-16 news__content"
+          v-html="$page.news.content"
+        />
       </base-row>
     </base-section>
   </Layout>
@@ -56,4 +58,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+.news__content {
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+</style>

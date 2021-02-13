@@ -1,7 +1,10 @@
 <template>
-  <div class="p-4 w-full" :class="itemNumber < 2 ? '' : `lg:w-1/${itemNumber}`">
+  <div
+    class="p-4 w-full"
+    :class="itemNumber < 2 || isNewsTeaser ? '' : `lg:w-1/${itemNumber}`"
+  >
     <div
-      class="h-full overflow-hidden shadow-xl text-gray-900 bg-white flex flex-col"
+      class="h-full overflow-hidden text-gray-900 bg-white flex flex-col"
       :class="border ? 'border-4 border-white ' : ''"
     >
       <g-image
@@ -13,7 +16,7 @@
         :src="isNewsTeaser ? image : `/images/${image}`"
       />
       <div class="p-6 flex flex-col h-full">
-        <div :class="isNewsTeaser ? 'h-48' : ''">
+        <div :class="isNewsTeaser ? 'h-32' : ''">
           <h3
             class="title-font text-lg font-medium inline-block underlined mb-3"
           >
@@ -21,9 +24,9 @@
           </h3>
         </div>
         <p v-if="subline" class="team-teaser__subline">
-          {{ subline }}
+          {{ formattedSubline }}
         </p>
-        <ul class="leading-relaxed mb-3" :class="list ? 'list-disc pl-5' : ''">
+        <ul class="leading-relaxed mb-3" :class="contentClasses">
           <li v-for="item in content" :key="item.index">{{ item }}</li>
         </ul>
         <div v-if="isNewsTeaser" class="flex items-end h-full">
@@ -86,6 +89,22 @@ export default {
   computed: {
     buttonText() {
       return this.isEnglish ? 'more' : 'mehr erfahren'
+    },
+    formattedSubline() {
+      if (this.isNewsTeaser) {
+        const date = new Date(this.subline)
+        return date.toLocaleDateString('de-DE')
+      }
+      return this.subline
+    },
+    contentClasses() {
+      if (this.list) {
+        return 'list-disc pl-5'
+      }
+      if (this.isNewsTeaser) {
+        return 'h-32'
+      }
+      return ''
     }
   }
 }
