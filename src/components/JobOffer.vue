@@ -1,6 +1,6 @@
 <template>
   <a
-    href="./vacancies/Stellenausschreibung_Wirtschaftsingenieur_VANEVO.pdf"
+    :href="jobPdf"
     target="_blank"
     class="flex flex-row justify-between items-center bg-white mt-6 lg:mx-5 p-6 lg:px-16 px-4 w-full break-words focus:border-none focus:outline-none text-xl hover:shadow-2xl"
   >
@@ -50,6 +50,10 @@ export default {
   name: 'JobOffer',
   props: {
     jobName: {
+      type: String,
+      default: ''
+    },
+    jobPdf: {
       type: String,
       default: ''
     }

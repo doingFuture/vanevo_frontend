@@ -21,13 +21,22 @@ module.exports = {
       anchorClassName: 'icon icon-link'
     }
   },
-
+  templates: {
+    News: '/news/:title'
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'posts/**/*.md',
-        typeName: 'Post'
+        path: 'news/**/*.md',
+        typeName: 'News'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'jobs/**/*.md',
+        typeName: 'Jobs'
       }
     },
     {

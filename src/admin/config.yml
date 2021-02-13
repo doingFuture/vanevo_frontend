@@ -1,3 +1,6 @@
+# local_backend:
+#   # when using a custom proxy server port
+#   url: http://localhost:8082/api/v1
 backend:
   name: git-gateway
   branch: master
@@ -5,14 +8,34 @@ backend:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
+i18n:
+  structure: multiple_folders
+  locales: [de, en]
+  default_locale: de
+
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "posts"
+  - name: "news"
+    label: "News"
+    folder: "news"
+    i18n: true
     create: true
-    slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        collapsed: true
+        i18n: true
+        fields:
+          - { label: "Image", name: "image", widget: "image", i18n: duplicate }
+          - { label: "Alt", name: "alt", widget: "string", i18n: true }
+      - { label: "Excerpt", name: "excerpt", widget: "string", i18n: true }
+      - { label: "Publish Date", name: "date", widget: "date", i18n: duplicate }
+      - { label: "Content", name: "content", widget: "markdown", i18n: true }
+  - name: "jobs"
+    label: "Jobs"
+    folder: "jobs"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "PDF", name: "vacancy_pdf", widget: "file" }
