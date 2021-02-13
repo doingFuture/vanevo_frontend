@@ -13,11 +13,19 @@ content: >-
   DurchSTARTer ist ein Preis des Landes Niedersachsen, verliehen von einer
   Gemeinschaftsinitiative niedersächsischer Ministerien, der NBank, dem
   Innovationszentrum Niedersachsen und der Unternehmerverbände Niedersachsen
-  (UVN). Die Verleihung fand am 01.12.2020 im Rahmen einer digitalen
-  Preisverleihung statt.
+  (UVN). 
+
+
+  Die Verleihung fand am 01.12.2020 im Rahmen einer digitalen Preisverleihung statt.
 
 
   VANEVO freut sich, dass mit der Darstellung des Unternehmenskonzepts die Jury überzeugt werden konnte!
+
+
+
+
+
+
 
 
   Weitere Informationen: [https://www.nbank.de/Blickpunkt/DurchSTARTer-Preis-2020-Niedersachsen-pr%C3%A4miert-seine-besten-Startups.jsp ](https://www.nbank.de/Blickpunkt/DurchSTARTer-Preis-2020-Niedersachsen-pr%C3%A4miert-seine-besten-Startups.jsp)<https://durchstarterpreis.nbank.de/>
