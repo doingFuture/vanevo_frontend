@@ -110,7 +110,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 h3 {
   position: relative;
 }
@@ -129,5 +129,11 @@ h3 {
   margin-bottom: 20px;
   font-weight: 200;
   font-size: 15px;
+}
+
+.VueCarousel-navigation-button {
+  &:focus {
+    outline: none !important;
+  }
 }
 </style>

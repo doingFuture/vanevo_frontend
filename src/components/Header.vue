@@ -54,6 +54,7 @@
         >
         <a
           :href="english ? '/home/#career' : '/#career'"
+          :bubble-content="$static.jobs.edges.length"
           class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer has-bubble"
           @click="showMenu = false"
           ><span v-if="!english">Karriere</span
@@ -84,6 +85,18 @@
     </div>
   </header>
 </template>
+
+<static-query>
+query {
+  jobs: allJobs {
+    edges {
+      node {
+      	title
+      }
+    }
+  }
+}
+</static-query>
 
 <script>
 import { VBurger } from 'vue-burger'
@@ -116,8 +129,8 @@ export default {
 .has-bubble {
   position: relative;
   &:after {
-    content: "1";
-    background:#143988;
+    content: attr(bubble-content);
+    background: #143988;
     color: white;
     text-align: center;
     position: absolute;
@@ -126,8 +139,8 @@ export default {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    font-size:16px;
-    padding-right:1px;
+    font-size: 16px;
+    padding-right: 1px;
   }
 }
 </style>
