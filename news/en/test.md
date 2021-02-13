@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Testing
 image:
   image: /uploads/nbank_bub_durchstarter_prz-0702.jpg
 excerpt: Test
