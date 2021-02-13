@@ -4,7 +4,6 @@
   "scripts": {
     "prebuild": "rm -rf .cache",
     "build": "gridsome build",
-    "postbuild": "npx staticrypt dist/index.html P@55W0RD -o dist/index.html",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
