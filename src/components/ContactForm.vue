@@ -158,7 +158,7 @@ export default {
     send() {
       axios
         .post(
-          'https://vanevo.de/new/vanevo.php',
+          'http://217.11.48.174/new/vanevo.php',
           querystring.stringify(this.form)
         )
         .then((res) => {
