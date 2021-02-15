@@ -40,6 +40,13 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'homepages/**/*.md',
+        typeName: 'Homepages'
+      }
+    },
+    {
       use: 'gridsome-plugin-netlify-cms',
       options: {
         publicPath: '/admin'

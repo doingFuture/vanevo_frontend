@@ -1,6 +1,6 @@
-# local_backend:
-#   # when using a custom proxy server port
-#   url: http://localhost:8082/api/v1
+local_backend:
+  # when using a custom proxy server port
+  url: http://localhost:8082/api/v1
 backend:
   name: git-gateway
   branch: master
@@ -19,7 +19,7 @@ collections:
     folder: "homepages"
     create: true
     fields:
-      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Intro", name: "intro", widget: "string" }
       - label: "Intro Section"
         name: "intro_section"

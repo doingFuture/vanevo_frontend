@@ -3,7 +3,7 @@
     <hero-section :text="data.hero" />
     <base-section background="blue" :fullheight="false">
       <base-row>
-        <intro-text :text="data.intro" />
+        <intro-text :text="$page.homepages.intro" />
       </base-row>
     </base-section>
     <base-section id="VANEVO-Stacks" :fullheight="false" background="gray">
@@ -318,6 +318,10 @@ query {
       }
     }
   }
+  homepages(path:"/homepages/") {
+    title
+    intro
+  }
 }
 </page-query>
 
@@ -362,6 +366,9 @@ export default {
     return {
       data: Content,
     };
+  },
+  mounted() {
+    console.log(this.$page.homepages.title);
   },
   computed: {
     isPhone() {
