@@ -206,23 +206,30 @@
             We’re looking forward to your message – whether specific to a job
             posting or a spontaneous application!
           </p>
-          <headline
-            :underlined="false"
-            :light="true"
-            class="my-4"
-            text="Current Vacancies:"
-          />
-          <job-offer
-            v-for="edge in $page.jobs.edges"
-            :key="edge.node.id"
-            :job-name="edge.node.title"
-            :job-pdf="edge.node.vacancy_pdf"
-          />
+          <div v-if="hasJobs">
+            <headline
+              :underlined="false"
+              :light="true"
+              class="my-4"
+              text="Current Vacancies:"
+            />
+            <job-offer
+              v-for="edge in $page.jobs.edges"
+              :key="edge.node.id"
+              :job-name="edge.node.title"
+              :job-pdf="edge.node.vacancy_pdf"
+            />
+          </div>
         </div>
       </base-row>
     </base-section>
 
-    <base-section id="news" :fullheight="false" background="gray">
+    <base-section
+      id="news"
+      :fullheight="false"
+      background="gray"
+      v-if="hasNews"
+    >
       <base-row>
         <headline text="News" />
         <ClientOnly v-if="!isPhone">
@@ -357,6 +364,12 @@ export default {
   computed: {
     isPhone() {
       return !this.$screen.lg;
+    },
+    hasJobs() {
+      return this.$page.jobs.edges.length;
+    },
+    hasNews() {
+      return this.$page.news.edges.length;
     },
   },
 };

@@ -55,7 +55,8 @@
         <a
           :href="english ? '/home/#career' : '/#career'"
           :bubble-content="$static.jobs.edges.length"
-          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer has-bubble"
+          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
+          :class="bubbleClass"
           @click="showMenu = false"
           ><span v-if="!english">Karriere</span
           ><span v-if="english">Career</span></a
@@ -115,6 +116,14 @@ export default {
   data() {
     return {
       showMenu: false
+    }
+  },
+  computed: {
+    hasJobs() {
+      return this.$static.jobs.edges.length
+    },
+    bubbleClass() {
+      return this.hasJobs ? 'has-bubble' : ''
     }
   },
   methods: {
