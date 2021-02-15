@@ -14,6 +14,140 @@ i18n:
   default_locale: de
 
 collections:
+  - name: "homepages"
+    label: "Homepages"
+    folder: "homepages"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Intro", name: "intro", widget: "string" }
+      - label: "Intro Section"
+        name: "intro_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Intro Content", name: "intro_content", widget: "text" }
+          - { label: "Intro Quote", name: "intro_quote", widget: "string" }
+          - { label: "Outro Content", name: "outro_content", widget: "text" }
+          - { label: "Outro Quote", name: "outro_quote", widget: "string" }
+          - {
+              label: "Competitor List",
+              name: "competitor_list",
+              widget: "list",
+              label_singular: "fact",
+              field: { label: Fact, name: fact, widget: string },
+            }
+          - {
+              label: "Vanevo List",
+              name: "vanevo_list",
+              widget: "list",
+              label_singular: "fact",
+              field: { label: Fact, name: fact, widget: string },
+            }
+      - label: "How Section"
+        name: "how_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - {
+              label: "Intro Content",
+              name: "intro_content",
+              widget: "markdown",
+            }
+          - { label: "Quote", name: "quote", widget: "string" }
+          - label: "Image"
+            name: "image"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt", name: "alt", widget: "string" }
+          - {
+              label: "Outro Content",
+              name: "outro_content",
+              widget: "markdown",
+            }
+      - label: "Where Section"
+        name: "where_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - label: "Image"
+            name: "image"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt", name: "alt", widget: "string" }
+          - {
+              label: "Intro Content",
+              name: "intro_content",
+              widget: "markdown",
+            }
+          - { label: "Quote", name: "quote", widget: "string" }
+          - {
+              label: "Outro Content",
+              name: "outro_content",
+              widget: "markdown",
+            }
+          - {
+              label: "Where List",
+              name: "where_list",
+              widget: "list",
+              label_singular: "fact",
+              field: { label: Fact, name: fact, widget: string },
+            }
+      - label: "Team Section"
+        name: "team_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - label: "Image"
+            name: "image"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt", name: "alt", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: "Quote", name: "quote", widget: "string" }
+          - label: "Team"
+            name: "team"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Jan"
+                name: "jan"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "About", name: "about", widget: "text" }
+              - label: "Arne"
+                name: "arne"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "About", name: "about", widget: "text" }
+              - label: "Jannick"
+                name: "jannick"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "About", name: "about", widget: "text" }
+      - label: "Career Section"
+        name: "career_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
   - name: "news"
     label: "News"
     folder: "news"
