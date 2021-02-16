@@ -29,7 +29,7 @@ intro_section:
 how_section:
   headline: How do redox flow batteries work?
   image:
-    image: /uploads/nbank_bub_durchstarter_prz-0702.jpg
+    image: /uploads/schema.b3618b3.5128bf04cf18fce3533b6be73ac9bae3.png
     alt: alt
   intro_content: >-
     In redox flow batteries, electrical energy is stored in two liquids, the
@@ -47,7 +47,7 @@ how_section:
 where_section:
   headline: Applications of redox flow batteries
   image:
-    image: /uploads/nbank_bub_durchstarter_prz-0702.jpg
+    image: /uploads/windrad.2665e34.a549ba09d3ee6302331a7d3312a141c2.jpg
     alt: alt
   intro_content: >-
     The generation of green energy from renewable sources is not continuous but
@@ -68,7 +68,7 @@ where_section:
 team_section:
   headline: VANEVO – the Team
   image:
-    image: /uploads/nbank_bub_durchstarter_prz-0702.jpg
+    image: /uploads/team_02.41d3bc4.180b41c3982ed122107e490adf6b015c.jpg
     alt: alt
   team:
     jan:
@@ -76,7 +76,7 @@ team_section:
         image: /uploads/jan_03.jpg
         alt: alt
       name: Dr. Jan grosse Austing
-      title: Elektrochemiker
+      title: Co-Founder, Electrochemist
       about: Domain expert for redox flow batteries and the energy sector. In charge
         of the electrochemistry and the business development.
     arne:
@@ -84,7 +84,7 @@ team_section:
         image: /uploads/arne_03.jpg
         alt: alt
       name: Arne grosse Austing
-      title: Ingenieur
+      title: Co-Founder, Engineer
       about: CAD designer of stacks and modules. Manufactures the parts for the
         prototypes on our CNC milling machine. System designer for the serial
         production of the stacks.
@@ -93,7 +93,7 @@ team_section:
         image: /uploads/jannick_03.jpg
         alt: alt
       name: Jannick Helms
-      title: Ingenieur / Physiker
+      title: Engineer/Physicist
       about: Keeps the test rigs running and takes care of the prototype assembly.
         Developer of the control system, the base for our upcoming battery
         management system.

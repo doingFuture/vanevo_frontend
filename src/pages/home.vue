@@ -70,7 +70,7 @@
             <div class="image-wrapper">
               <g-image
                 class="w-8/12 pb-5 lg:p-5"
-                src="~/assets/images/schema_eng.jpeg"
+                :src="$page.homepages.how_section.image.image"
               />
             </div>
             <div v-html="$page.homepages.how_section.outro_content" />
@@ -88,7 +88,7 @@
         <div class="grid gap-10 grid-cols-1 lg:grid-cols-2">
           <g-image
             class="w-full p-5 lg:pl-5"
-            src="~/assets/images/windrad.jpg"
+            :src="$page.homepages.where_section.image.image"
           />
           <div>
             <div
@@ -122,7 +122,7 @@
         <headline :text="$page.homepages.team_section.headline" />
         <g-image
           class="w-full pt-5 px-5 h-full"
-          src="~/assets/images/team_02.jpg"
+          :src="$page.homepages.team_section.image.image"
         />
         <div
           class="text-4m px-5 mb-20 lg:mt-20 mt-10"
@@ -394,7 +394,6 @@ export default {
   },
   methods: {
     asHTML(markdownString) {
-      console.log(markdownString);
       const htmlString = marked(markdownString);
       return htmlString;
     },

@@ -40,14 +40,14 @@ how_section:
   quote: "Die Vorteile dieser Speicher-Technologie liegen damit auf der Hand: Sie
     ist sicher, langlebig, günstig und nachhaltig!"
   image:
-    image: /uploads/nbank_bub_durchstarter_prz-0702.jpg
+    image: /uploads/schema.b3618b3.5128bf04cf18fce3533b6be73ac9bae3.png
     alt: alt
   outro_content: "Übrigens: Redox-Flow-Batterien sind eine bewährte Technologie,
     welche seit über 40 Jahren stetig weiterentwickelt wird."
 where_section:
   headline: Wo kommen Redox-Flow-Batterien zum Einsatz?
   image:
-    image: /uploads/nbank_bub_durchstarter_prz-0702.jpg
+    image: /uploads/windrad.2665e34.a549ba09d3ee6302331a7d3312a141c2.jpg
     alt: alt
   intro_content: >-
     Die Erzeugung von grünem Strom erfolgt zeitlich variabel - immer nur dann,
@@ -69,7 +69,7 @@ where_section:
 team_section:
   headline: VANEVO – das Team
   image:
-    image: /uploads/nbank_bub_durchstarter_prz-0702.jpg
+    image: /uploads/team_02.41d3bc4.180b41c3982ed122107e490adf6b015c.jpg
     alt: alt
   content: >-
     2015\

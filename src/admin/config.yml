@@ -18,7 +18,7 @@ collections:
     label: "Homepages"
     folder: "homepages"
     i18n: true
-    create: true
+    create: false
     fields:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Intro", name: "intro", widget: "string", i18n: true }
@@ -230,7 +230,7 @@ collections:
                       label: "Title",
                       name: "title",
                       widget: "string",
-                      i18n: duplicate,
+                      i18n: true,
                     }
                   - {
                       label: "About",
@@ -272,7 +272,7 @@ collections:
                       label: "Title",
                       name: "title",
                       widget: "string",
-                      i18n: duplicate,
+                      i18n: true,
                     }
                   - {
                       label: "About",
@@ -314,7 +314,7 @@ collections:
                       label: "Title",
                       name: "title",
                       widget: "string",
-                      i18n: duplicate,
+                      i18n: true,
                     }
                   - {
                       label: "About",
