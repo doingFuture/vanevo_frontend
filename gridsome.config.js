@@ -47,6 +47,13 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'legal_texts/**/*.md',
+        typeName: 'Legal_Texts'
+      }
+    },
+    {
       use: 'gridsome-plugin-netlify-cms',
       options: {
         publicPath: '/admin'

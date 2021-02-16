@@ -91,6 +91,8 @@ collections:
               name: "intro_content",
               i18n: true,
               widget: "markdown",
+              buttons: [],
+              editor_components: [],
             }
           - { label: "Quote", name: "quote", widget: "string", i18n: true }
           - label: "Image"
@@ -111,6 +113,8 @@ collections:
               name: "outro_content",
               i18n: true,
               widget: "markdown",
+              buttons: [],
+              editor_components: [],
             }
       - label: "Where Section"
         name: "where_section"
@@ -142,6 +146,8 @@ collections:
               name: "intro_content",
               widget: "markdown",
               i18n: true,
+              buttons: [],
+              editor_components: [],
             }
           - { label: "Quote", name: "quote", widget: "string", i18n: true }
           - {
@@ -149,6 +155,8 @@ collections:
               name: "outro_content",
               widget: "markdown",
               i18n: true,
+              buttons: [],
+              editor_components: [],
             }
           - {
               label: "Where List",
@@ -188,6 +196,8 @@ collections:
               name: "content",
               widget: "markdown",
               i18n: true,
+              buttons: [],
+              editor_components: [],
             }
           - { label: "Quote", name: "quote", widget: "string", i18n: true }
           - label: "Team"
@@ -339,6 +349,8 @@ collections:
               name: "content",
               widget: "markdown",
               i18n: true,
+              buttons: [],
+              editor_components: [],
             }
   - name: "news"
     label: "News"
@@ -357,7 +369,14 @@ collections:
           - { label: "Alt", name: "alt", widget: "string", i18n: true }
       - { label: "Excerpt", name: "excerpt", widget: "string", i18n: true }
       - { label: "Publish Date", name: "date", widget: "date", i18n: duplicate }
-      - { label: "Content", name: "content", widget: "markdown", i18n: true }
+      - {
+          label: "Content",
+          name: "content",
+          widget: "markdown",
+          i18n: true,
+          buttons: [],
+          editor_components: [],
+        }
   - name: "jobs"
     label: "Jobs"
     folder: "jobs"
@@ -365,3 +384,16 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "PDF", name: "vacancy_pdf", widget: "file" }
+  - name: "legal_texts"
+    label: "Legal Texts"
+    folder: "legal_texts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Content",
+          name: "content",
+          widget: "markdown",
+          buttons: [heading-three],
+          editor_components: [],
+        }
