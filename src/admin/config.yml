@@ -125,6 +125,14 @@ collections:
                 widget: "object"
                 collapsed: true
                 fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "object"
+                    collapsed: true
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Alt", name: "alt", widget: "string" }
+                  - { label: "Name", name: "name", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "About", name: "about", widget: "text" }
               - label: "Arne"
@@ -132,6 +140,14 @@ collections:
                 widget: "object"
                 collapsed: true
                 fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "object"
+                    collapsed: true
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Alt", name: "alt", widget: "string" }
+                  - { label: "Name", name: "name", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "About", name: "about", widget: "text" }
               - label: "Jannick"
@@ -139,6 +155,14 @@ collections:
                 widget: "object"
                 collapsed: true
                 fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "object"
+                    collapsed: true
+                    fields:
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Alt", name: "alt", widget: "string" }
+                  - { label: "Name", name: "name", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "About", name: "about", widget: "text" }
       - label: "Career Section"

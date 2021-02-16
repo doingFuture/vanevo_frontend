@@ -8,12 +8,9 @@
       class="lg:w-1/2 w-full bg-white flex flex-col justify-center items-center px-0 lg:px-5 py-10 lg:p-0"
     >
       <p class="w-10/12  ml-5">
-        {{ content.text[0] }}
+        {{ content }}
       </p>
       <slot />
-      <p class="w-10/12 ml-5">
-        {{ content.text[1] }}
-      </p>
     </div>
   </div>
 </template>

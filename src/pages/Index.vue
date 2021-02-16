@@ -14,16 +14,23 @@
         />
         <div class="my-5 lg:shadow-xl">
           <checkered-section
-            v-for="(item, index) in data.comparisonSection.checks"
-            :key="index"
-            :is-even="index % 2 == 0"
-            :content="item"
-            :image="item.image"
+            :is-even="true"
+            :content="$page.homepages.intro_section.intro_content"
+            image="was_01.jpg"
           >
             <quote-item
-              v-if="item.quote"
-              class="my-5 ml-5 w-10/12"
-              :text="item.quote"
+              class="my-5"
+              :text="$page.homepages.intro_section.intro_quote"
+            />
+          </checkered-section>
+          <checkered-section
+            :is-even="false"
+            :content="$page.homepages.intro_section.outro_content"
+            image="was_02.jpg"
+          >
+          <quote-item
+              class="my-5"
+              :text="$page.homepages.intro_section.outro_quote"
             />
           </checkered-section>
         </div>
@@ -48,8 +55,11 @@
     </base-section>
     <base-section id="function" :fullheight="false" background="white">
       <base-row>
-        <headline :text="$page.homepages.intro_section.headline" />
-        <div v-html="$page.homepages.how_section.intro_content" />
+        <headline :text="$page.homepages.how_section.headline" />
+        <div
+          class="p-5 text-black"
+          v-html="asHTML($page.homepages.how_section.intro_content)"
+        />
 
         <div class="grid gap-10 grid-cols-1">
           <quote-item
@@ -83,7 +93,7 @@
           <div>
             <div
               class="text-white p-5"
-              v-html="$page.homepages.where_section.intro_content"
+              v-html="asHTML($page.homepages.where_section.intro_content)"
             />
             <quote-item
               class="my-5 ml-5"
@@ -92,7 +102,7 @@
             />
             <div
               class="text-white p-5"
-              v-html="$page.homepages.where_section.outro_content"
+              v-html="asHTML($page.homepages.where_section.outro_content)"
             />
             <ul class="leading-relaxed p-5 list-disc pl-10 text-white">
               <li
@@ -114,16 +124,21 @@
           class="w-full pt-5 px-5 h-full"
           src="~/assets/images/team_02.jpg"
         />
-        <div v-html="$page.homepages.team_section.content" />
-        <span>{{ $page.homepages.team_section.quote }}</span>
+        <div
+          class="text-4m px-5 mb-20 lg:mt-20 mt-10"
+          v-html="asHTML($page.homepages.team_section.content)"
+        />
+        <span class="block w-full px-5 mb-8 font-bold text-vanevo-blue">{{
+          $page.homepages.team_section.quote
+        }}</span>
         <teaser-item
           v-for="item in $page.homepages.team_section.team"
           :key="item.index"
           :item-number="3"
-          :headline="item.headline"
+          :headline="item.name"
           :subline="item.title"
-          :content="item.about"
-          :image="item.image"
+          :content="[item.about]"
+          :image="item.image.image"
         />
       </base-row>
     </base-section>
@@ -136,17 +151,16 @@
     >
       <base-row class="px-2">
         <div class="w-full">
-          <headline :light="true" class="mb-4" text="Karriere bei VANEVO" />
-          <p class="pb-5 pl-5 pr-5 lg:pt-5 text-white">
-            Wir stellen ein! Für unsere weiteren technischen Entwicklungen sowie
-            den Markteintritt suchen wir Mitarbeiter (m/w/d).
-            <br />
-            <br />
-            Falls Du Lust auf die Mitarbeit in einem jungen Startup hast und mit
-            Deinen Ideen die Entwicklung von VANEVO mitgestalten möchtest, dann
-            bewirb Dich bei uns unter jobs@vanevo.de! Wir freuen uns auf deine
-            Bewerbung - gerne auch initiativ!
-          </p>
+          <headline
+            :light="true"
+            class="mb-4"
+            :text="$page.homepages.career_section.headline"
+          />
+          <div
+            class="pb-5 pl-5 pr-5 lg:pt-5 text-white"
+            v-html="asHTML($page.homepages.career_section.content)"
+          />
+
           <div v-if="hasJobs">
             <headline
               :underlined="false"
@@ -262,6 +276,10 @@ query {
     intro
     intro_section{
       headline
+      intro_content
+      intro_quote
+      outro_content
+      outro_quote
       vanevo_list
       competitor_list
     }
@@ -296,18 +314,37 @@ query {
       quote
       team{
         jan{
+          image{
+            image
+            alt
+          }
+          name
           title
           about
         }
         arne{
+          image{
+            image
+            alt
+          }
+          name
           title
           about
         }
         jannick{
+          image{
+            image
+            alt
+          }
+          name
           title
           about
         }
       }
+    }
+     career_section{
+      headline
+      content
     }
   }
 }
@@ -325,6 +362,7 @@ import IntroText from "@/components/IntroText.vue";
 import CheckeredSection from "@/components/CheckeredSection.vue";
 import JobOffer from "@/components/JobOffer.vue";
 import Content from "@/data/index.json";
+import marked from "marked";
 
 export default {
   metaInfo: {
@@ -357,6 +395,13 @@ export default {
   },
   mounted() {
     console.log(this.$page.homepages.title);
+  },
+  methods: {
+    asHTML(markdownString) {
+      console.log(markdownString);
+      const htmlString = marked(markdownString);
+      return htmlString;
+    },
   },
   computed: {
     isPhone() {

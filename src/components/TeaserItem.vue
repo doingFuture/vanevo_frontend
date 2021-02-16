@@ -13,7 +13,7 @@
             ? 'xl:h-64 lg:h-48 md:h-36 w-full object-cover object-center'
             : 'hidden'
         "
-        :src="isNewsTeaser ? image : `/images/${image}`"
+        :src="image"
       />
       <div class="p-6 flex flex-col h-full">
         <div :class="isNewsTeaser ? 'h-32' : ''">
