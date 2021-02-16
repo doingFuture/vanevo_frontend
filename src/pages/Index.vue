@@ -271,7 +271,7 @@ query {
       }
     }
   }
-  homepages(path:"/homepages/") {
+  homepages(path:"/homepages/de") {
     title
     intro
     intro_section{
@@ -393,12 +393,8 @@ export default {
       data: Content,
     };
   },
-  mounted() {
-    console.log(this.$page.homepages.title);
-  },
   methods: {
     asHTML(markdownString) {
-      console.log(markdownString);
       const htmlString = marked(markdownString);
       return htmlString;
     },

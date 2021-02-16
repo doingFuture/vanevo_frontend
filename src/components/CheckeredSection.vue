@@ -24,7 +24,7 @@ export default {
       default: false
     },
     content: {
-      type: Object,
+      type: String,
       default: () => {}
     },
     isEven: {
