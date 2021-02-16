@@ -3,24 +3,34 @@
     <hero-section :text="data.hero" />
     <base-section background="blue" :fullheight="false">
       <base-row>
-        <intro-text :text="data.intro" />
+        <intro-text :text="$page.homepages.intro" />
       </base-row>
     </base-section>
     <base-section id="VANEVO-Stacks" :fullheight="false" background="gray">
       <base-row>
-        <headline class="mb-10" :text="data.comparisonSection.headline" />
+        <headline
+          class="mb-10"
+          :text="$page.homepages.intro_section.headline"
+        />
         <div class="my-5 lg:shadow-xl">
           <checkered-section
-            v-for="(item, index) in data.comparisonSection.checks"
-            :key="index"
-            :is-even="index % 2 == 0"
-            :content="item"
-            :image="item.image"
+            :is-even="true"
+            :content="$page.homepages.intro_section.intro_content"
+            image="was_01.jpg"
           >
             <quote-item
-              v-if="item.quote"
-              class="my-5 ml-5 w-10/12"
-              :text="item.quote"
+              class="my-5"
+              :text="$page.homepages.intro_section.intro_quote"
+            />
+          </checkered-section>
+          <checkered-section
+            :is-even="false"
+            :content="$page.homepages.intro_section.outro_content"
+            image="was_02.jpg"
+          >
+          <quote-item
+              class="my-5"
+              :text="$page.homepages.intro_section.outro_quote"
             />
           </checkered-section>
         </div>
@@ -28,47 +38,42 @@
           Stacks im Vergleich:
         </h4>
         <teaser-item
-          v-for="item in data.comparisonSection.teasers"
-          :key="item.index"
-          :item-number="data.comparisonSection.teasers.length"
+          :item-number="2"
           :border="true"
           :list="true"
-          :headline="item.headline"
-          :content="item.content"
+          headline="Stand der Technik"
+          :content="$page.homepages.intro_section.competitor_list"
+        />
+        <teaser-item
+          :item-number="2"
+          :border="true"
+          :list="true"
+          headline="Vanevo"
+          :content="$page.homepages.intro_section.vanevo_list"
         />
       </base-row>
     </base-section>
     <base-section id="function" :fullheight="false" background="white">
       <base-row>
-        <headline text="Wie funktionieren Redox-Flow-Batterien?" />
-        <p class="p-5 text-black">
-          Redox-Flow-Batterien speichern elektrische Energie mit Hilfe von zwei
-          Flüssigkeiten (Elektrolyte).
-          <br />
-          <br />
-          Diese Elektrolyte werden in zwei Tanks gelagert und können in den
-          Stacks geladen und entladen werden. Redox-Flow-Batterien sind nicht
-          brennbar, bieten eine hohe Lebensdauer mit bis zu 15.000 Ladezyklen,
-          weisen die geringsten Kosten je Lade/Entlade-Zyklus auf und können
-          recycelt werden.
-        </p>
+        <headline :text="$page.homepages.how_section.headline" />
+        <div
+          class="p-5 text-black"
+          v-html="asHTML($page.homepages.how_section.intro_content)"
+        />
 
         <div class="grid gap-10 grid-cols-1">
           <quote-item
             class="mb-5 ml-5 mt-10"
-            text="Die Vorteile dieser Speicher-Technologie liegen damit auf der Hand: Sie ist sicher, langlebig, günstig und nachhaltig!"
+            :text="$page.homepages.how_section.quote"
           />
           <div>
             <div class="image-wrapper">
               <g-image
                 class="w-8/12 pb-5 lg:p-5"
-                src="~/assets/images/schema.png"
+                :src="$page.homepages.how_section.image.image"
               />
             </div>
-            <p class="p-5 text-black">
-              Übrigens: Redox-Flow-Batterien sind eine bewährte Technologie,
-              welche seit über 40 Jahren stetig weiterentwickelt wird.
-            </p>
+            <div v-html="$page.homepages.how_section.outro_content" />
           </div>
         </div>
       </base-row>
@@ -78,46 +83,34 @@
       <base-row>
         <headline
           :light="true"
-          text="Wo kommen Redox-Flow-Batterien zum Einsatz?"
+          :text="$page.homepages.where_section.headline"
         />
         <div class="grid gap-10 grid-cols-1 lg:grid-cols-2">
           <g-image
             class="w-full p-5 lg:pl-5"
-            src="~/assets/images/windrad.jpg"
+            :src="$page.homepages.where_section.image.image"
           />
           <div>
-            <p class="pb-5 pl-5 pr-5 lg:pt-5 text-white">
-              Die Erzeugung von grünem Strom erfolgt zeitlich variabel - immer
-              nur dann, wenn Wind weht oder die Sonne scheint.
-              <br />
-              Für eine gelungene Energiewende wird aber eine durchgehende,
-              zuverlässige Stromversorgung benötigt.
-              <br />
-              Dies kann mit Redox-Flow-Batterien als Stromspeicher für grünen
-              Strom erreicht werden: für eine zuverlässige und nachhaltige
-              Energiewende!
-            </p>
+            <div
+              class="text-white p-5"
+              v-html="asHTML($page.homepages.where_section.intro_content)"
+            />
             <quote-item
               class="my-5 ml-5"
               :inverted="true"
-              text="Redox-Flow-Batterien eignen sich perfekt als Puffer für grünen Strom!"
+              :text="$page.homepages.where_section.quote"
             />
-            <p class="p-5 text-white">
-              Die Einsatzgebiete für Redox-Flow-Batterien von VANEVO sind sehr
-              vielseitig:
-            </p>
+            <div
+              class="text-white p-5"
+              v-html="asHTML($page.homepages.where_section.outro_content)"
+            />
             <ul class="leading-relaxed p-5 list-disc pl-10 text-white">
-              <li>
-                Speicherung grünen Stroms zur Erhöhung des Eigenverbrauchs
+              <li
+                v-for="listItem in $page.homepages.where_section.where_list"
+                :key="listItem.index"
+              >
+                {{ listItem }}
               </li>
-              <li>Versorgung von Ladesäulen für die Elektromobilität</li>
-              <li>
-                Lastmanagement (Peakshaving), Notstromversorgung in der
-                Industrie
-              </li>
-              <li>Verringerung des Netzausbaus</li>
-              <li>Systemdienstleistungen (Regelleistung)</li>
-              <li>Speicher für Inselnetze z.B. in Entwicklungsländern</li>
             </ul>
           </div>
         </div>
@@ -126,65 +119,26 @@
 
     <base-section id="team" :fullheight="false" background="gray">
       <base-row>
-        <headline :text="data.teamSection.headline" />
+        <headline :text="$page.homepages.team_section.headline" />
         <g-image
           class="w-full pt-5 px-5 h-full"
-          src="~/assets/images/team_02.jpg"
+          :src="$page.homepages.team_section.image.image"
         />
-        <p class="text-4m px-5 mb-20 lg:mt-20 mt-10">
-          2015
-          <br />
-          Aller Anfang ist... akademisch, zumindest bei VANEVO:
-          <br />
-          Während seiner Doktorarbeit am Forschungsinstitut untersuchte und
-          entwickelte Jan Redox-Flow-Batterien.
-          <br />
-          Dabei kam die Frage auf: Wieso ist diese vorteilhafte Technologie
-          eigentlich nicht wirklich im Markt der Stromspeicher-Technologie
-          vertreten?
-          <br />
-          Die Antwort war schnell gefunden: zu teuer!
-          <br />
-          Es wurden Lösungen zur Kostenreduktion entwickelt und ein erstes
-          Patent angemeldet. Mit drei Kollegen konnte Jan im Rahmen eines
-          Forschungsprojektes den Ansatz zur Kostenreduktion weiter zu einer
-          Geschäftsidee entwickeln.
-          <br />
-          <br />
-          2016
-          <br />
-          Jannick kam ans Forschungsinstitut und unterstützte das Vorhaben mit
-          seiner Abschlussarbeit.
-          <br />
-          <br />
-          2018
-          <br />
-          Arne, ein erfahrener Konstrukteur, wird Teil des Teams. Die VANEVO
-          GmbH wird gegründet mit dem Ziel, Komponenten für Redox-Flow-Batterien
-          auf den Markt zu bringen.
-          <br />
-          <br />
-          2019 / 2020
-          <br />
-          Arne, Jannick und Jan verbessern die Technik und das Geschäftsmodell.
-          Es wird ein weiteres Patent für ein optimiertes Herstellverfahren
-          angemeldet.
-          <br />
-          <br />
-          <br />
-          <span class="text-vanevo-blue font-bold"
-            >Nächste Meilensteine: Investoren gewinnen, Mitarbeiter einstellen,
-            Serienproduktion aufbauen!</span
-          >
-        </p>
+        <div
+          class="text-4m px-5 mb-20 lg:mt-20 mt-10"
+          v-html="asHTML($page.homepages.team_section.content)"
+        />
+        <span class="block w-full px-5 mb-8 font-bold text-vanevo-blue">{{
+          $page.homepages.team_section.quote
+        }}</span>
         <teaser-item
-          v-for="item in data.teamSection.teasers"
+          v-for="item in $page.homepages.team_section.team"
           :key="item.index"
-          :item-number="data.teamSection.teasers.length"
-          :headline="item.headline"
-          :subline="item.job"
-          :content="item.content"
-          :image="item.image"
+          :item-number="3"
+          :headline="item.name"
+          :subline="item.title"
+          :content="[item.about]"
+          :image="item.image.image"
         />
       </base-row>
     </base-section>
@@ -197,17 +151,16 @@
     >
       <base-row class="px-2">
         <div class="w-full">
-          <headline :light="true" class="mb-4" text="Karriere bei VANEVO" />
-          <p class="pb-5 pl-5 pr-5 lg:pt-5 text-white">
-            Wir stellen ein! Für unsere weiteren technischen Entwicklungen sowie
-            den Markteintritt suchen wir Mitarbeiter (m/w/d).
-            <br />
-            <br />
-            Falls Du Lust auf die Mitarbeit in einem jungen Startup hast und mit
-            Deinen Ideen die Entwicklung von VANEVO mitgestalten möchtest, dann
-            bewirb Dich bei uns unter jobs@vanevo.de! Wir freuen uns auf deine
-            Bewerbung - gerne auch initiativ!
-          </p>
+          <headline
+            :light="true"
+            class="mb-4"
+            :text="$page.homepages.career_section.headline"
+          />
+          <div
+            class="pb-5 pl-5 pr-5 lg:pt-5 text-white"
+            v-html="asHTML($page.homepages.career_section.content)"
+          />
+
           <div v-if="hasJobs">
             <headline
               :underlined="false"
@@ -318,6 +271,82 @@ query {
       }
     }
   }
+  homepages(path:"/homepages/de") {
+    title
+    intro
+    intro_section{
+      headline
+      intro_content
+      intro_quote
+      outro_content
+      outro_quote
+      vanevo_list
+      competitor_list
+    }
+    how_section{
+      headline
+      intro_content
+      quote
+      outro_content
+      image {
+        image
+        alt
+      }
+    }
+    where_section{
+      headline
+      image{
+        image
+        alt
+      }
+      intro_content
+      quote
+      outro_content
+      where_list
+    }
+    team_section{
+      headline
+      image{
+        image
+        alt
+      }
+      content
+      quote
+      team{
+        jan{
+          image{
+            image
+            alt
+          }
+          name
+          title
+          about
+        }
+        arne{
+          image{
+            image
+            alt
+          }
+          name
+          title
+          about
+        }
+        jannick{
+          image{
+            image
+            alt
+          }
+          name
+          title
+          about
+        }
+      }
+    }
+     career_section{
+      headline
+      content
+    }
+  }
 }
 </page-query>
 
@@ -333,6 +362,7 @@ import IntroText from "@/components/IntroText.vue";
 import CheckeredSection from "@/components/CheckeredSection.vue";
 import JobOffer from "@/components/JobOffer.vue";
 import Content from "@/data/index.json";
+import marked from "marked";
 
 export default {
   metaInfo: {
@@ -362,6 +392,12 @@ export default {
     return {
       data: Content,
     };
+  },
+  methods: {
+    asHTML(markdownString) {
+      const htmlString = marked(markdownString);
+      return htmlString;
+    },
   },
   computed: {
     isPhone() {

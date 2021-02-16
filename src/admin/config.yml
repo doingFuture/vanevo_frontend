@@ -1,6 +1,6 @@
-# local_backend:
-#   # when using a custom proxy server port
-#   url: http://localhost:8082/api/v1
+local_backend:
+  # when using a custom proxy server port
+  url: http://localhost:8082/api/v1
 backend:
   name: git-gateway
   branch: master
@@ -14,6 +14,344 @@ i18n:
   default_locale: de
 
 collections:
+  - name: "homepages"
+    label: "Homepages"
+    folder: "homepages"
+    i18n: true
+    create: false
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Intro", name: "intro", widget: "string", i18n: true }
+      - label: "Intro Section"
+        name: "intro_section"
+        widget: "object"
+        i18n: true
+        collapsed: true
+        fields:
+          - {
+              label: "Headline",
+              name: "headline",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Intro Content",
+              name: "intro_content",
+              widget: "text",
+              i18n: true,
+            }
+          - {
+              label: "Intro Quote",
+              name: "intro_quote",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Outro Content",
+              name: "outro_content",
+              widget: "text",
+              i18n: true,
+            }
+          - {
+              label: "Outro Quote",
+              name: "outro_quote",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Competitor List",
+              name: "competitor_list",
+              widget: "list",
+              i18n: true,
+              label_singular: "fact",
+              field: { label: Fact, name: fact, widget: string, i18n: true },
+            }
+          - {
+              label: "Vanevo List",
+              name: "vanevo_list",
+              widget: "list",
+              i18n: true,
+              label_singular: "fact",
+              field: { label: Fact, name: fact, widget: string, i18n: true },
+            }
+      - label: "How Section"
+        name: "how_section"
+        widget: "object"
+        i18n: true
+        collapsed: true
+        fields:
+          - {
+              label: "Headline",
+              name: "headline",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Intro Content",
+              name: "intro_content",
+              i18n: true,
+              widget: "markdown",
+              buttons: [],
+              editor_components: [],
+            }
+          - { label: "Quote", name: "quote", widget: "string", i18n: true }
+          - label: "Image"
+            name: "image"
+            widget: "object"
+            i18n: true
+            collapsed: true
+            fields:
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  i18n: duplicate,
+                }
+              - { label: "Alt", name: "alt", widget: "string", i18n: true }
+          - {
+              label: "Outro Content",
+              name: "outro_content",
+              i18n: true,
+              widget: "markdown",
+              buttons: [],
+              editor_components: [],
+            }
+      - label: "Where Section"
+        name: "where_section"
+        widget: "object"
+        i18n: true
+        collapsed: true
+        fields:
+          - {
+              label: "Headline",
+              name: "headline",
+              widget: "string",
+              i18n: true,
+            }
+          - label: "Image"
+            name: "image"
+            widget: "object"
+            i18n: true
+            collapsed: true
+            fields:
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  i18n: duplicate,
+                }
+              - { label: "Alt", name: "alt", widget: "string", i18n: true }
+          - {
+              label: "Intro Content",
+              name: "intro_content",
+              widget: "markdown",
+              i18n: true,
+              buttons: [],
+              editor_components: [],
+            }
+          - { label: "Quote", name: "quote", widget: "string", i18n: true }
+          - {
+              label: "Outro Content",
+              name: "outro_content",
+              widget: "markdown",
+              i18n: true,
+              buttons: [],
+              editor_components: [],
+            }
+          - {
+              label: "Where List",
+              name: "where_list",
+              widget: "list",
+              i18n: true,
+              label_singular: "fact",
+              field: { label: Fact, name: fact, widget: string, i18n: true },
+            }
+      - label: "Team Section"
+        name: "team_section"
+        widget: "object"
+        i18n: true
+        collapsed: true
+        fields:
+          - {
+              label: "Headline",
+              name: "headline",
+              widget: "string",
+              i18n: true,
+            }
+          - label: "Image"
+            name: "image"
+            widget: "object"
+            i18n: true
+            collapsed: true
+            fields:
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  i18n: duplicate,
+                }
+              - { label: "Alt", name: "alt", widget: "string", i18n: true }
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              i18n: true,
+              buttons: [],
+              editor_components: [],
+            }
+          - { label: "Quote", name: "quote", widget: "string", i18n: true }
+          - label: "Team"
+            name: "team"
+            widget: "object"
+            collapsed: true
+            i18n: true
+            fields:
+              - label: "Jan"
+                name: "jan"
+                widget: "object"
+                i18n: true
+                collapsed: true
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "object"
+                    i18n: true
+                    collapsed: true
+                    fields:
+                      - {
+                          label: "Image",
+                          name: "image",
+                          widget: "image",
+                          i18n: duplicate,
+                        }
+                      - {
+                          label: "Alt",
+                          name: "alt",
+                          widget: "string",
+                          i18n: true,
+                        }
+                  - {
+                      label: "Name",
+                      name: "name",
+                      widget: "string",
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      i18n: true,
+                    }
+                  - {
+                      label: "About",
+                      name: "about",
+                      widget: "text",
+                      i18n: true,
+                    }
+              - label: "Arne"
+                name: "arne"
+                widget: "object"
+                i18n: true
+                collapsed: true
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "object"
+                    i18n: true
+                    collapsed: true
+                    fields:
+                      - {
+                          label: "Image",
+                          name: "image",
+                          widget: "image",
+                          i18n: duplicate,
+                        }
+                      - {
+                          label: "Alt",
+                          name: "alt",
+                          widget: "string",
+                          i18n: true,
+                        }
+                  - {
+                      label: "Name",
+                      name: "name",
+                      widget: "string",
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      i18n: true,
+                    }
+                  - {
+                      label: "About",
+                      name: "about",
+                      widget: "text",
+                      i18n: true,
+                    }
+              - label: "Jannick"
+                name: "jannick"
+                widget: "object"
+                i18n: true
+                collapsed: true
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "object"
+                    i18n: true
+                    collapsed: true
+                    fields:
+                      - {
+                          label: "Image",
+                          name: "image",
+                          widget: "image",
+                          i18n: duplicate,
+                        }
+                      - {
+                          label: "Alt",
+                          name: "alt",
+                          widget: "string",
+                          i18n: true,
+                        }
+                  - {
+                      label: "Name",
+                      name: "name",
+                      widget: "string",
+                      i18n: duplicate,
+                    }
+                  - {
+                      label: "Title",
+                      name: "title",
+                      widget: "string",
+                      i18n: true,
+                    }
+                  - {
+                      label: "About",
+                      name: "about",
+                      widget: "text",
+                      i18n: true,
+                    }
+      - label: "Career Section"
+        name: "career_section"
+        widget: "object"
+        i18n: true
+        collapsed: true
+        fields:
+          - {
+              label: "Headline",
+              name: "headline",
+              widget: "string",
+              i18n: true,
+            }
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              i18n: true,
+              buttons: [],
+              editor_components: [],
+            }
   - name: "news"
     label: "News"
     folder: "news"
@@ -31,7 +369,14 @@ collections:
           - { label: "Alt", name: "alt", widget: "string", i18n: true }
       - { label: "Excerpt", name: "excerpt", widget: "string", i18n: true }
       - { label: "Publish Date", name: "date", widget: "date", i18n: duplicate }
-      - { label: "Content", name: "content", widget: "markdown", i18n: true }
+      - {
+          label: "Content",
+          name: "content",
+          widget: "markdown",
+          i18n: true,
+          buttons: [],
+          editor_components: [],
+        }
   - name: "jobs"
     label: "Jobs"
     folder: "jobs"
@@ -39,3 +384,16 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "PDF", name: "vacancy_pdf", widget: "file" }
+  - name: "legal_texts"
+    label: "Legal Texts"
+    folder: "legal_texts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Content",
+          name: "content",
+          widget: "markdown",
+          buttons: [heading-three],
+          editor_components: [],
+        }
