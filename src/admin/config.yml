@@ -387,7 +387,7 @@ collections:
   - name: "legal_texts"
     label: "Legal Texts"
     folder: "legal_texts"
-    create: true
+    create: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
