@@ -136,9 +136,9 @@ career_section:
   headline: Karriere bei VANEVO
   content: >-
     Wir stellen ein! Für unsere weiteren technischen Entwicklungen sowie den
-    Markteintritt suchen wir Mitarbeiter (m/w/d).\
+    Markteintritt suchen wir Unterstützung.\
 
     \
 
-    Falls Du Lust auf die Mitarbeit in einem jungen Startup hast und mit Deinen Ideen die Entwicklung von VANEVO mitgestalten möchtest, dann bewirb Dich bei uns unter jobs@vanevo.de! Wir freuen uns auf deine Bewerbung - gerne auch initiativ!
+    Du hast Lust auf die Mitarbeit in einem jungen Startup und möchtest mit Deinen Ideen die Entwicklung von VANEVO mitgestalten? Dann bewirb Dich bei uns unter jobs@vanevo.de! Wir freuen uns auf deine Bewerbung - gerne auch initiativ!
 ---

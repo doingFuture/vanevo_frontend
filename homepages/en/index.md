@@ -131,7 +131,7 @@ team_section:
 career_section:
   content: >-
     We hire! For our technical developments and the upcoming market entry we
-    look for talents (M/F/X).\
+    look for support.\
 
     \
 
