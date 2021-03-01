@@ -22,11 +22,11 @@ content: >-
   VANEVO freut sich, dass mit der Darstellung des Unternehmenskonzepts die Jury überzeugt werden konnte!
 
 
+  Weitere Informationen:
 
 
+   <https://www.nbank.de/Blickpunkt/DurchSTARTer-Preis-2020-Niedersachsen-pr%C3%A4miert-seine-besten-Startups.jsp>
 
 
-
-
-  Weitere Informationen: [https://www.nbank.de/Blickpunkt/DurchSTARTer-Preis-2020-Niedersachsen-pr%C3%A4miert-seine-besten-Startups.jsp ](https://www.nbank.de/Blickpunkt/DurchSTARTer-Preis-2020-Niedersachsen-pr%C3%A4miert-seine-besten-Startups.jsp)<https://durchstarterpreis.nbank.de/>
+  [ ](https://www.nbank.de/Blickpunkt/DurchSTARTer-Preis-2020-Niedersachsen-pr%C3%A4miert-seine-besten-Startups.jsp)<https://durchstarterpreis.nbank.de/>
 ---
