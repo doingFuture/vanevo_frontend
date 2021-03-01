@@ -7,22 +7,16 @@ content: >-
   Vanevo GmbH Johann-Hinrich-Engelbart Weg 2 26131 Oldenburg Handelsregister: HRB 213671 Registergericht: AG Oldenburg Vertreten durch: Dr. Jan grosse Austing Arne grosse Austing
 
 
-
-
   ### Kontakt
 
 
   Telefon: 015152131083 E-Mail: info@vanevo.de
 
 
-
-
   ### Umsatzsteuer-ID
 
 
   Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE321256133
-
-
 
 
   ### Streitschlichtung
@@ -52,14 +46,23 @@ content: >-
   ### Fotos
 
 
-  \- Fotos, auf denen Teammitglieder von VANEVO abgebildet sind: von unserem Fotografen vom Foto- und Bilderwerk - www.bilderwerk.org\
+  Fotos, auf denen Teammitglieder von VANEVO abgebildet sind: von unserem Fotografen vom Foto- und Bilderwerk - www.bilderwerk.org\
 
 
-  * Funktionsweise Redox-Flow-Batterien: eigenes Schema\
+  Funktionsweise Redox-Flow-Batterien: eigenes Schema\
 
-  * Titelbild / Danke Gonz DDL dass du deine Arbeit auf Unsplash geteilt hast.\
 
-  * Windrad / Danke Jean-Philippe Delberghe dass du deine Arbeit auf Unsplash geteilt hast.
+  Titelbild / Danke Gonz DDL dass du deine Arbeit auf Unsplash geteilt hast.\
+
+
+  Windrad / Danke Jean-Philippe Delberghe dass du deine Arbeit auf Unsplash geteilt hast.
+
+
+  Foto Durchstarterpreis: Maik Przyklenk/PRZ Fotografie
+
+
+
+
 
 
   Quelle: [e-recht24.de](https://www.e-recht24.de/impressum-generator.html)
