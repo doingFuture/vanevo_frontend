@@ -59,11 +59,4 @@ content: >-
 
 
   Foto Durchstarterpreis: Maik Przyklenk/PRZ Fotografie
-
-
-
-
-
-
-  Quelle: [e-recht24.de](https://www.e-recht24.de/impressum-generator.html)
 ---
