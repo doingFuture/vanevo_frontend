@@ -101,8 +101,7 @@ team_section:
     2019 / 2020\
 
     Arne, Jannick und Jan verbessern die Technik und das Geschäftsmodell. Es wird ein weiteres Patent für ein optimiertes Herstellverfahren angemeldet.
-  quote: "Nächste Meilensteine: Investoren gewinnen, Mitarbeiter einstellen,
-    Serienproduktion aufbauen!"
+  quote: "Nächste Meilensteine: Mitarbeiter einstellen, Produktion aufbauen!"
   team:
     jan:
       image:
