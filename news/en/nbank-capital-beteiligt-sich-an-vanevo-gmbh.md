@@ -18,5 +18,8 @@ content: >-
   We are looking forward to the collaboration with NBank Capital and are happy that VANEVO takes another step!
 
 
-  Further information: <https://www.nbank.de/Die-NBank/Presse/NBank-Capital-2020.jsp>
+  Further information:
+
+
+   <https://www.nbank.de/Die-NBank/Presse/NBank-Capital-2020.jsp>
 ---

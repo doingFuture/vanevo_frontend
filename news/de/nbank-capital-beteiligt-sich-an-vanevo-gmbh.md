@@ -18,5 +18,8 @@ content: >-
   Wir freuen uns auf die weitere Zusammenarbeit mit der NBank Capital und darauf, VANEVO mit neuen Mitarbeitern und Mitteln weiter voranbringen zu können!
 
 
-  Weitere Informationen: <https://www.nbank.de/Die-NBank/Presse/NBank-Capital-2020.jsp>
+  Weitere Informationen:[](https://www.nbank.de/Die-NBank/Presse/NBank-Capital-2020.jsp)
+
+
+  <https://www.nbank.de/Die-NBank/Presse/NBank-Capital-2020.jsp>
 ---
