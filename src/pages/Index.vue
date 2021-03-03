@@ -48,7 +48,7 @@
           :item-number="2"
           :border="true"
           :list="true"
-          headline="Vanevo"
+          headline="VANEVO"
           :content="$page.homepages.intro_section.vanevo_list"
         />
       </base-row>

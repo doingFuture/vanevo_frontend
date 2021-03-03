@@ -41,14 +41,14 @@
           :item-number="2"
           :border="true"
           :list="true"
-          headline="Stand der Technik"
+          headline="State of the Art"
           :content="$page.homepages.intro_section.competitor_list"
         />
         <teaser-item
           :item-number="2"
           :border="true"
           :list="true"
-          headline="Vanevo"
+          headline="VANEVO"
           :content="$page.homepages.intro_section.vanevo_list"
         />
       </base-row>
