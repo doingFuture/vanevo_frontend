@@ -21,7 +21,7 @@
             <a
               href="mailto:info@vanevo.de"
               class="text-vanevo-blue leading-relaxed block mb-3"
-              >info@vanevo.de</a
+              >{{ footerContent.mail }}</a
             >
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-2"
@@ -29,7 +29,7 @@
               <span v-if="!english">TELEFON</span
               ><span v-if="english">PHONE</span>
             </h2>
-            <p class="leading-relaxed mb-3">+49 (0) 15152131083</p>
+            <p class="leading-relaxed mb-3">{{ footerContent.phone }}</p>
           </div>
           <div class="px-6 w-full">
             <h2
@@ -38,12 +38,10 @@
               <span v-if="!english"> ADRESSE</span
               ><span v-if="english">ADDRESS</span>
             </h2>
-            <p class="leading-relaxed">
-              Johann-Hinrich-Engelbart Weg 2
-            </p>
-            <p class="leading-relaxed mb-3">
-              26131 Oldenburg
-            </p>
+            <div
+              class="leading-relaxed"
+              v-html="asHTML(footerContent.address)"
+            />
           </div>
         </div>
       </div>
@@ -157,13 +155,41 @@
   </footer>
 </template>
 
+<static-query>
+query {
+  footer: allFooter {
+    edges {
+      node {
+      	title
+        mail
+        phone
+        address
+      }
+    }
+  }
+}
+</static-query>
+
 <script>
+import marked from 'marked'
+
 export default {
   name: 'Footer',
   props: {
     english: {
       type: Boolean,
       default: false
+    }
+  },
+  computed: {
+    footerContent() {
+      return this.$static.footer.edges[0].node
+    }
+  },
+  methods: {
+    asHTML(markdownString) {
+      const htmlString = marked(markdownString)
+      return htmlString
     }
   }
 }

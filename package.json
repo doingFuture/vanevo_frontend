@@ -5,7 +5,8 @@
     "prebuild": "rm -rf .cache",
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "proxy-backend": "npx netlify-cms-proxy-server"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",

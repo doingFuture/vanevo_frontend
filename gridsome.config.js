@@ -54,6 +54,13 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'footer/**/*.md',
+        typeName: 'Footer'
+      }
+    },
+    {
       use: 'gridsome-plugin-netlify-cms',
       options: {
         publicPath: '/admin'
