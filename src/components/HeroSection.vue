@@ -2,7 +2,8 @@
   <section
     class="h-75 bg-white flex flex-wrap flex-col justify-center items-center relative bg-cover"
     :style="{
-      'background-image': 'url(' + require('../assets/images/intro.jpg') + ')',
+      'background-image':
+        'url(' + require('../assets/images/intro_compressed.jpg') + ')',
     }"
   >
     <div class="container w-10/12 md:w-3/5">
