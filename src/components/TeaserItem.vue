@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="p-4 w-full"
-    :class="itemNumber < 2 || isNewsTeaser ? '' : `lg:w-1/${itemNumber}`"
-  >
+  <div class="p-4 w-full" :class="widthClasses">
     <div
       class="h-full overflow-hidden text-gray-900 bg-white flex flex-col"
       :class="border ? 'border-4 border-white ' : ''"
@@ -105,6 +102,15 @@ export default {
         return 'h-32'
       }
       return ''
+    },
+    widthClasses() {
+      if (this.itemNumber < 2 || this.isNewsTeaser) {
+        return ''
+      }
+      if (this.itemNumber === 2) {
+        return 'lg:w-1/2'
+      }
+      return 'lg:w-1/3'
     }
   }
 }
