@@ -28,7 +28,7 @@
             :content="$page.homepages.intro_section.outro_content"
             image="was_02.jpg"
           >
-          <quote-item
+            <quote-item
               class="my-5"
               :text="$page.homepages.intro_section.outro_quote"
             />
@@ -68,9 +68,11 @@
           />
           <div>
             <div class="image-wrapper">
-              <g-image
+              <img
                 class="w-8/12 pb-5 lg:p-5"
                 :src="$page.homepages.how_section.image.image"
+                width="520"
+                height="320"
               />
             </div>
             <div v-html="$page.homepages.how_section.outro_content" />
