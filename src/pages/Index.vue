@@ -71,8 +71,6 @@
               <img
                 class="w-8/12 pb-5 lg:p-5"
                 :src="$page.homepages.how_section.image.image"
-                width="520"
-                height="320"
               />
             </div>
             <div v-html="$page.homepages.how_section.outro_content" />
