@@ -29,7 +29,7 @@ intro_section:
 how_section:
   headline: How do redox flow batteries work?
   image:
-    image: /uploads/schema.b3618b3.5128bf04cf18fce3533b6be73ac9bae3.png
+    image: /uploads/schema_redox-flow_engl..jpg
     alt: alt
   intro_content: >-
     In redox flow batteries, electrical energy is stored in two liquids, the
