@@ -1,7 +1,7 @@
 ---
 title: "Zuwachs bei VANEVO: Dr. Markus Schwiering"
 image:
-  image: /uploads/pxl_20210520_105935771.portrait.jpg
+  image: /uploads/k800_pxl_20210520_105935771.portrait.jpg
   alt: " "
 excerpt: Markus wird Teil von VANEVO!
 date: 2021-05-25T19:48:21.464Z
