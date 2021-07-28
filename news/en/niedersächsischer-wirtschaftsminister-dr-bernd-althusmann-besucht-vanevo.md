@@ -1,5 +1,5 @@
 ---
-title: Minister of economics of lower saxony, Dr Bernd Althusmann, visits VANEVO!
+title: Minister of economics of Lower Saxony, Dr Bernd Althusmann, visits VANEVO!
 image:
   image: /uploads/k1600_pxl_20210728_091453256.portrait.jpg
 date: 2021-07-28T14:50:09.652Z
