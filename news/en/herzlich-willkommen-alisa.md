@@ -1,7 +1,7 @@
 ---
 title: Welcome Alisa!
 image:
-  image: /uploads/k1024_alisa.jpg
+  image: /uploads/k1024_pxl_20211124_152841563.portrait.jpg
 date: 2021-11-24T16:01:59.263Z
 content: >-
   We are very happy to announce that Alisa joined the VANEVO team!

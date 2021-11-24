@@ -1,7 +1,7 @@
 ---
 title: Herzlich Willkommen Alisa!
 image:
-  image: /uploads/k1024_alisa.jpg
+  image: /uploads/k1024_pxl_20211124_152841563.portrait.jpg
   alt: " "
 excerpt: " "
 date: 2021-11-24T16:01:59.263Z
