@@ -1,7 +1,7 @@
 ---
 title: "Zusätzliche Verstärkung im Ingenieursbereich: Yago Elbrecht"
 image:
-  image: /uploads/whatsapp-image-2022-03-03-at-10.57.12.jpeg
+  image: /uploads/k800_yago_news.jpg
   alt: " "
 excerpt: " "
 date: 2022-01-02T23:00:00.000Z
