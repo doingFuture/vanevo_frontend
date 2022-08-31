@@ -1,0 +1,19 @@
+---
+title: VANEVO ist Gewinner des NachhaltigkeitsAwards 2022 der Metropolregion Nordwest!
+image:
+  image: /uploads/k1024_pxl_20220830_180505805.mp.jpg
+  alt: " "
+excerpt: " "
+date: 2022-08-31T11:28:14.965Z
+content: >-
+  Alle 2 Jahre verleiht die Metropolregion Nordwest für auszeichnungswürdige
+  Projekte und Firmen aus der Region Awards - unter anderem den
+  NachhaltigkeitsAward. VANEVO gehörte zu den drei für den NachhaltigkeitsAward
+  2022 nominierten Projekten - und wurde schließlich als Gewinner gekürt! 
+
+
+  Wir freuen uns sehr für die Anerkennung unser Arbeit und die Auszeichnung mit diesem Preis! 
+
+
+  Vielen Dank an alle Sponsoren und Organisatoren!
+---
