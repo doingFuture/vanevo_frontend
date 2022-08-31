@@ -18,7 +18,10 @@ content: >-
   Vielen Dank an alle Sponsoren und Organisatoren!
 
 
+  Weitere Infos
 
 
-  Weitere Infos: https://www.metropolregion-nordwest.de/portal/meldungen/bunte-papierflieger-fuer-die-besten-im-nordwesten-900000345-10018.html?rubrik=900000005
+  https://www.metropolregion-nordwest.de/portal/seiten/gewinner-nachhaltigkeitsaward-2022-redox-flow-batterien-von-vanevo-fuer-die-energiewende-900000280-10018.html?rubrik=900000005
+
+   https://www.metropolregion-nordwest.de/portal/meldungen/bunte-papierflieger-fuer-die-besten-im-nordwesten-900000345-10018.html?rubrik=900000005
 ---
