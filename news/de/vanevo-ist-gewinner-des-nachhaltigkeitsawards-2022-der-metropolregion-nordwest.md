@@ -16,4 +16,9 @@ content: >-
 
 
   Vielen Dank an alle Sponsoren und Organisatoren!
+
+
+
+
+  Weitere Infos: https://www.metropolregion-nordwest.de/portal/meldungen/bunte-papierflieger-fuer-die-besten-im-nordwesten-900000345-10018.html?rubrik=900000005
 ---
