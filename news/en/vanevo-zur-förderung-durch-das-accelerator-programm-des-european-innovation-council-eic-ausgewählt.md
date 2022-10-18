@@ -6,7 +6,7 @@ image:
 date: 2022-10-18T13:22:50.749Z
 content: >-
   VANEVO is really proud to announce that we are one of the selected 75
-  companies that will receive funding of the EIC Accelerator! 
+  companies that will receive funding from the EIC Accelerator! 
 
 
   The EIC Accelerator is one of Europe’s flagship innovation programmes to identify, develop and scale up breakthrough technologies and game changing innovations. It is a highly competitive and selective programme. Only the most innovative companies get funded: in 2021, only 164 projects our of 4000 applications were selected (4.1 %).\
