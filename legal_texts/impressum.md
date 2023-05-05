@@ -4,7 +4,7 @@ content: >-
   ### Angaben gemäß § 5 TMG
 
 
-  Vanevo GmbH Johann-Hinrich-Engelbart Weg 2 26131 Oldenburg Handelsregister: HRB 213671 Registergericht: AG Oldenburg Vertreten durch: Dr. Jan grosse Austing Arne grosse Austing
+  Vanevo GmbH Johann-Hinrich-Engelbart Weg 2 26131 Oldenburg Handelsregister: HRB 213671 Registergericht: AG Oldenburg Vertreten durch: Dr. Jan grosse Austing 
 
 
   ### Kontakt
