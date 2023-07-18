@@ -4,7 +4,7 @@ content: >-
   ### Angaben gemäß § 5 TMG
 
 
-  Vanevo GmbH Johann-Hinrich-Engelbart Weg 2 26131 Oldenburg Handelsregister: HRB 213671 Registergericht: AG Oldenburg Vertreten durch: Dr. Jan grosse Austing 
+  VANEVO GmbH Johann-Hinrich-Engelbart Weg 2 26131 Oldenburg Handelsregister: HRB 213671 Registergericht: AG Oldenburg Vertreten durch: Dr. Jan grosse Austing 
 
 
   ### Kontakt
@@ -40,7 +40,7 @@ content: >-
   ### Urheberrecht
 
 
-  Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen. Die Urheber der Fotos auf der Webseite sind in der Regel beim Klick auf das Foto in der LightBox angegeben (Quelle Startseite: iStock). Die Vanevo GmbH hat Berechtigungen und Lizenzen zur Nutzung von Bildern mit externer Urheberschaft vorliegen.
+  Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen. Die Urheber der Fotos auf der Webseite sind in der Regel beim Klick auf das Foto in der LightBox angegeben (Quelle Startseite: iStock). Die VANEVO GmbH hat Berechtigungen und Lizenzen zur Nutzung von Bildern mit externer Urheberschaft vorliegen.
 
 
   ### Fotos
