@@ -102,14 +102,6 @@
             </li>
             <li class="mb-3">
               <g-link
-                :to="english ? '/home/#contact' : '/#contact'"
-                class="text-gray-600 hover:text-gray-800"
-                ><span v-if="!english">Kontakt</span
-                ><span v-if="english">Contact</span></g-link
-              >
-            </li>
-            <li class="mb-3">
-              <g-link
                 to="/datenschutz"
                 class="text-gray-600 hover:text-gray-800"
                 ><span v-if="!english">Datenschutz</span
