@@ -218,27 +218,6 @@
       </base-row>
     </base-section>
 
-    <base-section
-      id="contact"
-      class="pt-16"
-      :fullheight="false"
-      background="white"
-    >
-      <base-row class="px-2">
-        <div class="lg:w-7/12">
-          <p class="font-semibold text-3xl lg:pr-5 pb-2">
-            Interesse geweckt?
-            <br />
-            Nehmen Sie Kontakt mit uns auf!
-          </p>
-          <contact-form />
-        </div>
-        <g-image
-          class="hidden lg:block w-5/12 h-full pt-5 lg:pt-0 shadow-2xl"
-          src="~/assets/images/jannick_cta.jpg"
-        />
-      </base-row>
-    </base-section>
   </Layout>
 </template>
 
@@ -357,7 +336,6 @@ import Headline from "@/components/Headline.vue";
 import TeaserItem from "@/components/TeaserItem.vue";
 import QuoteItem from "@/components/QuoteItem.vue";
 import BaseRow from "@/components/BaseRow.vue";
-import ContactForm from "@/components/ContactForm.vue";
 import IntroText from "@/components/IntroText.vue";
 import CheckeredSection from "@/components/CheckeredSection.vue";
 import JobOffer from "@/components/JobOffer.vue";
@@ -375,7 +353,6 @@ export default {
     TeaserItem,
     QuoteItem,
     BaseRow,
-    ContactForm,
     IntroText,
     CheckeredSection,
     JobOffer,
