@@ -67,13 +67,6 @@
           @click="showMenu = false"
           ><span>News</span></a
         >
-        <a
-          :href="english ? '/home/#contact' : '/#contact'"
-          class="p-5 lg:p-0 lg:mr-5 border-transparent border-b-2 hover:border-vanevo-blue cursor-pointer"
-          @click="showMenu = false"
-          ><span v-if="!english">Kontakt</span
-          ><span v-if="english">Contact</span></a
-        >
         <div class="flex">
           <g-link to="/">
             <g-image class="w-8 p-1" src="~/assets/images/german.jpeg" />
